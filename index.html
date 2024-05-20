@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <meta 
     charset="utf-8" />
     <meta 
@@ -23,38 +26,75 @@
     <link
       rel="icon"
       href="images/Logo mini.png"
-      type="image/x-icon"/>
-      <!--Change icon to 32x32 .ico file-->
+      sizes="32x32"/>
+      <!--Change png to .ico file-->
     <link 
       rel="stylesheet"
       href="styles/darktheme.css" />
   </head>
   <body>
     <nav>
-      <ul>
-        <li>
-          <a
+        <a class="home_icon"
             href="index.html"
             title=Home>
-            <img src="images/Logo mini.png" alt="My logo" />
-          </a>
-        </li>
-        <li>
-          <form>
-            <input type="search" name="q" placeholder="Search query" />
-          </form>
-        </li>
-        <li>
-          <img src="images/theme.svg" alt="Theme" />
-        </li>
-      </ul>
+            <img style="display: inline;" src="images/logo no bg.svg" alt="My logo" height=50/>
+        </a>
+      <div class="search_theme">
+        <ul>
+          <li>
+            <form>
+              <input style="display: inline;" type="search" name="q" placeholder="Search query" />
+            </form>
+          </li>
+          <li>
+            <img src="images/theme.svg" alt="Theme" style="height:40px;"/>
+          </li>
+        </ul>
+      </div>  
     </nav>
     <main>
       <header>
+        <div class="centered">
+          <img src="images/dp.png" alt="Profile Pic" style="width:250px;height:250px;"/>
+          <ul>
+          <li>
+            <a href="mailto:oliverstocks@proton.me"><img src="images/email icon.svg" alt="Email icon" title="Send me an email" style="height:49px;"/>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/oliver-stocks/">
+              <svg
+                width="32px"
+                height="32px"
+                viewBox="0 0 16.404165 16.404167"
+                version="1.1"
+                id="svg1"
+                xml:space="preserve"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:svg="http://www.w3.org/2000/svg"><defs
+                  id="defs1" /><g
+                  id="layer1"
+                  transform="translate(-71.129381,-85.31751)"><image
+                    width="16.404167"
+                    height="16.404167"
+                    preserveAspectRatio="none"
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAA+CAYAAABzwahEAAAABHNCSVQICAgIfAhkiAAAA4FJREFU&#10;aIHtmkFPGkEUgBfoGJzLbgJY0ABbsQEJDWq8kbSYXnrTpJf2hB57sv9AeuuteuxJ/Qd6b+LWhEuj&#10;siQGJQpdMS0mLMnOwdFmlPZSEtIAO9h1d3H3OxF4s7yPHea9GXAwDMMAALiJ8fFlPhRahBDyzANE&#10;QUj8WattHZVKHxiGYRwMwzAv0+k8x7JTxqamDwpC4m4uN+eajMVWgmNjb4xOSC/cbrf/9vb2l3PU&#10;718wOhm94UOhjNMqU7wdCCHvNDoJo7DFrcajfoIJIYpUrW4ihEQwNMT6PJ70aCAwkIsjtfhpubxW&#10;LJWyhBCl/TkIIf8ildoZtMaHaqqflstrhcPD9+3SLTDG0hdBmMYYS5pnd4+oimOMpZNKZbVXDCFE&#10;2cvnl7RL6/5RFVcQKtDczbosC51mhFmhERdpL3Y5QNNdVRwAwOmRiN6oinMsm6S5EISQH6T2V1Xc&#10;5/WmfR5PWi0uHAplNMlIJ6jK2ezMzHqvOh0OhTLxaDSrVVJ64IrHYlm1IAAANxYILBBCFHJzg1qr&#10;N4SQn4xGV57F4x/vPVONcbyen//d7yCMsQQA4AZ54eurV28xaO1pJ+zdmdkghCh1WRbaO8e/JTPJ&#10;sezU/846KvG9g4MlfHUl9YoJB4OLnUoazdjnqdRO6zEhRCmWStmzanWzVwvs83rT3d6TBirxeqMh&#10;qPXr3i61nmZsi05b3645ybJQl2Wh3mgIyUTiU78LrWm+40fHxx+6bX17cVatbuzmcnP9jjOF+Fm1&#10;ulEslbJ3Ha8gJLZ+IaHFFOLFPpPuxEm5vFqXZYE23hTiWp3e9HPXTSGuFXVZpl5ITVfHAQBcOBjM&#10;QAifEEIUBSGxdnGxRTv+R622/TQSWVaLM5X4RCSyHI9Gs/+WJoyx9DWXm6O5m4jyxMg0Uz0cDC4m&#10;E4nVTvUYQsjPTk+v01znUqVZamEa8XgsttLrdZ/Xm6ZpUmi/46YQH/X7F2h6by1/0jaFOEt5Vqfl&#10;dtgU4kbs700hbgS2uNWwxa2GLW41bHGrYYtbDVvcatjiVoPqsBEOD/NqMd2OhWjGDgHA0uQBAODU&#10;9u60e/s7/SPiIWDZqW6LWw3rig/a/8y1QEFIdErn55tGJ6I3tVpt24UQEh+PjLxyu91+oxPSAwUh&#10;8dv+/ltXs9m8/i5Jnx0OhwMAwD3UDwBjLJ1WKmv5QuFds9m8/gPbcHf2EVPbKwAAAABJRU5ErkJg&#10;gg==&#10;"
+                    id="image1"
+                    x="71.129379"
+                    y="85.317505" /></g>
+              </svg>
+            <a/>
+          </li>
+          <li>
+            <a href="https://github.com/Spoyl"><img src="images/github icon.svg" alt="Github" style="height:32px;"/>
+            <a/>
+          </li>
+        </ul>
         <h1>
           About Me
         </h1>
-        <p>
+        <p class="bodytext">
           Welcome to my website - I&apos;m Oli 👋🏻 If you don&apos;t know me, 
           I&apos;m into agonizing over life&apos;s contradictions; can a person 
           be an explorer and an expert? Are kindness and competence 
@@ -65,30 +105,76 @@
           outcomes here...<br/><br/>
           I split my time between working in the UK and travelling abroad 🌍
         </p>
-        <ul>
-          <li>
-            <a href="mailto:oliverstocks@proton.me"><img src="images/email icon.svg" alt="Email"/>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/oliver-stocks/"><img src="images/linkedin icon.svg" alt="LinkedIn"/>
-            <a/>
-          </li>
-          <li>
-            <a href="https://github.com/Spoyl"><img src="images/github icon.svg" alt="Github"/>
-            <a/>
-          </li>
-        </ul>
+      </div>
       </header>
       <section>
-        <hr />
-      </section>
+        <div class = "body-nav">
+          <hr/>
+          <button
+            class="button">Blog
+          </button>
+          <button
+            class="button">Projects
+          </button>
+          <button
+            class="button">Resume
+          </button>
+        </div>
+        <div class="category">
+          <h2>France...</h2>
+            <div class="scroll-bar">
+            <img
+              width="400"
+              height="341"
+            />
+          </div>  
+        </div>
+        <div class="category">
+          <h2>Canada...</h2>
+          <div class="scroll-bar">
+            <img
+              width="400"
+              height="341"
+            />
+          </div>
+        </div>
+        <div class="category">
+          <h2>Misc...</h2>
+          <div class="scroll-bar">
+            <img
+              width="400"
+              height="341"
+              />
+          </div>
+        </div>
+    </section>
     </main>
     <footer>
       <p>
         I designed this website; reach out if you'd like me to design yours.
       </p> 
-        <a href="mailto:oliverstocks@proton.me"><img src="images/email icon.svg" alt="Email"/>
+        <a href="mailto:oliverstocks@proton.me">
+          <svg
+            width="22.754166mm"
+            height="25.929167mm"
+            viewBox="0 0 22.754166 25.929167"
+            version="1.1"
+            id="svg1"
+            xml:space="preserve"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svg="http://www.w3.org/2000/svg"><defs
+              id="defs1" /><g
+              id="layer1"
+              transform="translate(-93.076311,-135.53541)"><image
+                width="22.754168"
+                height="25.929167"
+                preserveAspectRatio="none"
+                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABiCAYAAADKvSRMAAAABHNCSVQICAgIfAhkiAAABRRJREFU&#10;eJzt3N9K41gcB/C4a6RzBkyXibNVaNKxSmNRWkUYlsJOhtnA9s59gu0+gfUJrE8wejd3232C9W4u&#10;vLA7IDsMA1UJtUVj/wzYgcZpMzBH1iOyF25gcNua0+b0j/w+l6HnJPnS/HJ6ThOOAwAAAAAAAAAA&#10;AAAAAAAAAACAJka67QAhFBDGx6NjPO9FCAVcOKa+IYTUv2Bctj5/3scYl7rpq+Ngp3y+lZlgcHVC&#10;FNVuDmBQNSxr/8QwNssfPvzRSftvO2k0pyjrS5HIq4dD/g1tx+Px+KYmJ1c4juPM8/O/aNtTByv7&#10;/YnIwsImbbthNSGKKiHE+lSvv6Vp9w3tjsKKsk7bZth1cs5UwYqiqA77DaoTPM97Jx49UmnajNJ8&#10;2CsI0WbbCSGNs2p1+wvGZZr+Bs1DhOSJFl8eQRCitfPzjNO+qIJFDx78b4ccx3G5fH7j5PT0XtTd&#10;mWAwGZmff3l7O+2VSlUKeJ73NttOCGnQ9DPIyOVl03MZ43mBph/qmxdwBoJlBIJlBIJlBIJlxJVg&#10;w4qyLvv9v7rRVz+Joqi69cvSlWARQoHlpaX0C1XNDuMvM1EU1R9jsd1nsdiuW8fvainwCkI0rmnF&#10;5cXF34chYJ7nvcuLi+lnsdiu29OfVL+8nJIlKTE1OblybBibR4XCBot9dIPnee/M9PTqbDCYbPWj&#10;p1tMguW4m4MPK0oqIEmJXD6f6nTC2G1TPt9KZGHhJesrivmoYFDqr11Hf3j69M9eHEfPhlv9qr8s&#10;62g7rgSby+c3ypWKo0tdlqREXNOKc6EQ0wlznue9c6HQelzTirIkORoKnhjG1qGur7mxf1eCxRiX&#10;3mezidc7O0+cBhxWlFRc04osxr+y35/4SVWzYUVJObk51Uwz83pn58mBricvW8xu0XK1FNgBv89m&#10;f3OyfGzX37imFd0oD3YdXV5aclRuMMalN3t7z9/s7T3vdrn7NiajgnKlki5XKmlZkhLhUGj9rpNE&#10;CAXimlYsVyrpXKGwQXuSCKFAOBRKOb3kCSGNo0Jh49gwmE3OMxtucdxNwDXTzDg9aVmSEvJ/wzMn&#10;499OxqMnhrGVKxRSrCfnmY8KWNXfbupoL1Y8ejbcsgP++927X2jr79eLmLR1tGFZ+6zqaDtMS0Ez&#10;Z9Xq9lm1uk1Tf1+oarZcqaQRQgGnY9Fe1NF2eh6sza6/s9PTyZlgcPWuz8uSlHDatx1oPxc5+zrR&#10;jTEuHeh6kqb+tmPX0Vw+z/zmdJe+fWO/Ztffs48ftyPz89QTJA3L2j/U9bWaaWbYHCG9gQjWRlt/&#10;+11H2xmoYG12/Q1IUqLZnAIhpHFyerrV7zrazkAGy3E35SGXz6eODWNzQhRVYXw8Sq6u6hjjcs00&#10;M4MaqG1gg7XZf7g7q1a3+30sNGD5mxEIlhEIlhEIlhEIlhEIlhEIlhEIlhEIlhEIlhEIlhEIlhGq&#10;YFvNKLH6K2Q/8GNjTc/lkhCLph+q2S18cVFqtn02GFz1CkLkPjzyaT9KfxvtCi9VsJZl7TfbjhAK&#10;0Cz2DaNW594KVSkYhglmFjDGJZoHlDmugxdBXF9f//P948c/07YbZge6nrQs64CmDXWwn+r1tyMj&#10;IyP39V0wtx3dPNm+Rduuo3fC1Ewzgy8uygihgMfj8XXSx6CrmWbmUNfXTkulV520d+X1UF5BiCKE&#10;ZH509Ltu++snjHGJXF01GpbV9euhAAAAAAAAAAAAAAAAAAAAAACgqX8BN+5dvKX9ei8AAAAASUVO&#10;RK5CYII=&#10;"
+                id="image1"
+                x="93.076309"
+                y="135.53542" /></g>
+          </svg>
         </a>
         <br/>
       <p>
