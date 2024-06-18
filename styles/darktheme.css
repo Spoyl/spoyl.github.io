@@ -47,6 +47,11 @@ h1 {
 hr{
     border: 2px solid #AAAE8E;
     opacity: 30%;
+}
+
+.home-rule{
+    border: 2px solid #AAAE8E;
+    opacity: 30%;
     width: 90%;
     position: absolute;
     left: 0;
@@ -55,9 +60,34 @@ hr{
     margin-right: auto;
 }
 
+
 h2{
     font-size: 22px;
     color: #FFFFFF;
+}
+
+h3{
+    color: #E0E0E0;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+h4{
+    color: #EAB402;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+h5{
+    color: #9DA083;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    margin: 0px;
+    margin-bottom: 20px;
 }
 
 ul {
