@@ -4,12 +4,7 @@
     font-family: 'Inter';
 }
 
-nav {
-    overflow: auto;
-    position: fixed;
-    width: 100%;
-    opacity: 95%;
-}
+
 
 main {
     background-color: #2A4B57;
@@ -24,29 +19,23 @@ body {
     background-color: #2A4B57;
 }
 
+nav {
+    position: fixed;
+    display: flex; /* Correct property to use flexbox */
+    align-items: center; /* Center align children vertically */
+    justify-content: space-between; /* Distribute space evenly between children */
+    width: 100%;
+    opacity: 95%;
+    padding: 10px 0; /* Optional: add padding for vertical spacing */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.home_icon {
+    margin-left: 10%; /* Maintain the left margin for spacing */
+}
+
 .search_theme {
-    float: right;
-    padding: 0px;
-    margin-top: 5px;
-    margin-right: 80px; 
-}
-
-.search_theme ul{
-    position: relative;
-    margin: 0px;
-    padding: 0px;
-}
-
-.search_theme ul li:first-child{
-    margin-right: 10px;
-}
-
-.home_icon{
-    float: left;
-    padding: 0px;
-    margin-left: 80px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-right: 10%; /* Maintain the right margin for spacing */
 }
 
 h1 {
