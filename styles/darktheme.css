@@ -4,45 +4,24 @@
     font-family: 'Inter';
 }
 
-body {
-    position: relative;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    width: 100%;
-    margin: 0px 0px;
-    background-color: #2A4B57;
-}
-
-hr{
-    border: 2px solid #AAAE8E;
-    opacity: 30%;
-}
-
-h1 {
-    font-size: 32px;
-    color: #EAB402;
-}
-h2{
-    font-size: 22px;
-    color: #FFFFFF;
-}
-
-ul {
-    position: relative;
-    top: 50%;
-    padding-left: 0px;
-}
-
-li {
-    list-style-type: none;
-    display: inline-block;
-    margin: 0px;
-  }
-
 nav {
     overflow: auto;
     position: fixed;
     width: 100%;
+    opacity: 95%;
+}
+
+main {
+    background-color: #2A4B57;
+}
+
+body {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    width: 100%;
+    margin: 0px 0px;
+    background-color: #2A4B57;
 }
 
 .search_theme {
@@ -69,10 +48,43 @@ nav {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+h1 {
+    font-size: 32px;
+    color: #EAB402;
+}
+
+hr{
+    border: 2px solid #AAAE8E;
+    opacity: 30%;
+    width: 90%;
+}
+
+h2{
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+ul {
+    position: relative;
+    top: 50%;
+    padding-left: 0px;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px;
+}
   
 .bodytext {
     color: #FFFFFF;
     font-size: 20px;
+    font-weight: 300;
+}
+
+header{
+    background-image: url("images/Olive Branch.svg");
 }
 
 nav {
@@ -81,45 +93,122 @@ nav {
     height: 70px;
     width: 100%;
     background-color: #9DA083;
+    z-index: 1;
 }
 
-main {
-    background-color: #2A4B57;
-}
-
-.linkedin_icon{
+.github_icon{
     padding-left: 30px;
     padding-right: 30px;
 }
 
-.centered{
+.head_centered {
     width: 60%;
     margin: auto;
+    display: flex; /* Flex container to align children horizontally */
+    justify-content: space-between; /* Space out children evenly */
+    align-items: center; /* Center align children vertically */
+    padding: 20px; /* Optional: add padding around the container */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.centered{
+    width:fit-content;
+    margin: auto;
+    display: flex;
+}
+
+.category{
+    position: relative;
+    width: 90%;
+    height: 100%;
+    margin: auto;
     display: block;
+    padding-bottom: 10px;
 }
 
 .left_side{
-    width: 50%;
-    float: left;
-    height: 100%;
+    flex:0 0 50%;
+    box-sizing: border-box;
+    padding-top: 20px;
 }
-  
-.button {
+
+.right_side{
+    flex:0 0 50%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    .head_centered {
+        flex-direction: column; /* Stack children vertically on small screens */
+    }
+    .left_side, .right_side {
+        flex: none;
+        width: 80%; /* Full width on smaller screens */
+        margin-bottom: 10px; /* Optional: add spacing between stacked items */
+    }
+}
+
+.button_block{
+    padding-bottom: 20px;
+    display: block;
+}
+
+.blog_button {
     border: 0px solid #9DA083;
     background-color: #9DA083;
     color: #2A4B57;
     text-align: center;
-    font-style: bold;
+    padding: 16px 32px;
+    font-size: 20px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    float: left;
+    font-weight: 600;
+}
+
+.blog_button:hover{
+    background-color: #EAB402;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.proj_button {
+    border: 0px solid #9DA083;
+    background-color: #9DA083;
+    color: #2A4B57;
+    text-align: center;
     padding: 16px 32px;
     font-size: 20px;
     margin: 0px 0px;
     transition-duration: 0.2s;
     cursor: pointer;
-    border-radius: 12px;
     float: left;
-  }
+    font-weight: 600;
+}
 
-.button:hover{
+.proj_button:hover{
+    background-color: #EAB402;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.resume_button {
+    border: 0px solid #9DA083;
+    background-color: #9DA083;
+    color: #2A4B57;
+    text-align: center;
+    padding: 16px 32px;
+    font-size: 20px;
+    margin: 0px 0px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    float: left;
+    font-weight: 600;
+}
+
+.resume_button:hover{
     background-color: #EAB402;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
@@ -127,14 +216,20 @@ main {
 .scroll-bar{
     background-color: #AAAE8E;
     opacity: 0.3;
+    border-radius: 10px;
+}
+
+section{
+    display:block;
 }
 
 footer {
     position: absolute;
     bottom: 0;
-    height: 70px;
+    height: 100px;
     width: 100%;
     background-color: #9DA083;
+    opacity: 95%;
 }
 
 footer p{
