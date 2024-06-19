@@ -173,6 +173,7 @@ header{
     float: left;
     font-weight: 600;
     z-index: 1;
+    text-decoration: none;
 }
 
 .blog_button:hover{
@@ -193,6 +194,7 @@ header{
     float: left;
     font-weight: 600;
     z-index: 1;
+    text-decoration: none;
 }
 
 .proj_button:hover{
@@ -215,6 +217,7 @@ header{
     float: left;
     font-weight: 600;
     z-index: 1;
+    text-decoration: none;
 }
 
 .resume_button:hover{
@@ -226,6 +229,8 @@ header{
     background-color: #AAAE8E;
     opacity: 0.3;
     border-radius: 10px;
+    height: 341px;
+    width: 100%;
 }
 
 section{
@@ -252,5 +257,8 @@ footer p{
     .left_side, .right_side {
         flex: none;
         width: fit-content;
+    }
+    .home-rule{
+        display: none;
     }
 }
