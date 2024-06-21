@@ -19,7 +19,7 @@ body {
 
 nav {
     position: fixed;
-    display: flex; /* Correct property to use flexbox */
+    display: flex;
     align-items: center; /* Center align children vertically */
     justify-content: space-between; /* Distribute space evenly between children */
     width: 100%;
@@ -106,10 +106,6 @@ li {
     color: #FFFFFF;
     font-size: 20px;
     font-weight: 300;
-}
-
-header{
-    background-image: url("images/Olive Branch.svg");
 }
 
 .github_icon{
@@ -226,12 +222,31 @@ header{
 }
 
 .scroll-bar{
-    background-color: #AAAE8E;
-    opacity: 0.3;
+    background-color: rgba(170, 174, 142, 0.3);
     border-radius: 10px;
     height: 341px;
     width: 100%;
+    display: block;
 }
+  
+.prev{
+    all: unset;
+    height: fit-content;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+}
+
+.next{
+    all: unset;
+    height: fit-content;
+    float: right;
+    position: absolute;
+    right: 0%;
+    top: 50%;
+}
+
+
 
 section{
     display:block;
@@ -252,6 +267,13 @@ footer p{
 
 @media (max-width: 600px) {
     .head_centered {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
         flex-direction: column;
     }
     .left_side, .right_side {
@@ -260,5 +282,8 @@ footer p{
     }
     .home-rule{
         display: none;
+    }
+    .scroll-bar{
+        height: 120px;
     }
 }
