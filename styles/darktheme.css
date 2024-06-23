@@ -8,6 +8,13 @@ main {
     background-color: #2A4B57;
 }
 
+header{
+    background-image: url("../images/Olive Branch.svg");
+    background-repeat: no-repeat;
+    background-position: -3% 0px;
+    background-size: 300px;
+}
+
 body {
     position: relative;
     padding-top: 100px;
@@ -278,6 +285,17 @@ li {
     height: 0;
 }
 
+.blog-preview p{
+    position: absolute; /* Position relative to .blog-preview */
+    bottom: 0; /* Adjust top positioning as needed */
+    width: 100%; /* Ensure it covers the full width of .blog-preview */
+    color: #2A4B57; /* Inherit or set a color */
+    font-size: 18px; /* Ensure readability */
+    font-weight: 400; /* Make the text bold */
+    text-align: center; /* Center the text */
+    pointer-events: none; /* Prevent the paragraph from interfering with clicks */
+}
+
 .blog-preview{
     height: 80%;
     background-color: #E0E0E0;
@@ -292,14 +310,15 @@ li {
     text-decoration: none;
     color: #2A4B57;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: bold;
     text-align: center;
     overflow: hidden;
+    position: relative;
 }
 
 .blog-preview:hover{
     box-shadow: 0 10px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    background-color: #EAB402;
+    opacity: 100%;
 }
 
 .blog-preview a span{
@@ -362,18 +381,25 @@ footer p{
         width: calc(90vw - 30px);
         display: flex;
         align-items: left;
-        margin-left: 20px;
+        margin-left: 15px;
         margin-right: 20px;
+        transform: translate(0, -50%);
     }
     .blog-preview{
-        width: 110px;
+        height: 90%;
+        width: 120px;
         margin: 5px;
+        opacity: 100%;
+        font-size:14px;
+        font-weight: 400;
+    }
+    .blog-preview p{
+        display: none;
     }
     .prev, .next{
         display: none;
     }
-    .blog-preview{
-        font-size:14px;
-        font-weight: 400;
+    header{
+        background-position: -10% 0px;
     }
 }
