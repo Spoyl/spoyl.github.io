@@ -70,6 +70,9 @@ hr{
     transform: translate(0, -200%);
 }
 
+#placeholderPic{
+    width: 300px;
+}
 
 h2{
     font-size: 22px;
