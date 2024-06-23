@@ -278,11 +278,10 @@ li {
     height: 0;
 }
 
-
 .blog-preview{
     height: 80%;
     background-color: #E0E0E0;
-    opacity: 50%;
+    opacity: 100%;
     width: 320px;
     border-radius: 10px;
     display: flex; /* Use flexbox */
@@ -300,7 +299,7 @@ li {
 
 .blog-preview:hover{
     box-shadow: 0 10px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    color: #181b1b;
+    background-color: #EAB402;
 }
 
 .blog-preview a span{
