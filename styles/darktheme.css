@@ -144,6 +144,15 @@ li {
     box-sizing: border-box;
 }
 
+.blog{
+    position: relative;
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    display: block;
+    padding-bottom: 10px;
+}
+
 .centered{
     width:fit-content;
     margin: auto;
@@ -163,6 +172,13 @@ li {
     flex:0 0 50%;
     box-sizing: border-box;
     padding-top: 10px;
+}
+
+.left_side_blog{
+    flex:0 0 50%;
+    box-sizing: border-box;
+    padding-top: 10px;
+    justify-content: right;
 }
 
 .right_side{
@@ -357,13 +373,6 @@ footer p{
     display: block;
 }
 
-.bodytext_page{
-    color: #FFFFFF;
-    font-size: 20px;
-    font-weight: 300;
-    width: 60%;
-}
-
 @media (max-width: 600px) {
     .head_centered {
         width: 80%;
@@ -408,5 +417,14 @@ footer p{
     }
     header{
         background-position: -10% 0px;
+    }
+
+    .blog{
+        position: relative;
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        display: block;
+        padding-bottom: 10px;
     }
 }
