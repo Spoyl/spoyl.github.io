@@ -6,8 +6,30 @@
    fill="none"
    version="1.1"
    id="svg1"
+   sodipodi:docname="dark github icon.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="7.375"
+     inkscape:cx="16"
+     inkscape:cy="15.932203"
+     inkscape:window-width="1792"
+     inkscape:window-height="1120"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g1" />
   <g
      clip-path="url(#clip0_25_174)"
      id="g1">
@@ -16,7 +38,11 @@
        clip-rule="evenodd"
        d="M 16.0132,0 C 7.15833,0 0,7.2111 0,16.1322 c 0,7.1311 4.58659,13.1675 10.9494,15.304 0.7955,0.1606 1.0869,-0.3472 1.0869,-0.7743 0,-0.374 -0.0262,-1.6559 -0.0262,-2.9916 C 7.5556,28.632 6.62799,25.7472 6.62799,25.7472 5.91212,23.8776 4.85143,23.3971 4.85143,23.3971 c -1.45795,-0.9883 0.1062,-0.9883 0.1062,-0.9883 1.61726,0.1069 2.46587,1.656 2.46587,1.656 1.43141,2.457 3.738,1.7628 4.6659,1.3353 0.1324,-1.0416 0.5569,-1.7628 1.0076,-2.1633 -3.55278,-0.374 -7.29075,-1.7628 -7.29075,-7.9594 0,-1.7628 0.63589,-3.205 1.64348,-4.3267 -0.15898,-0.4005 -0.71587,-2.05679 0.1593,-4.27355 0,0 1.35208,-0.42742 4.40077,1.65594 1.3052,-0.35313 2.6513,-0.53277 4.0034,-0.53428 1.3521,0 2.7304,0.18716 4.0032,0.53428 3.049,-2.08336 4.4011,-1.65594 4.4011,-1.65594 0.8751,2.21676 0.3179,3.87305 0.1589,4.27355 1.0342,1.1217 1.6438,2.5639 1.6438,4.3267 0,6.1966 -3.7379,7.5585 -7.3173,7.9594 0.5835,0.5074 1.0869,1.4688 1.0869,2.9913 0,2.1633 -0.0262,3.8996 -0.0262,4.4335 0,0.4274 0.2917,0.9352 1.0869,0.7749 C 27.4133,29.2994 31.9999,23.2633 31.9999,16.1322 32.0261,7.2111 24.8416,0 16.0132,0 Z"
        fill="#eab402"
-       id="path1" />
+       id="path1"
+       style="fill:#9da083;fill-opacity:1"
+       inkscape:export-filename="dark github icon.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
   </g>
   <defs
      id="defs1">

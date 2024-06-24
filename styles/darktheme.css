@@ -48,7 +48,7 @@ nav {
 
 h1 {
     font-size: 32px;
-    color: #EAB402;
+    color: #9DA083;
 }
 
 hr{
@@ -95,7 +95,7 @@ h3{
 }
 
 h4{
-    color: #EAB402;
+    color: #9DA083;
     font-size: 22px;
     font-weight: bold;
     margin: 0px;
@@ -214,7 +214,7 @@ li {
 }
 
 .blog_button:hover{
-    background-color: #EAB402;
+    background-color: #E0E0E0;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
@@ -235,7 +235,7 @@ li {
 }
 
 .proj_button:hover{
-    background-color: #EAB402;
+    background-color: #E0E0E0;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
@@ -258,7 +258,7 @@ li {
 }
 
 .resume_button:hover{
-    background-color: #EAB402;
+    background-color: #E0E0E0;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
@@ -349,6 +349,10 @@ li {
 .blog-preview a span{
     position: absolute;
     top: 30px;
+}
+
+.head_centered li img{
+    color: #9DA083;
 }
 
 .prev svg:hover{
