@@ -357,6 +357,13 @@ footer p{
     display: block;
 }
 
+.bodytext_page{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 300;
+    width: 60%;
+}
+
 @media (max-width: 600px) {
     .head_centered {
         width: 80%;
