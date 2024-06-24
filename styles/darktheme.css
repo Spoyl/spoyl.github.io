@@ -174,7 +174,7 @@ li {
     padding-top: 10px;
 }
 
-.left_side_blog{
+.right_side_blog{
     flex:0 0 50%;
     box-sizing: border-box;
     padding-top: 10px;
@@ -280,6 +280,7 @@ li {
     top: 50%;
     display: block;
 }
+
 .blog-window{
     position: relative;
     margin: auto;
