@@ -144,6 +144,14 @@ li {
     box-sizing: border-box;
 }
 
+.blog_links {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
 .blog{
     position: relative;
     width: 60%;
