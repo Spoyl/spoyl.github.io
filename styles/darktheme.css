@@ -7,13 +7,14 @@
 main {
     background-color: #2A4B57;
 }
-
+/*
 header{
     background-image: url("../images/Olive Branch.svg");
     background-repeat: no-repeat;
     background-position: 0px 0px;
     background-size: 300px;
 }
+*/
 
 body {
     position: relative;
@@ -432,9 +433,6 @@ footer p{
     }
     .prev, .next{
         display: none;
-    }
-    header{
-        background-position: -10% 0px;
     }
 
     .blog{
