@@ -43,8 +43,12 @@ nav {
     margin-left: 10%; /* Maintain the left margin for spacing */
 }
 
-.search_theme {
+.menu {
     margin-right: 10%; /* Maintain the right margin for spacing */
+}
+
+.menu:hover{
+    cursor: pointer;
 }
 
 h1 {
@@ -365,6 +369,7 @@ li {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.19));
     cursor: pointer;
 }
+
 
 section{
     display:block;
