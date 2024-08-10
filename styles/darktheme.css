@@ -47,10 +47,6 @@ nav {
     margin-right: 10%; /* Maintain the right margin for spacing */
 }
 
-.menu:hover{
-    cursor: pointer;
-}
-
 h1 {
     font-size: 32px;
     color: #9DA083;
@@ -65,7 +61,20 @@ hr{
     cursor: pointer;
 }
 
+.dropdown_content{
+    display: none;
+}
+
+.menu{
+    cursor: pointer;
+}
+
+.menu:hover .dropdown_content{
+    display: block;
+}
+
 .button_block{
+    padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
     align-items: center;
@@ -146,7 +155,7 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: 20px;
     box-sizing: border-box;
 }
 
@@ -224,28 +233,12 @@ li {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.proj_button {
-    border: 0px solid #9DA083;
-    background-color: #9DA083;
-    color: #2A4B57;
-    text-align: center;
-    padding: 16px 32px;
-    font-size: 20px;
-    margin: 0px 0px;
-    transition-duration: 0.2s;
-    cursor: pointer;
-    float: left;
-    font-weight: 600;
-    z-index: 1;
-    text-decoration: none;
-}
-
 .proj_button:hover{
     background-color: #E0E0E0;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.resume_button {
+.proj_button {
     border: 0px solid #9DA083;
     background-color: #9DA083;
     color: #2A4B57;
@@ -304,7 +297,7 @@ li {
     transform: translate(0, -40%);
     height: 90%;
     display: flex;
-    overflow: scroll;
+    overflow-x: scroll;
     left: 0;
     scroll-behavior: smooth;
     scrollbar-width: none; /* Firefox */
@@ -433,6 +426,7 @@ footer p{
         align-items: baseline;
         padding-top: 10px;
     }
+
     .blog-preview p{
         padding: 15px;
         font-size: 16px;
@@ -440,7 +434,9 @@ footer p{
     .prev, .next{
         display: none;
     }
-
+    .blog-preview:hover{
+        box-shadow: none;
+    }
     .blog{
         position: relative;
         width: 80%;
