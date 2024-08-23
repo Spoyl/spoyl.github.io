@@ -313,7 +313,7 @@ li {
     position: absolute; /* Position relative to .blog-preview */
     bottom: 0; /* Adjust top positioning as needed */
     width: 100%; /* Ensure it covers the full width of .blog-preview */
-    color: #2A4B57; /* Inherit or set a color */
+    color: #FFFFFF; /* Inherit or set a color */
     font-size: 18px; /* Ensure readability */
     font-weight: 400; /* Make the text bold */
     text-align: center; /* Center the text */
@@ -332,12 +332,15 @@ li {
     margin-left: 20px;
     margin-right: 20px;
     text-decoration: none;
-    color: #2A4B57;
+    color: #FFFFFF;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
     overflow: hidden;
     position: relative;
+    background-image: url("../images/sunset_turgetreis.jpg");
+    background-size: cover;
+    background-blend-mode:darken;
 }
 
 .blog-preview:hover{
