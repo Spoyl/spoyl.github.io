@@ -313,7 +313,7 @@ li {
     position: absolute; /* Position relative to .blog-preview */
     bottom: 0; /* Adjust top positioning as needed */
     width: 100%; /* Ensure it covers the full width of .blog-preview */
-    color: #FFFFFF; /* Inherit or set a color */
+    color: #2A4B57; /* Inherit or set a color */
     font-size: 18px; /* Ensure readability */
     font-weight: 400; /* Make the text bold */
     text-align: center; /* Center the text */
@@ -321,6 +321,7 @@ li {
 }
 
 .blog-preview{
+    position: relative;
     height: 80%;
     background-color: #E0E0E0;
     opacity: 100%;
@@ -332,25 +333,33 @@ li {
     margin-left: 20px;
     margin-right: 20px;
     text-decoration: none;
-    color: #FFFFFF;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
     overflow: hidden;
-    position: relative;
     background-image: url("../images/sunset_turgetreis.jpg");
     background-size: cover;
-    background-blend-mode:darken;
 }
+
+.blog-preview::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255,255,255,0.7);
+}
+
 
 .blog-preview:hover{
     box-shadow: 0 10px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     opacity: 100%;
 }
 
-.blog-preview a span{
-    position: absolute;
-    top: 30px;
+.blog-preview span{
+    color: #2A4B57;
+    position: relative;
 }
 
 .head_centered li img{
@@ -406,9 +415,7 @@ footer p{
         flex: none;
         width: fit-content;
     }
-    .home-rule{
-        display: none;
-    }
+   
     .scroll-bar{
         height: 160px;
     }
