@@ -7,14 +7,6 @@
 main {
     background-color: #2A4B57;
 }
-/*
-header{
-    background-image: url("../images/Olive Branch.svg");
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
-    background-size: 300px;
-}
-*/
 
 body {
     position: relative;
@@ -62,15 +54,31 @@ hr{
 }
 
 .dropdown_content{
-    display: none;
-}
-
-.menu{
-    cursor: pointer;
+    display: none
 }
 
 .menu:hover .dropdown_content{
     display: block;
+}
+
+.menu:hover .dropdown_content ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown_content li{
+    font-size: 16px;
+    font-weight: 500;
+    color: #2A4B57;
+    padding: 8px 32px;
+}
+
+.dropdown_content > ul > ul > li{
+    margin-left: 30px;
+    list-style-type: circle;
+    & a{
+        all: unset;
+    }
 }
 
 .button_block{
@@ -208,7 +216,6 @@ li {
     flex:0 0 50%;
     box-sizing: border-box;
     padding-bottom: 20px;
-
 }
 
 .blog_button {
@@ -337,6 +344,9 @@ li {
     font-weight: bold;
     text-align: center;
     overflow: hidden;
+}
+
+#travel{
     background-image: url("../images/sunset_turgetreis.jpg");
     background-size: cover;
 }
