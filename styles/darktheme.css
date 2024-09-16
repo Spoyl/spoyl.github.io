@@ -390,6 +390,10 @@ li {
     background-image: url("../images/magic-fire-artists.png");
     background-size: cover;
 }
+#noimg {
+    background-image: url("../images/Olive\ Branch.svg");
+    background-size: cover;
+}
 
 section{
     display:block;
