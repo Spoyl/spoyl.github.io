@@ -386,6 +386,10 @@ li {
     cursor: pointer;
 }
 
+#FCMago{
+    background-image: url("../images/magic-fire-artists.png");
+    background-size: cover;
+}
 
 section{
     display:block;
