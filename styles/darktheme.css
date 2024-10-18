@@ -31,12 +31,30 @@ nav {
     top: 0;
 }
 
+.insta{
+    padding-left: 20px;
+    padding-right: 10px;
+}
 .home_icon {
     margin-left: 10%; /* Maintain the left margin for spacing */
 }
 
 .menu {
     margin-right: 10%; /* Maintain the right margin for spacing */
+}
+
+.menu img{
+    float: right;
+}
+
+#dropdown{
+    clear: right;
+}
+
+#dp {
+    border: solid #E0E0E0;
+    border-radius: 50%;
+    border-width: 3px;
 }
 
 h1 {
@@ -54,7 +72,7 @@ hr{
 }
 
 .dropdown_content{
-    display: none
+    display: none;
 }
 
 .menu:hover .dropdown_content{
@@ -152,8 +170,8 @@ li {
 }
 
 .github_icon{
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 10px;
+    padding-right: 20px;
 }
 
 
