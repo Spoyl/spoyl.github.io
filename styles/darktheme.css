@@ -29,7 +29,6 @@ nav {
     z-index: 2;
     background-color: #9DA083;
     top: 0;
-    box-shadow: 0 5px 2px 0 rgba(0,0,0,0.14);
 }
 
 .insta{
@@ -165,7 +164,7 @@ li {
   
 .bodytext {
     color: #FFFFFF;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 300;
     text-align: justify;
 }
