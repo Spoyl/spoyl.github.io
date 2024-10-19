@@ -29,6 +29,7 @@ nav {
     z-index: 2;
     background-color: #9DA083;
     top: 0;
+    box-shadow: 0 5px 2px 0 rgba(0,0,0,0.14);
 }
 
 .insta{
@@ -174,6 +175,10 @@ li {
     padding-right: 20px;
 }
 
+header, .blog{
+    background-image: url("../images/Olive\ Branch.svg");
+    background-repeat: no-repeat;
+}
 
 .head_centered {
     width: 60%;
@@ -181,7 +186,6 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
     box-sizing: border-box;
 }
 
@@ -362,6 +366,7 @@ li {
     font-weight: bold;
     text-align: center;
     overflow: hidden;
+    transition: 0.3s all;
 }
 
 #travel{
@@ -377,12 +382,17 @@ li {
     bottom: 0px;
     left: 0px;
     background-color: rgba(255,255,255,0.7);
+    transition: 0.2s all;
+
 }
 
 
 .blog-preview:hover{
     box-shadow: 0 10px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    opacity: 100%;
+}
+
+.blog-preview:hover::before{
+    background-color: rgba(255,255,255,0.2);
 }
 
 .blog-preview span{
