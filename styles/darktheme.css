@@ -245,13 +245,13 @@ header, .blog{
     color: #2A4B57;
     text-align: center;
     padding: 14px 28px;
-    font-size: 20px;
+    font-size: 18px;
     transition-duration: 0.2s;
     cursor: pointer;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     float: left;
-    font-weight: 600;
+    font-weight: 500;
     z-index: 1;
     text-decoration: none;
 }
@@ -272,14 +272,14 @@ header, .blog{
     color: #2A4B57;
     text-align: center;
     padding: 16px 32px;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0px 0px;
     transition-duration: 0.2s;
     cursor: pointer;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     float: left;
-    font-weight: 600;
+    font-weight: 500;
     z-index: 1;
     text-decoration: none;
 }
@@ -292,7 +292,7 @@ header, .blog{
 .scroll-bar{
     background-color: rgba(170, 174, 142, 0.3);
     border-radius: 10px;
-    height: 240px;
+    height: 200px;
     width: 100%;
     display: block;
 }
@@ -342,7 +342,7 @@ header, .blog{
     bottom: 0; /* Adjust top positioning as needed */
     width: 100%; /* Ensure it covers the full width of .blog-preview */
     color: #2A4B57; /* Inherit or set a color */
-    font-size: 18px; /* Ensure readability */
+    font-size: 16px; /* Ensure readability */
     font-weight: 400; /* Make the text bold */
     text-align: center; /* Center the text */
     pointer-events: none; /* Prevent the paragraph from interfering with clicks */
@@ -353,7 +353,7 @@ header, .blog{
     height: 80%;
     background-color: #E0E0E0;
     opacity: 100%;
-    width: 300px;
+    width: 220px;
     border-radius: 10px;
     display: flex; /* Use flexbox */
     justify-content: center; /* Center horizontally */
@@ -361,8 +361,8 @@ header, .blog{
     margin-left: 20px;
     margin-right: 20px;
     text-decoration: none;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 500;
     text-align: center;
     overflow: hidden;
     transition: 0.3s all;
