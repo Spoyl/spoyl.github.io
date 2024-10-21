@@ -10,7 +10,7 @@ main {
 
 body {
     position: relative;
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 150px;
     width: 100%;
     margin: 0px 0px;
@@ -305,6 +305,7 @@ header, .blog{
     top: 50%;
     display: block;
     margin-right: 5px;
+    transform: translate(0, -40%);
 }
 
 .next{
@@ -314,6 +315,7 @@ header, .blog{
     position: absolute;
     top: 50%;
     display: block;
+    transform: translate(0, -50%);
 }
 
 .blog-window{
@@ -358,8 +360,8 @@ header, .blog{
     display: flex; /* Use flexbox */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
@@ -397,6 +399,7 @@ header, .blog{
 .blog-preview span{
     color: #2A4B57;
     position: relative;
+    width: 90%;
 }
 
 .head_centered li img{
