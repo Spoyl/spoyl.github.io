@@ -86,9 +86,9 @@ hr{
 
 .dropdown_content li{
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     color: #2A4B57;
-    padding: 8px 32px;
+    padding: 8px 28px;
 }
 
 .dropdown_content > ul > ul > li{
@@ -444,6 +444,7 @@ footer {
 footer p{
     color: #FFFFFF;
     display: block;
+    font-size: 16px;
 }
 
 @media (max-width: 1000px) {
