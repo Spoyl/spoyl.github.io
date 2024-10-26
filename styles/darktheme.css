@@ -244,8 +244,9 @@ header, .blog{
     background-color: #9DA083;
     color: #2A4B57;
     text-align: center;
-    padding: 14px 28px;
+    padding: 12px 18px;
     font-size: 18px;
+    margin: 0px 0px;
     transition-duration: 0.2s;
     cursor: pointer;
     border-top-left-radius: 10px;
@@ -271,7 +272,7 @@ header, .blog{
     background-color: #9DA083;
     color: #2A4B57;
     text-align: center;
-    padding: 16px 32px;
+    padding: 12px 18px;
     font-size: 18px;
     margin: 0px 0px;
     transition-duration: 0.2s;
