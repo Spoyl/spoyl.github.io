@@ -32,8 +32,8 @@ nav {
 }
 
 .insta{
-    padding-left: 20px;
-    padding-right: 10px;
+    padding-left: 14px;
+    padding-right: 7px;
 }
 .home_icon {
     margin-left: 10%; /* Maintain the left margin for spacing */
@@ -85,10 +85,10 @@ hr{
 }
 
 .dropdown_content li{
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 340;
     color: #2A4B57;
-    padding: 8px 28px;
+    padding: 6px 14px;
 }
 
 .dropdown_content > ul > ul > li{
@@ -169,9 +169,9 @@ li {
     text-align: justify;
 }
 
-.github_icon{
-    padding-left: 10px;
-    padding-right: 20px;
+.polarsteps_icon{
+    padding-left: 7px;
+    padding-right: 14px;
 }
 
 header, .blog{
@@ -422,6 +422,10 @@ header, .blog{
 }
 #noimg {
     background-image: url("../images/Olive\ Branch.svg");
+    background-size: cover;
+}
+#Ampscan{
+    background-image: url("https://drive.google.com/thumbnail?id=1TCHYE03qN_Y3GFQVfSM7ZSdAJdvQ8nyc");
     background-size: cover;
 }
 
