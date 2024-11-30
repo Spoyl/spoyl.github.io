@@ -122,6 +122,7 @@ hr{
 }
 
 h2{
+    margin-top: 0px;
     font-size: 22px;
     color: #FFFFFF;
 }
@@ -244,8 +245,8 @@ header, .blog{
     background-color: #9DA083;
     color: #2A4B57;
     text-align: center;
-    padding: 12px 18px;
-    font-size: 18px;
+    padding: 10px 16px;
+    font-size: 16px;
     margin: 0px 0px;
     transition-duration: 0.2s;
     cursor: pointer;
@@ -272,8 +273,8 @@ header, .blog{
     background-color: #9DA083;
     color: #2A4B57;
     text-align: center;
-    padding: 12px 18px;
-    font-size: 18px;
+    padding: 10px 16px;
+    font-size: 16px;
     margin: 0px 0px;
     transition-duration: 0.2s;
     cursor: pointer;
@@ -449,7 +450,7 @@ footer {
 footer p{
     color: #FFFFFF;
     display: block;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 @media (max-width: 1000px) {
