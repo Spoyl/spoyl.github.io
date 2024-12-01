@@ -40,6 +40,8 @@ nav {
 }
 
 .menu {
+    padding-top: 12px;
+    padding-bottom: 12px;
     margin-right: 10%; /* Maintain the right margin for spacing */
 }
 
@@ -101,7 +103,7 @@ hr{
 
 .button_block{
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     display: flex;
     align-items: center;
 }
@@ -399,9 +401,6 @@ header, .blog{
     box-shadow: 0 10px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.blog-preview:hover::before{
-    background-color: rgba(255,255,255,0.2);
-}
 
 .blog-preview span{
     color: #2A4B57;
