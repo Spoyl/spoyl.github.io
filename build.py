@@ -1,9 +1,6 @@
 from jinja2 import Environment, FileSystemLoader, TemplateNotFound, select_autoescape
 from os.path import join, exists, getmtime
 
-variables= {
-    "navigation": ["item 1", "item 2", "item 3"]
-}
 
 class MyLoader(FileSystemLoader):
 
@@ -19,14 +16,9 @@ class MyLoader(FileSystemLoader):
             source = f.read()
         return source, path, lambda: mtime == getmtime(path)
 
-f = open("posts/human-kinds-to-do-list.html")
-content = f.read()
-variables["content"] = content
-env = Environment(loader = MyLoader("styles/templates"))
-template = env.get_template("generic.html")
-blog = template.render(variables)
-f.close()
-
+env = Environment(loader = MyLoader("posts"))
+template = env.get_template("how-to-travel-for-free.html")
+blog = template.render()
 newfile = open("site/testblog.html", "w")
 newfile.write(blog)
 newfile.close()

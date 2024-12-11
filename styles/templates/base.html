@@ -9,13 +9,13 @@
     <meta 
       name="viewport" 
       content="width=device-width" />
-    <title>Human Kind's To-Do List</title>
+    <title>Oli Stocks (and shares) | {% block title %}{% endblock %} </title>
     <meta 
       name="author"
       content="Oli Stocks"/>
     <meta
       name="description"
-      content="These are the problems that need to be solved if humans are to live high-quality lives in a place long-term."/>
+      content={{description}}/>
     <meta
       property="og:image"
       content="images/logomini.svg" />
@@ -63,7 +63,7 @@
         </div>
       </div>
     </nav>
-        {{ content }}
+        {% block content %}{% endblock %}
     <footer>
         <center>
         <p>
