@@ -6,7 +6,7 @@ class MyLoader(FileSystemLoader):
 
     def __init__(self, path):
         self.path = path
-        super(MyLoader, self).__init__(path) # This is strange, I wouldn't expect to have to call the parent class
+        super(MyLoader, self).__init__(path) #this is required to access the searchpath atrribute, which is necessary to access the list_templates method
 
     def get_source(self, environment, template):
         path = join(self.path, template)
@@ -18,10 +18,22 @@ class MyLoader(FileSystemLoader):
         return source, path, lambda: mtime == getmtime(path)
 
 
-env = Environment(loader = MyLoader("posts"))
-blogs = env.list_templates()
-for templ in blogs:
-    blog = env.get_template(templ)
-    newfile = open("site/"+templ, "w")
-    newfile.write(blog.render())
-    newfile.close()
+class generate_posts():
+    
+    def __init__(self, path, loader_obj):
+        self.path = path
+        self.loader_obj = loader_obj
+        self.env = Environment(loader=loader_obj(path))
+
+    def generate(self):
+        blogs = self.env.list_templates()
+        # formatted list of blog titles
+        for templ in blogs:
+            blog = self.env.get_template(templ)
+            newfile = open("site/"+templ, "w")
+            newfile.write(blog.render())
+            newfile.close()        
+
+poster = generate_posts("posts", MyLoader)
+poster.generate()
+
