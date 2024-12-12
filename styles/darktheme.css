@@ -10,7 +10,6 @@ main {
 
 body {
     position: relative;
-    padding-top: 80px;
     padding-bottom: 150px;
     width: 100%;
     margin: 0px 0px;
@@ -23,12 +22,14 @@ nav {
     align-items: center; /* Center align children vertically */
     justify-content: space-between; /* Distribute space evenly between children */
     width: 100%;
-    opacity: 95%;
     padding: 10px 0; /* Optional: add padding for vertical spacing */
     box-sizing: border-box; /* Include padding and border in the element's total width */
     z-index: 2;
-    background-color: #9DA083;
+    background-color: #2A4B57;
     top: 0;
+    border-width: 0px 0px 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgba(83, 79, 79, 0.949), rgba(42, 75, 87, 0.95), rgba(157, 160, 131, 0.95), rgba(255, 255, 255, 0.95), rgba(234, 180, 2, 0.95)) 1;
 }
 
 .insta{
@@ -65,7 +66,7 @@ h1 {
 }
 
 hr{
-    border: 2px solid #AAAE8E;
+    border: 2px solid;
     opacity: 30%;
 }
 
@@ -89,7 +90,7 @@ hr{
 .dropdown_content li{
     font-size: 14px;
     font-weight: 340;
-    color: #2A4B57;
+    color: #AAAE8E;
     padding: 6px 14px;
 }
 
@@ -113,10 +114,7 @@ hr{
     opacity: 30%;
     width: 90%;
     display:block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    transform: translate(0, -200%);
+    margin-bottom: 10px;
 }
 
 #placeholderPic{
@@ -182,9 +180,42 @@ li {
     padding-right: 14px;
 }
 
+/*
 header, .blog{
     background-image: url("../images/Olive\ Branch.svg");
     background-repeat: no-repeat;
+}
+*/
+
+#hero{
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/Hero_image.jpg");
+    min-height:100%;
+    background:linear-gradient(#2a4b5700 40%, #2a4b57), url("../images/Hero_image.jpg");
+    background-size:cover;
+}
+
+#subtitle{
+    font-family: "Judson", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 28px;
+    text-shadow: 1px 1px 1px #2A4B57;
+
+}
+
+h6{
+    font-family: "Judson", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 90px;
+    margin: 0px;
+    text-shadow: 1px 1px 1px #2A4B57;
 }
 
 .head_centered {
@@ -209,6 +240,7 @@ header, .blog{
     width: 60%;
     height: 100%;
     margin: auto;
+    margin-top: 80px;
     display: block;
     padding-bottom: 10px;
 }
@@ -248,17 +280,15 @@ header, .blog{
 }
 
 .blog_button {
-    border: 0px solid #9DA083;
     background-color: #9DA083;
-    color: #2A4B57;
+    color: #2a4b57;
     text-align: center;
     padding: 10px 16px;
     font-size: 16px;
-    margin: 0px 0px;
+    margin: 4px;
     transition-duration: 0.2s;
     cursor: pointer;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-radius: 8px;
     float: left;
     font-weight: 500;
     z-index: 1;
@@ -282,11 +312,10 @@ header, .blog{
     text-align: center;
     padding: 10px 16px;
     font-size: 16px;
-    margin: 0px 0px;
+    margin: 4px;
     transition-duration: 0.2s;
     cursor: pointer;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 8px;
     float: left;
     font-weight: 500;
     z-index: 1;
@@ -393,7 +422,6 @@ header, .blog{
     left: 0px;
     background-color: rgba(255,255,255,0.7);
     transition: 0.2s all;
-
 }
 
 
