@@ -46,18 +46,9 @@
               Misc
             </li>
             <ul>
-              <li>
-                <a href="how-to-travel-for-free.html">How to Travel for Free (or Really Cheap)</a>
-              </li>
-              <li>
-                <a href="pub-quiz-questions.html">Pub Quiz Questions</a>
-              </li>
-              <li>
-                <a href="the-georgian-dream-is-dead-long-live-georgian-dream.html">The Georgian Dream is Dead, Long live Georgian Dream</a>
-              </li>
-              <li>
-                <a href="human-kinds-to-do-list.html">Human Kind's To-Do List</a>
-              </li>
+              {% for name in navigation %}
+            <li><a href="{{ name }}">{{ name|striptags|replace(".html", "")|title|replace("-", " ") }}</a></li>
+              {% endfor %}
             </ul>
           </ul>
         </div>

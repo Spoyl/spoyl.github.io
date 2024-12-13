@@ -18,22 +18,28 @@ class MyLoader(FileSystemLoader):
         return source, path, lambda: mtime == getmtime(path)
 
 
-class generate_posts():
+class generate_site():
     
     def __init__(self, path, loader_obj):
         self.path = path
         self.loader_obj = loader_obj
         self.env = Environment(loader=loader_obj(path))
+        self.navigation = {}
 
-    def generate(self):
+    def generate_posts(self):
         blogs = self.env.list_templates()
-        # formatted list of blog titles
-        for templ in blogs:
-            blog = self.env.get_template(templ)
-            newfile = open("site/"+templ, "w")
-            newfile.write(blog.render())
-            newfile.close()        
+        for name in blogs:
+            title = name.replace("-", " ")
+            self.navigation[name] = title
+        print(self.navigation)
+        for name in blogs:
+            blog = self.env.get_template(name)
+            newfile = open("site/"+name, "w")
+            newfile.write(blog.render(navigation=blogs))
+            newfile.close()
+        return self.navigation
 
-poster = generate_posts("posts", MyLoader)
-poster.generate()
 
+
+poster = generate_site("posts", MyLoader)
+poster.generate_posts()
