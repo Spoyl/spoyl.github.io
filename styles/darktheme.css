@@ -25,11 +25,13 @@ nav {
     padding: 10px 0; /* Optional: add padding for vertical spacing */
     box-sizing: border-box; /* Include padding and border in the element's total width */
     z-index: 2;
-    background-color: #2A4B57;
+    background-color: #9DA083;
     top: 0;
+    /*
     border-width: 0px 0px 4px;
     border-style: solid;
     border-image: linear-gradient(to right, rgba(83, 79, 79, 0.949), rgba(42, 75, 87, 0.95), rgba(157, 160, 131, 0.95), rgba(255, 255, 255, 0.95), rgba(234, 180, 2, 0.95)) 1;
+    neat border design trick */
 }
 
 .insta{
@@ -62,7 +64,7 @@ nav {
 
 h1 {
     font-size: 32px;
-    color: #9DA083;
+    color: #9da083;
 }
 
 hr{
@@ -90,7 +92,7 @@ hr{
 .dropdown_content li{
     font-size: 14px;
     font-weight: 340;
-    color: #AAAE8E;
+    color: #2A4B57;
     padding: 6px 14px;
 }
 
@@ -112,9 +114,10 @@ hr{
 .home-rule{
     border: 2px solid #AAAE8E;
     opacity: 30%;
-    width: 90%;
+    width: 60%;
     display:block;
-    margin-bottom: 10px;
+    margin-top: 10;
+    margin-bottom: 20px;
 }
 
 #placeholderPic{
@@ -122,7 +125,7 @@ hr{
 }
 
 h2{
-    margin-top: 0px;
+    margin-top: 10px;
     font-size: 18px;
     color: #FFFFFF;
 }
@@ -194,22 +197,20 @@ header, .blog{
     justify-content: center;
     background-image: url("../images/Hero_image.jpg");
     min-height:100%;
-    background:linear-gradient(#2a4b5700 40%, #2a4b57), url("../images/Hero_image.jpg");
+    background:linear-gradient(#2a4b57, #2a4b5700 50%, #2a4b57), url("../images/Hero_image.jpg");
     background-size:cover;
 }
 
 #subtitle{
-    font-family: "Judson", serif;
     font-weight: 400;
     font-style: normal;
     color: #FFFFFF;
-    font-size: 24px;
+    font-size: 20px;
     text-shadow: 1px 1px 1px #2A4B57;
 
 }
 
 h6{
-    font-family: "Judson", serif;
     font-weight: 700;
     font-style: normal;
     color: #FFFFFF;
@@ -280,11 +281,11 @@ h6{
 }
 
 .blog_button {
-    background-color: #9DA083;
-    color: #2a4b57;
+    background-color: #2A4B57;
+    color: #FFFFFF;
     text-align: center;
     padding: 10px 16px;
-    font-size: 16px;
+    font-size: 18px;
     margin: 4px;
     transition-duration: 0.2s;
     cursor: pointer;
@@ -308,10 +309,10 @@ h6{
 .proj_button {
     border: 0px solid #9DA083;
     background-color: #9DA083;
-    color: #2A4B57;
+    color: #FFFFFF;
     text-align: center;
     padding: 10px 16px;
-    font-size: 16px;
+    font-size: 18px;
     margin: 4px;
     transition-duration: 0.2s;
     cursor: pointer;
@@ -482,7 +483,7 @@ footer {
 footer p{
     color: #FFFFFF;
     display: block;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 @media (max-width: 1000px) {
