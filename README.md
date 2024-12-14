@@ -8,7 +8,7 @@ The overriding design philosophies are:
 - Prioritise using tools or approaches that increase my options, not restrict them; if no suitable tool exists, I'll build what I need from scratch :construction_worker:
 - Every feature of the site must have real value; ignore technical curiosities :leaves:
 
-Find the website [here](spoyl.gihub.io)
+Find the website [here](spoyl.github.io)
 
 Milestones so Far
 -----------------
