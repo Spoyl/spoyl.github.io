@@ -43,10 +43,20 @@
         <div id="dropdown" class="dropdown_content">
           <ul>
             <li>
+              Travel
+            </li>
+            <ul>
+              {% for name in travel_nav %}
+            <li><a href="{{ name }}">{{ name|striptags|replace(".html", "")|title|replace("-", " ") }}</a></li>
+              {% endfor %}
+            </ul>
+          </ul>
+          <ul>
+            <li>
               Misc
             </li>
             <ul>
-              {% for name in navigation %}
+              {% for name in misc_nav %}
             <li><a href="{{ name }}">{{ name|striptags|replace(".html", "")|title|replace("-", " ") }}</a></li>
               {% endfor %}
             </ul>

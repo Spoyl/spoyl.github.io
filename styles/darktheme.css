@@ -88,13 +88,13 @@ hr{
 
 .dropdown_content li{
     font-size: 14px;
-    font-weight: 340;
+    font-weight: 550;
     color: #2A4B57;
     padding: 6px 14px;
 }
 
 .dropdown_content > ul > ul > li{
-    margin-left: 30px;
+    font-weight: 340;
     list-style-type: circle;
     & a{
         all: unset;

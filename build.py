@@ -1,5 +1,6 @@
-from jinja2 import Environment, FileSystemLoader, TemplateNotFound, select_autoescape
+from jinja2 import Environment, FileSystemLoader, TemplateNotFound, meta
 from os.path import join, exists, getmtime
+import json
 
 
 class MyLoader(FileSystemLoader):
@@ -24,21 +25,20 @@ class generate_site():
         self.path = path
         self.loader_obj = loader_obj
         self.env = Environment(loader=loader_obj(path))
-        self.navigation = {}
+        self.date_category = {}
 
     def generate_posts(self):
-        blogs = self.env.list_templates()
-        for name in blogs:
-            title = name.replace("-", " ")
-            self.navigation[name] = title
-        print(self.navigation)
-        for name in blogs:
+        href_title = self.env.list_templates()
+        with open('config.json', 'r') as file:
+            self.data = json.load(file)
+        travel_href = [item["href"] for item in self.data["Travel"]]
+        misc_href = [item["href"] for item in self.data["Misc"]]
+        print(travel_href, misc_href)
+        for name in href_title:
             blog = self.env.get_template(name)
             newfile = open("site/"+name, "w")
-            newfile.write(blog.render(navigation=blogs))
+            newfile.write(blog.render(travel_nav=travel_href, misc_nav = misc_href))
             newfile.close()
-        return self.navigation
-
 
 
 poster = generate_site("posts", MyLoader)
