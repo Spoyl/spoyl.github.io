@@ -111,7 +111,7 @@ hr{
     align-items: center;
 }
 
-.home-rule{
+#home-rule{
     border: 2px solid #AAAE8E;
     opacity: 30%;
     width: 60%;
@@ -195,9 +195,9 @@ header, .blog{
     height: 100vh;
     align-items: center;
     justify-content: center;
-    background-image: url("../images/Hero_image.jpg");
+    background-image: url("../static/Hero_image.jpg");
     min-height:100%;
-    background:linear-gradient(#2a4b57, #2a4b5700 50%, #2a4b57), url("../images/Hero_image.jpg");
+    background:linear-gradient(#2a4b57, #2a4b5700 50%, #2a4b57), url("../static/Hero_image.jpg");
     background-size:cover;
 }
 
@@ -451,12 +451,8 @@ h6{
     cursor: pointer;
 }
 
-#FCMago{
-    background-image: url("../images/magic-fire-artists.png");
-    background-size: cover;
-}
 #noimg {
-    background-image: url("../images/Olive\ Branch.svg");
+    background-image: url("../static/Olive\ Branch.svg");
     background-size: cover;
 }
 #Ampscan{
