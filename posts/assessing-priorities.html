@@ -1,80 +1,18 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <meta 
-    charset="utf-8" />
-    <meta 
-      name="viewport" 
-      content="width=device-width" />
-    <title>Assessing Priorities</title>
-    <meta 
-      name="author"
-      content="Oli Stocks"/>
-    <meta
-      name="description"
-      content="I reckon these are the problems that need to be solved if humans are to live high-quality lives in a place long-term."/>
-    <meta
-      property="og:image"
-      content="images/logomini.svg" />
-    <meta
-      property="og:description"
-      content="Yet another blog. Here you can find travel stories, projects and contact information."/>
-    <meta property="og:title" content="Oli Stocks (and Shares)" />
-    <link
-      rel="icon"
-      href="../images/logomini.svg"
-      sizes="32x32"/>
-    <link 
-      rel="stylesheet"
-      href="../styles/darktheme.css" />
-  </head>
-  <body>
-    <nav>
-        <a class="home_icon"
-            href="https://spoyl.github.io"
-            title=Homepage>
-            <img style="display: inline;" src="images/logo.svg" alt="My logo" height=35/>
-        </a>
-      <div class="menu">
-        <img src="images/Menu.svg" alt="Theme" height=16px/>
-        <div id="dropdown" class="dropdown_content">
-          <ul>
-            <li>
-              Misc
-            </li>
-            <ul>
-              <li>
-                <a href="how-to-travel-for-free.html">How to Travel for Free (or Really Cheap)</a>
-              </li>
-              <li>
-                <a href="pub-quiz-questions.html">Pub Quiz Questions</a>
-              </li>
-              <li>
-                <a href="the-georgian-dream-is-dead-long-live-georgian-dream.html">The Georgian Dream is Dead, Long live Georgian Dream</a>
-              </li>
-              <li>
-                <a href="assessing-priorities.html">Assessing Priorities</a>
-              </li>
-            </ul>
-          </ul>
-        </div>
-      </div>
-    </nav>
+{% extends "../styles/templates/base.html" %}
+{% block content %}    
     <main class="blog">
         <h4>
-            Misc
+            {% block category %}Misc{% endblock %}
         </h4>
         <h3>
-            Assessing Priorities
+            {%block title %}Human Kind's To-Do List{% endblock %}
         </h3>
         <h5>
-            Dec 2, 2024
+            {% block date %}Dec 2, 2024{% endblock %}
         </h5>
         <p class="bodytext">
-            Given that there's a race to Mars on the go, I came up with a list of things that I think need to be solved here on earth. Well defined solutions to the causes of these problems seems like an important step to make Earth 
+            The following factors are the primary problems that drive people away from one place and into new 
+            territories. Finding well defined solutions to the causes of these problems is essential to make Earth 
             (or any other place) viable for high quality, long-term habitation. <br><br>
             <hr/>
         </p>
@@ -154,12 +92,4 @@
           </div>
         </div>
     </main>
-    <footer>
-        <center>
-        <p>
-          &#169 OliStocks 2024. All rights reserved.
-        </p>
-      </center>
-      </footer>
-  </body>
-</html>
+{% endblock %}
