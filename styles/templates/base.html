@@ -47,7 +47,7 @@
             </li>
             <ul>
               {% for name in travel_nav %}
-            <li><a href="{{ name }}">{{ name|striptags|replace(".html", "")|title|replace("-", " ") }}</a></li>
+            <li><a href="{{ name[0] }}">{{ name[0]|striptags|replace(".html", "")|title|replace("-", " ") }}</a></li>
               {% endfor %}
             </ul>
           </ul>
@@ -57,7 +57,7 @@
             </li>
             <ul>
               {% for name in misc_nav %}
-            <li><a href="{{ name }}">{{ name|striptags|replace(".html", "")|title|replace("-", " ") }}</a></li>
+            <li><a href="{{ name[0] }}">{{ name[0]|striptags|replace(".html", "")|title|replace("-", " ") }}</a></li>
               {% endfor %}
             </ul>
           </ul>

@@ -75,10 +75,10 @@
             <div class="blog-window">
               {% for name in travel_nav %}
               <div>
-                <a class="blog-preview" id="noimg" href={{name}}>
-                    <span>{{name|striptags|replace(".html", "")|title|replace("-", " ") }}</span>
+                <a class="blog-preview" id="noimg" href={{name[0]}}>
+                    <span>{{name[0]|striptags|replace(".html", "")|title|replace("-", " ") }}</span>
                     <p>
-                      Date
+                      {{name[1]}}
                     </p>
                 </a>
               </div>
@@ -118,10 +118,10 @@
             <div class="blog-window">
               {% for name in misc_nav %}
               <div>
-                <a class="blog-preview" id="noimg" href={{name}}>
-                    <span>{{name|striptags|replace(".html", "")|title|replace("-", " ") }}</span>
+                <a class="blog-preview" id="noimg" href={{name[0]}}>
+                    <span>{{name[0]|striptags|replace(".html", "")|title|replace("-", " ") }}</span>
                     <p>
-                      Date
+                      {{name[1]}}
                     </p>
                 </a>
               </div>

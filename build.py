@@ -31,8 +31,8 @@ class generate_site():
         href_title = self.env.list_templates()
         with open('config.json', 'r') as file:
             self.data = json.load(file)
-        travel_href = [item["href"] for item in self.data["Travel"]]
-        misc_href = [item["href"] for item in self.data["Misc"]]
+        travel_href = [[item["href"], item["date"]] for item in self.data["Travel"]]
+        misc_href = [[item["href"], item["date"]] for item in self.data["Misc"]]
         print(travel_href, misc_href)
         for name in href_title:
             blog = self.env.get_template(name)
