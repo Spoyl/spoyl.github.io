@@ -334,6 +334,7 @@ h6{
     height: 200px;
     width: 100%;
     display: block;
+    align-items: center;
 }
   
 .prev{
@@ -513,6 +514,7 @@ footer p{
         transform: translate(0, -52%);
         height: 90%;
     }
+
     .blog-preview{
         height: 90%;
         width: 160px;
