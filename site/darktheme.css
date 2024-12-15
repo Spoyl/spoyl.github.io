@@ -111,7 +111,7 @@ hr{
     align-items: center;
 }
 
-#home-rule{
+.home-rule{
     border: 2px solid #AAAE8E;
     opacity: 30%;
     width: 60%;
