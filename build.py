@@ -41,5 +41,5 @@ class generate_site():
             newfile.close()
 
 
-poster = generate_site("posts", MyLoader)
+poster = generate_site("content", MyLoader)
 poster.generate_posts()

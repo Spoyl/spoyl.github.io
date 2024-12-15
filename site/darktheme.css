@@ -195,9 +195,9 @@ header, .blog{
     height: 100vh;
     align-items: center;
     justify-content: center;
-    background-image: url("../static/Hero_image.jpg");
+    background-image: url("static/Hero_image.jpg");
     min-height:100%;
-    background:linear-gradient(#2a4b57, #2a4b5700 50%, #2a4b57), url("../static/Hero_image.jpg");
+    background:linear-gradient(#2a4b57, #2a4b5700 50%, #2a4b57), url("static/Hero_image.jpg");
     background-size:cover;
 }
 
@@ -452,9 +452,10 @@ h6{
 }
 
 #noimg {
-    background-image: url("../static/Olive\ Branch.svg");
+    background-image: url("Olive\ Branch.svg");
     background-size: cover;
 }
+
 #Ampscan{
     background-image: url("https://drive.google.com/thumbnail?id=1TCHYE03qN_Y3GFQVfSM7ZSdAJdvQ8nyc");
     background-size: cover;
