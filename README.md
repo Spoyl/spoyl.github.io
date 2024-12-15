@@ -8,14 +8,14 @@ The overriding design philosophies are:
 - Prioritise using tools or approaches that increase my options, not restrict them; if no suitable tool exists, I'll build what I need from scratch :construction_worker:
 - Every feature of the site must have real value; ignore technical curiosities :leaves:
 
-Find the website [here](spoyl.github.io)
+Find the website [here](https://olistocks.com)
 
 Milestones so Far
 -----------------
 
 1. Site designed in Figma (icons and svgs made using inkscape) :tada:
 2. Static site built using only JS, CSS and HTML :tada:
-3. WIP; Custom Python site builder added to speed up my workflows :construction:
+3. Custom Python site builder added to speed up my workflows :tada:
 
 Future Plans
 ------------
