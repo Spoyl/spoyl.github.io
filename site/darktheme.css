@@ -540,6 +540,7 @@ footer p{
         width: 80%;
         height: 100%;
         margin: auto;
+        margin-top: 80px;
         display: block;
         padding-bottom: 10px;
     }
