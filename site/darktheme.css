@@ -407,6 +407,7 @@ h6{
 }
 
 .package{
+    color: #2A4B57;
     display: flex;
     background-color: #E0E0E0;
     border-radius: 10px;
