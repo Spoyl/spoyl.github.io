@@ -1,0 +1,32 @@
+{% extends "../styles/templates/base.html" %}
+{% block content %}    
+    <main class="blog">
+        <h4>
+            {% block category %}CATEGORY{% endblock %}
+        </h4>
+        <h3>
+            {%block title %}TITLE{% endblock %}
+        </h3>
+        <h5>
+            {% block date %}MONTH DAY, YEAR{% endblock %}
+        </h5>
+        <p class="bodytext">
+
+        <br/><br/>
+
+        <hr/>
+
+        </p>
+        <div class="blog_links">
+            <div class="left_side">
+              <h4>
+              </h4>
+            </div>
+            <div class="right_side_blog">
+              <h4>
+                -
+              </h4>
+            </div>
+          </div>
+        </main>
+        {% endblock %}
