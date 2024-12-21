@@ -9,13 +9,13 @@
     <meta 
       name="viewport" 
       content="width=device-width" />
-    <title>Oli Stocks (and shares) {% if title %} {% block title %}{% endblock %}{% endif %} </title>
+    <title>Oli Stocks (and shares)  </title>
     <meta 
       name="author"
       content="Oli Stocks"/>
     <meta
       name="description"
-      content={{description}}/>
+      content=/>
     <meta
       property="og:image"
       content="static/logomini.svg" />
@@ -46,9 +46,19 @@
               Travel Stories
             </li>
             <ul>
-              {% for name in travel_nav %}
-            <li><a href="{{ name[0] }}">{{ name[0]|striptags|replace(".html", "")|title|replace("-", " ") }}</a></li>
-              {% endfor %}
+              
+            <li><a href="hoses-runny-noses-and-other-quelque-choses.html">Hoses Runny Noses And Other Quelque Choses</a></li>
+              
+            <li><a href="these-choux-were-made-for-weeding.html">These Choux Were Made For Weeding</a></li>
+              
+            <li><a href="hitchhiking-to-descartes.html">Hitchhiking To Descartes</a></li>
+              
+            <li><a href="bastille-day.html">Bastille Day</a></li>
+              
+            <li><a href="chicken-run.html">Chicken Run</a></li>
+              
+            <li><a href="another-delicacy.html">Another Delicacy</a></li>
+              
             </ul>
           </ul>
           <ul>
@@ -56,15 +66,47 @@
               Misc
             </li>
             <ul>
-              {% for name in misc_nav %}
-            <li><a href="{{ name[0] }}">{{ name[0]|striptags|replace(".html", "")|title|replace("-", " ") }}</a></li>
-              {% endfor %}
+              
+            <li><a href="how-to-travel-for-free.html">How To Travel For Free</a></li>
+              
+            <li><a href="assessing-priorities.html">Assessing Priorities</a></li>
+              
             </ul>
           </ul>
         </div>
       </div>
     </nav>
-        {% block content %}{% endblock %}
+            
+    <main class="blog">
+        <h4>
+            CATEGORY
+        </h4>
+        <h3>
+            TITLE
+        </h3>
+        <h5>
+            MONTH DAY, YEAR
+        </h5>
+        <p class="bodytext">
+
+        <br/><br/>
+
+        <hr/>
+
+        </p>
+        <div class="blog_links">
+            <div class="left_side">
+              <h4>
+              </h4>
+            </div>
+            <div class="right_side_blog">
+              <h4>
+                -
+              </h4>
+            </div>
+          </div>
+        </main>
+        
     <footer>
         <center>
         <p>
