@@ -574,14 +574,14 @@ footer p{
         width: 160px;
         margin: 5px;
         opacity: 100%;
-        font-size:18px;
+        font-size:14px;
         align-items: baseline;
         padding-top: 10px;
     }
 
     .blog-preview p{
         padding: 15px;
-        font-size: 16px;
+        font-size: 12px;
     }
     .prev, .next{
         display: none;
