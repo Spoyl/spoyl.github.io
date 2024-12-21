@@ -563,9 +563,6 @@ footer p{
         height: 160px;
     }
     .blog-window{
-        width: calc(90vw - 30px);
-        display: flex;
-        align-items: left;
         margin-left: 15px;
         margin-right: 20px;
         transform: translate(0, -52%);
