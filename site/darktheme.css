@@ -251,7 +251,7 @@ h6{
 }
 
 #blog-search{
-    width: 80%;
+    width: 88%;
     justify-content: center;
     margin: auto;
 }
@@ -425,13 +425,15 @@ h6{
 }
 
 #explorer:hover{
-    box-shadow: 0 12px 16px 0 #eab4025e, 0 17px 50px 0 #EAB4025e;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     background-color: #FFFFFF;
+    transition: 0.3s all;
 }
 
 #roamer:hover{
-    box-shadow: 0 12px 16px 0 #9da0835c, 0 17px 50px 0 #9DA0835c;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     background-color: #FFFFFF;
+    transition: 0.3s all;
 }
 
 h7{
@@ -479,6 +481,7 @@ h7{
 
 .blog-preview:hover{
     box-shadow: 0 10px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: rgba(255,255,255);
 }
 
 
