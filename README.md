@@ -19,4 +19,4 @@ Milestones so Far
 
 Future Plans
 ------------
-- Project pages when something piques my interest
+- Sketch canvas for creating a sketch to 3D object database
