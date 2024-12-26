@@ -31,13 +31,14 @@ class generate_site():
         href_title = self.env.list_templates()
         with open('config.json', 'r') as file:
             self.data = json.load(file)
-        travel_href = [[item["href"], item["date"]] for item in self.data["Travel"]]
+        travel23_href = [[item["href"], item["date"]] for item in self.data["Travel23"]]
+        travel24_href = [[item["href"], item["date"]] for item in self.data["Travel24"]]
         misc_href = [[item["href"], item["date"]] for item in self.data["Misc"]]
-        print(travel_href, misc_href)
+        print(travel24_href, travel23_href, misc_href)
         for name in href_title:
             blog = self.env.get_template(name)
             newfile = open("site/"+name, "w")
-            newfile.write(blog.render(travel_nav=travel_href, misc_nav = misc_href))
+            newfile.write(blog.render(travel24_nav = travel24_href, travel23_nav=travel23_href, misc_nav = misc_href))
             newfile.close()
 
 

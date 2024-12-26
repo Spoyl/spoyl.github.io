@@ -3,7 +3,11 @@
         {"href":"how-to-travel-for-free.html", "date":"Nov 25, 2023"},
         { "href":"assessing-priorities.html", "date":"Dec 2, 2024"}
     ],
-    "Travel": [
+    "Travel24": [
+        {"href":"the-troubles-begin.html", "date":"Jul 7, 2024"},
+        {"href":"free-ride.html", "date":"Aug 20, 2024"}
+    ],
+    "Travel23": [
         {"href":"hoses-runny-noses-and-other-quelque-choses.html", "date":"Jul 11, 2023"},
         {"href":"these-choux-were-made-for-weeding.html","date":"Jul 24, 2023"},
         {"href":"hitchhiking-to-descartes.html", "date":"Aug 7, 2023"},
