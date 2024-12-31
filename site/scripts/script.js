@@ -2,6 +2,8 @@ const previewWidth = 680;
 const clickNext = document.querySelectorAll(".next");
 const scrollWindows = document.querySelectorAll(".blog-window");
 const clickPrev = document.querySelectorAll(".prev");
+const canvas = document.getElementById("charcanvas");
+const ctx = canvas.getContext("2d");
 
 function scrollToNext(index){
     scrollWindows[index].scrollLeft += previewWidth;
