@@ -19,4 +19,6 @@ Milestones so Far
 
 Future Plans
 ------------
-- Sketch canvas for creating a sketch to 3D object database
+- Interactive, real-time character recognition demo ✍🏻  
+- Ultra-concise, tunable news aggregator 📰
+- Extend character recognition demo to sketches of 3D objects ✍🏻
