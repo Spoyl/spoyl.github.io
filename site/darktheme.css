@@ -431,7 +431,7 @@ h6{
 
 
 #services{
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
@@ -598,8 +598,9 @@ footer p{
     }
 
     #services{
-        width: 80%;
+        width: 88%;
     }
+
     #package_display{
         flex-direction: column;
     }
