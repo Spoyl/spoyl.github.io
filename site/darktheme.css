@@ -340,6 +340,36 @@ h6{
     display: block;
     align-items: center;
 }
+
+#contactform{
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    height: fit-content;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.refer{
+    border: 0px solid #ee83acff;
+    background-color: #ee83acff;
+    color: #000000;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 18px;
+    margin: 4px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 500;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.refer:hover{
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
   
 .prev{
     all: unset;
@@ -398,8 +428,20 @@ h6{
     margin-bottom: 0px;
 }
 
+
+
 #services{
-    width: 60%;
+    width: 80%;
+    margin: auto;
+}
+
+#reviews{
+    width: 80%;
+    margin: auto;
+}
+
+#booking{
+    width: 80%;
     margin: auto;
 }
 

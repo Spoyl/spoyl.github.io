@@ -19,6 +19,7 @@ Milestones so Far
 
 Future Plans
 ------------
+- Build my own crypto wallet? 🔐
 - Interactive, real-time character recognition demo ✍🏻  
 - Ultra-concise, tunable news aggregator 📰
 - Extend character recognition demo to sketches of 3D objects ✍🏻

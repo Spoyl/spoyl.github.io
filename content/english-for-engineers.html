@@ -1,0 +1,99 @@
+{% extends "../styles/templates/base.html" %}
+{% block content %} 
+<main>
+<div id="hero">
+  <center>
+    <h6>
+      English for Engineers
+    </h6>
+    <p id="subtitle">
+      Tools and classes for engineers to improve their technical English
+    </p>
+    <div class="button_block">
+      <div class = "centered">
+        <a href="#services" class="proj_button">How it works</>
+          <a/>   
+          <a href="#booking" class="blog_button">Book a trial</>
+            <a/>
+      </div>
+    </div>
+  </center>
+</div>    
+<section id="services">
+     <!--   <h1 id="serviceh1">
+         How it Works
+        </h1>-->
+        <div id="package_display">
+          <div class="package" id="roamer">
+            <center>
+              <p>
+                <h7>
+                  1. Trial Lesson
+                </h7>
+              </p>
+              <p>
+                A free 20 minute trial lesson to discuss your goals and assess your English level.
+              </p>
+            </center>
+          </div>
+          <div class="package" id="explorer">
+            <center>
+              <p>
+                <h7>
+                  2. Choose a Project
+                </h7>
+              </p>
+              <p>
+                Choose a technical project to work on - this could be a project from your work, a hobby, or a project I provide.
+              </p>
+            </center>
+          </div>
+          <div class="package" id="explorer">
+            <center>
+              <p>
+                <h7>
+                  3. Lessons
+                </h7>
+              </p>
+              <p>
+                Sessions are 50 minutes long and are based around your project. We'll work on it together, and I'll provide feedback on your English as we go.
+              </p>
+            </center>
+          </div>
+          <div class="package" id="explorer">
+            <center>
+              <p>
+                <h7>
+                  4. Cheatsheet
+                </h7>
+              </p>
+              <p>
+                After the project is complete, I'll provide a cheatsheet with the key vocabulary we covered.
+              </p>
+            </center>
+          </div>
+        </div>
+        <hr class="home-rule"/>
+      </section>
+     <!-- <section id="reviews">
+        <h1 id="serviceh1">
+          Reviews
+         </h1>
+      </section> -->
+      <section id="booking">
+        <h1>
+          Book a Trial Lesson
+         </h1>
+          <center>
+            <div id="contactform">
+                <img src="static/preplypink.svg" alt="Preply" id="referlogo">
+                <p>
+                    The classes are done on Preply. Click the button below to get 30% off your first lesson!
+                </p>
+                <a href="https://preply.com/en/?pref=MTY3MDY3ODQ=&id=1735961074.54518" class="refer">Book a Trial</>
+                    <a/>  
+            </div>
+        </center>
+      </section>
+  </main>
+    {% endblock %}
