@@ -17,9 +17,8 @@ Milestones so Far
 2. Static site built using only JS, CSS and HTML :tada:
 3. Custom Python site builder added to speed up my workflows :tada:
 
-Future Plans
+Future Ideas
 ------------
-- Build a crypto wallet? 🔐
 - Interactive, real-time character recognition demo ✍🏻  
 - Ultra-concise, tunable news aggregator 📰
 - Extend character recognition demo to sketches of 3D objects ✍🏻
