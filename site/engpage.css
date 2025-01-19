@@ -1,0 +1,538 @@
+/* Calamata theme for OliStocks.com */
+
+* {
+    font-family: 'Inter';
+}
+
+main {
+    background-color: #000000;
+}
+
+body {
+    position: relative;
+    padding-bottom: 240px;
+    width: 100%;
+    margin: 0px 0px;
+    background-color: #000000;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    align-items: center; /* Center align children vertically */
+    justify-content: space-between; /* Distribute space evenly between children */
+    width: 100%;
+    padding: 10px 0; /* Optional: add padding for vertical spacing */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    z-index: 2;
+    background-color: #000000;
+    top: 0;
+    /*
+    border-width: 0px 0px 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgba(83, 79, 79, 0.949), rgba(42, 75, 87, 0.95), rgba(157, 160, 131, 0.95), rgba(255, 255, 255, 0.95), rgba(234, 180, 2, 0.95)) 1;
+    neat border design trick */
+}
+
+.insta{
+    padding-left: 14px;
+    padding-right: 7px;
+}
+.home_icon {
+    margin-left: 10%;
+}
+
+.menu {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-right: 10%; /* Maintain the right margin for spacing */
+}
+
+.menu img{
+    float: right;
+}
+
+#dropdown{
+    clear: right;
+}
+
+#dp {
+    border: solid #E0E0E0;
+    border-radius: 50%;
+    border-width: 3px;
+}
+
+h1 {
+    z-index: 2;
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+hr{
+    border: 2px solid;
+    opacity: 30%;
+}
+
+.head_centered img:hover{
+    cursor: pointer;
+}
+
+.dropdown_content{
+    display: none;
+}
+
+.menu:hover .dropdown_content{
+    display: block;
+}
+
+.menu:hover .dropdown_content ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown_content li{
+    font-size: 14px;
+    font-weight: 550;
+    color: #2A4B57;
+    padding: 6px 14px;
+}
+
+.dropdown_content > ul > ul > li{
+    font-weight: 340;
+    list-style-type: circle;
+    & a{
+        all: unset;
+    }
+}
+
+h2{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+h3{
+    color: #E0E0E0;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+h4{
+    color: #9DA083;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+h5{
+    color: #9DA083;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.bodytext {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.github_icon{
+    padding-left: 7px;
+    padding-right: 14px;
+}
+
+
+#hero{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url("static/Hero_image.jpg");
+    min-height:100%;
+    background:linear-gradient(#000000, #2A4B57 80%, #000000);
+    background-size:cover;
+}
+
+#subtitle{
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+h6{
+    font-weight: 700;
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 80px;
+    margin: 0px;
+    text-shadow: 1px 1px 1px #2A4B57;
+}
+
+.centered{
+    width:fit-content;
+    margin: auto;
+    display: flex;
+}
+
+
+.left_side{
+    flex:0 0 50%;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+
+.right_side_blog{
+    flex:0 0 50%;
+    box-sizing: border-box;
+    text-align: right;
+    padding-top: 10px;
+}
+
+.right_side{
+    flex:0 0 50%;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+}
+
+.blog_button {
+    background-color: #EF8914;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 18px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    border-radius: 18px;
+    border-top: 20px;
+    font-weight: 500;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.blog_button:hover{
+    background-color: #E0E0E0;
+    color: #2A4B57;
+}
+
+.resources_button {
+    border: 2px solid #FFFFFF;
+    background-color: #ef891400;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 18px;
+    margin: 4px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    border-radius: 18px;
+    float: left;
+    font-weight: 500;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.resources_button:hover{
+    background-color: #E0E0E0;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    color: #2A4B57;
+}
+
+.proj_button:hover{
+    background-color: #EF8914;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    color: #2A4B57;
+}
+
+.proj_button {
+    border: 2px solid #EF8914;
+    background-color: #ffffff00;
+    color: #EF8914;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 18px;
+    margin: 4px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    border-radius: 18px;
+    float: left;
+    font-weight: 500;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.resume_button:hover{
+    background-color: #E0E0E0;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#contactform{
+    width: 50%;
+    display: inline-flex;
+    background:linear-gradient(#2A4B57, #000000);
+    color: #FFFFFF;
+    border-radius: 40px;
+    height: fit-content;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.refer{
+    width: fit-content;
+    display: block;
+    margin-top: 40px;
+    background-color: #2A4B57;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 20px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    border-radius: 18px;
+    font-weight: 500;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.refer:hover{
+    background-color: #E0E0E0;
+}
+
+#preplyimg{
+    z-index: 0;
+    position: absolute;
+    align-items: center;
+}
+  
+#reviewsh1{
+    color: #2A4B57;
+}
+
+#services{
+    width: 90%;
+    margin: auto;
+}
+
+#reviews{
+    width: 80%;
+    margin: auto;
+}
+
+#booking{
+    padding-top: 60px;
+    margin: auto;
+    padding-bottom: 120px;
+}
+
+#package_display{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    box-sizing: border-box;
+    margin-top: 0px;
+}
+
+.package{
+    color: #2A4B57;
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.package:hover{
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#resources{
+    margin: auto;
+    padding: 20px;
+    padding: 20px;
+    background-color: #f1f4f8ff;
+    color: #2A4B57;
+    border-radius: 40px;
+    height: fit-content;
+}
+
+#googly{
+    color: #3d4043ff;
+}
+
+h7{
+    font-size: 22px;
+    font-weight: 600;
+    color: #2A4B57;
+}
+
+.blog-preview{
+    position: relative;
+    height: 80%;
+    background-color: #E0E0E0;
+    opacity: 100%;
+    width: 220px;
+    border-radius: 10px;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-left: 16px;
+    margin-right: 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.3s all;
+}
+
+#travel{
+    background-image: url("https://drive.google.com/thumbnail?id=1JVXAKESUIsQF8bOVkIXEedhygHIHj_Oj");
+    background-size: cover;
+}
+
+.blog-preview::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255,255,255,0.7);
+    transition: 0.2s all;
+}
+
+
+.blog-preview:hover{
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: rgba(255,255,255);
+}
+
+
+.blog-preview span{
+    color: #2A4B57;
+    position: relative;
+    width: 90%;
+}
+
+.head_centered li img{
+    color: #9DA083;
+}
+
+.prev svg:hover{
+    filter: drop-shadow(-3px 5px 2px rgb(0 0 0 / 0.19));
+    cursor: pointer;
+}
+
+.next svg:hover{
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.19));
+    cursor: pointer;
+}
+
+#noimg {
+    background-image: url("Olive\ Branch.svg");
+    background-size: cover;
+}
+
+#Ampscan{
+    background-image: url("https://drive.google.com/thumbnail?id=1TCHYE03qN_Y3GFQVfSM7ZSdAJdvQ8nyc");
+    background-size: cover;
+}
+
+section{
+    display:block;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 200px;
+    width: 100%;
+    background:linear-gradient(#000000, #2A4B57 30%);
+    opacity: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: #FFFFFF;
+    display: block;
+    font-size: 14px;
+}
+
+@media (max-width: 1000px) {
+    .head_centered {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        align-items: left;
+        padding: 0px;
+        box-sizing: border-box;
+        flex-direction: column;
+    }
+    .blog_links {
+        flex-direction: column;
+    }
+    .left_side, .right_side {
+        flex: none;
+        width: fit-content;
+    }
+
+    #services{
+        width: 88%;
+    }
+
+    #package_display{
+        flex-direction: column;
+    }
+   
+    .scroll-bar{
+        height: 160px;
+    }
+    .blog-window{
+        margin-left: 15px;
+        margin-right: 20px;
+        transform: translate(0, -52%);
+        height: 90%;
+    }
+
+    .blog-preview{
+        height: 90%;
+        width: 160px;
+        margin: 5px;
+        opacity: 100%;
+        font-size:14px;
+        align-items: baseline;
+        padding-top: 10px;
+    }
+
+    .blog-preview p{
+        padding: 15px;
+        font-size: 12px;
+    }
+    .prev, .next{
+        display: none;
+    }
+    .blog-preview:hover{
+        box-shadow: none;
+    }
+    .blog{
+        position: relative;
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        margin-top: 80px;
+        display: block;
+        padding-bottom: 10px;
+    }
+}
