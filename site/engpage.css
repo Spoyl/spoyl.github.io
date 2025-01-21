@@ -205,6 +205,10 @@ h6{
     display: none;
 }
 
+#title{
+    display: block;
+}
+
 .blog_button {
     background-color: rgb(239, 137, 20);
     color: #FFFFFF;
