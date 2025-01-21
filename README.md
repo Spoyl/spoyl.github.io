@@ -1,11 +1,19 @@
 MechSpeak.io
 ============
 
-This is Mechspeak.io, a site for mechanical engineers looking to learn technical english. It serves two purposes:
-1. Acts as a portal to new students looking for lessons
-2. Provides a portal to mechspeak resources 
+This is Mechspeak.io, a site to help mechanical engineers learn technical english. The website serves two purposes:
+
+1. It's a portal to new students, providing booking and payment options
+2. It provides access to mechspeak resources, with paid and free options
+
 Find the website [here](https://mechspeak.io)
 
-Next Steps
+
+Milestones
 ----------
-- Payment system 💸
+- Landing page ✅
+- Logo design ✅
+- Calendar booking ✅
+- Payment system ✅
+- Resources section access rights 🚧 
+- "About" section 🚧
