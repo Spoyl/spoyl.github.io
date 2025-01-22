@@ -262,6 +262,12 @@ h6{
     color: #2A4B57;
 }
 
+#bookingp{
+    color:#EF8914;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 .proj_button {
     border: 2px solid #EF8914;
     background-color: #ffffff00;
