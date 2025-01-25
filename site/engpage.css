@@ -73,10 +73,6 @@ hr{
     opacity: 30%;
 }
 
-.head_centered img:hover{
-    cursor: pointer;
-}
-
 .dropdown_content{
     display: none;
 }
@@ -177,28 +173,8 @@ h6{
 
 .centered{
     width:fit-content;
-    margin: auto;
+    justify-content: left;
     display: flex;
-}
-
-
-.left_side{
-    flex:0 0 50%;
-    box-sizing: border-box;
-    padding-top: 10px;
-}
-
-.right_side_blog{
-    flex:0 0 50%;
-    box-sizing: border-box;
-    text-align: right;
-    padding-top: 10px;
-}
-
-.right_side{
-    flex:0 0 50%;
-    box-sizing: border-box;
-    padding-bottom: 20px;
 }
 
 #mobiletitle{
@@ -222,6 +198,8 @@ h6{
     font-weight: 500;
     z-index: 1;
     text-decoration: none;
+    display:none;
+    width: fit-content;
 }
 
 .blog_button:hover{
@@ -349,6 +327,15 @@ h6{
     padding-bottom: 120px;
 }
 
+#left_side{
+    padding: 80px;
+    justify-content: left;
+}
+
+#right_side {
+    padding: 80px;
+}
+
 #package_display{
     display: flex;
     align-items: center;
@@ -394,10 +381,6 @@ h7{
     color: #2A4B57;
 }
 
-.head_centered li img{
-    color: #9DA083;
-}
-
 .prev svg:hover{
     filter: drop-shadow(-3px 5px 2px rgb(0 0 0 / 0.19));
     cursor: pointer;
@@ -408,9 +391,8 @@ h7{
     cursor: pointer;
 }
 
-#noimg {
-    background-image: url("Olive\ Branch.svg");
-    background-size: cover;
+iframe{
+    display: block;
 }
 
 section{
@@ -440,19 +422,35 @@ footer p{
         display: none;
     }
 
+    iframe{
+        display: none;
+    }
+
+    .blog_button {
+        background-color: rgb(239, 137, 20);
+        color: #FFFFFF;
+        text-align: center;
+        padding: 10px 16px;
+        font-size: 18px;
+        transition-duration: 0.2s;
+        cursor: pointer;
+        border-radius: 18px;
+        border-top: 20px;
+        font-weight: 500;
+        z-index: 1;
+        text-decoration: none;
+        display:block;
+        width: fit-content;
+    }
+    
+    .blog_button:hover{
+        background-color: #E0E0E0;
+        color: #2a4b57;
+    }
+
     #mobiletitle{
         display: block;
         font-size: 50px;
-    }
-
-    .head_centered {
-        width: 80%;
-        margin: auto;
-        display: flex;
-        align-items: left;
-        padding: 0px;
-        box-sizing: border-box;
-        flex-direction: column;
     }
 
     #contactform{
@@ -462,9 +460,9 @@ footer p{
     .blog_links {
         flex-direction: column;
     }
-    .left_side, .right_side {
-        flex: none;
-        width: fit-content;
+    
+    #right_side {
+        display: none;
     }
 
     #mechspeakinpage{
@@ -482,6 +480,8 @@ footer p{
     .scroll-bar{
         height: 160px;
     }
+
+
     .blog-window{
         margin-left: 15px;
         margin-right: 20px;
