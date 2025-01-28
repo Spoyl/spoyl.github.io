@@ -418,6 +418,10 @@ footer p{
 }
 
 @media (max-width: 1000px) {
+    body{
+    overflow-x: hidden;
+    }
+ 
     #title{
         display: none;
     }
