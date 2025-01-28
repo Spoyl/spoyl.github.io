@@ -198,7 +198,6 @@ h6{
     font-weight: 500;
     z-index: 1;
     text-decoration: none;
-    display:none;
     width: fit-content;
 }
 
@@ -274,7 +273,7 @@ h6{
     background:linear-gradient(#2A4B57, #000000);
     color: #FFFFFF;
     border-radius: 40px;
-    height: fit-content;
+    height: auto;
     flex-direction: column;
     padding: 20px;
 }
@@ -391,10 +390,6 @@ h7{
     cursor: pointer;
 }
 
-iframe{
-    display: block;
-}
-
 section{
     display:block;
 }
@@ -424,32 +419,6 @@ footer p{
  
     #title{
         display: none;
-    }
-
-    iframe{
-        display: none;
-    }
-
-    .blog_button {
-        background-color: rgb(239, 137, 20);
-        color: #FFFFFF;
-        text-align: center;
-        padding: 10px 16px;
-        font-size: 18px;
-        transition-duration: 0.2s;
-        cursor: pointer;
-        border-radius: 18px;
-        border-top: 20px;
-        font-weight: 500;
-        z-index: 1;
-        text-decoration: none;
-        display:block;
-        width: fit-content;
-    }
-    
-    .blog_button:hover{
-        background-color: #E0E0E0;
-        color: #2a4b57;
     }
 
     #mobiletitle{
