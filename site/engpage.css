@@ -342,7 +342,8 @@ h6{
     box-sizing: border-box;
     margin-top: 0px;
     flex-wrap: wrap; /* Allow wrapping on small screens */
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
 }
 
 .package{
@@ -350,11 +351,9 @@ h6{
     display: flex;
     background-color: #FFFFFF;
     border-radius: 40px;
-    margin: auto;
     padding: 20px;
-    margin-top: 20px;
     align-items: center;
-    max-width: 280px;
+    max-width: 250px;
     height: fit-content;
 }
 
@@ -362,10 +361,21 @@ h6{
     box-shadow: 0 10px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+.package2{
+    color: #2A4B57;
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    padding: 20px;
+    align-items: center;
+    max-width: 300px;
+    height: fit-content;
+}
+
 #resources{
     margin: auto;
     padding: 20px;
-    padding: 20px;
+    margin-bottom: 20px;
     background-color: #f1f4f8ff;
     color: #2A4B57;
     border-radius: 40px;
