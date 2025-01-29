@@ -338,10 +338,11 @@ h6{
 #package_display{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin: auto;
     box-sizing: border-box;
     margin-top: 0px;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    justify-content: space-between;
 }
 
 .package{
@@ -349,10 +350,11 @@ h6{
     display: flex;
     background-color: #FFFFFF;
     border-radius: 40px;
-    margin: 20px;
+    margin: auto;
     padding: 20px;
+    margin-top: 20px;
     align-items: center;
-    width: fit-content;
+    max-width: 280px;
     height: fit-content;
 }
 
@@ -416,6 +418,14 @@ footer p{
     body{
     overflow-x: hidden;
     }
+
+    #left_side, #right_side {
+        padding: 20px; /* Reduce padding */
+    }
+    #hero {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+    }
  
     #title{
         display: none;
@@ -428,6 +438,7 @@ footer p{
 
     #contactform{
         width: 80%;
+        margin: auto;
     }
     
     .blog_links {
