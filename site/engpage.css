@@ -282,6 +282,39 @@ h6{
     padding: 20px;
 }
 
+#whitedot{
+    background-color: #FFFFFF;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 50vh;
+    z-index: 0;
+}
+
+#orangedot1{
+    background-color: #EF8914;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    top: 78vh;
+    z-index: 1;
+}
+
+#orangedot2{
+    background-color: #EF8914;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: absolute;
+    right: 2vw;
+    top: 10vh;
+    z-index: 0;
+}
+
 .refer{
     width: fit-content;
     display: block;
@@ -337,6 +370,8 @@ h6{
 
 #right_side {
     padding: 80px;
+    z-index: 2;
+    position: relative;
 }
 
 #package_display{
@@ -422,7 +457,7 @@ footer {
     align-items: center;
 }
 
-footer p{
+footer p, #contactform p{
     color: #FFFFFF;
     display: block;
     font-size: 14px;
