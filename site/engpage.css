@@ -1,4 +1,3 @@
-/* Calamata theme for OliStocks.com */
 
 * {
     font-family: 'Inter';
@@ -374,7 +373,7 @@ h6{
     position: relative;
 }
 
-#package_display{
+#package_display, #review_display{
     display: flex;
     align-items: center;
     margin: auto;
@@ -383,6 +382,15 @@ h6{
     flex-wrap: wrap; /* Allow wrapping on small screens */
     justify-content: center;
     gap: 20px;
+}
+
+#review_display{
+    width: 90vw;
+}
+
+#review{
+    background-color: #2A4B57;
+    color: #FFFFFF;
 }
 
 .package{
@@ -429,6 +437,10 @@ h7{
     font-size: 22px;
     font-weight: 600;
     color: #2A4B57;
+}
+
+#review_heading{
+    color: #FFFFFF;
 }
 
 .prev svg:hover{
