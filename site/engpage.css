@@ -391,6 +391,7 @@ h6{
 #review{
     background-color: #2A4B57;
     color: #FFFFFF;
+    box-shadow: 2px 2px 2px 2px #e0e0e0a3;
 }
 
 .package{
@@ -402,10 +403,6 @@ h6{
     align-items: center;
     max-width: 250px;
     height: fit-content;
-}
-
-.package:hover{
-    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .package2{
