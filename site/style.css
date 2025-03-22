@@ -54,13 +54,9 @@ article {
     margin: 10px 0px 10px;
     display: flex;
     color: #2A4B57;
-
     justify-content: space-between;
     width: 100%;
-}
-
-#tutor_profile > img{
-    margin: 20px;
+    flex-wrap: wrap;
 }
 
 #tutor_profile img{
@@ -68,20 +64,29 @@ article {
 }
 
 #tutor_profile div{
+    display: flex;
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 10px;
+    margin: 14px 14px 14px 14px;
 }
 
 #tutor_links {
-    margin-left: auto; /* Pushes this div to the right */
-    display: flex;
     flex-direction: column; /* Ensures buttons stack vertically */
     align-items: flex-end; /* Aligns buttons to the right */
+    display: flex;
+    justify-content: center;
 }
 
-#tutor_left img, #tutor_left div{
+#tutor_left div{
     display: inline;
+}
+
+#tutor_left img{
+    display: inline;
+}
+
+#tutor_description{
+    align-content: center;
 }
 
 a{
@@ -269,6 +274,7 @@ h6{
 }
 
 .blog_button_blue {
+    margin: 10px;
     background-color: #2A4B57;
     color: #FFFFFF;
     text-align: center;
@@ -282,11 +288,11 @@ h6{
     z-index: 1;
     text-decoration: none;
     width: fit-content;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .blog_button_blue:hover{
     background-color: #E0E0E0;
-    color: #2a4b57;
 }
 
 #mobiletitle{
@@ -559,6 +565,11 @@ footer p, #contactform p{
 @media (max-width: 1000px) {
     body{
     overflow-x: hidden;
+    }
+
+    #tutor_links{
+        width: 100%;
+        align-items: center;
     }
 
     #left_side, #right_side {
