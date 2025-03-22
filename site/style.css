@@ -33,12 +33,76 @@ nav {
     neat border design trick */
 }
 
+article {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    min-height:100%;
+    background:linear-gradient(#000000, #2A4B57 80%, #000000);
+    background-size:cover;
+}
+
+#tutor_list{
+    padding-top: 10vh;
+    width: 80vw;
+}
+
+#tutor_profile{
+    height: fit-content;
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    margin: 10px 0px 10px;
+    display: flex;
+    color: #2A4B57;
+
+    justify-content: space-between;
+    width: 100%;
+}
+
+#tutor_profile > img{
+    margin: 20px;
+}
+
+#tutor_profile img{
+    display: inline-flex;
+}
+
+#tutor_profile div{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+}
+
+#tutor_links {
+    margin-left: auto; /* Pushes this div to the right */
+    display: flex;
+    flex-direction: column; /* Ensures buttons stack vertically */
+    align-items: flex-end; /* Aligns buttons to the right */
+}
+
+#tutor_left img, #tutor_left div{
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+    color:#EF8914;
+}
+
+#li_callout{
+    color: #EF8914;
+}
+
 .insta{
     padding-left: 14px;
     padding-right: 7px;
 }
 .home_icon {
     margin-left: 10%;
+}
+
+#search{
+    margin-right: 10%;
 }
 
 .menu {
@@ -148,7 +212,6 @@ h5{
     height: 100vh;
     align-items: center;
     justify-content: center;
-    background-image: url("static/Hero_image.jpg");
     min-height:100%;
     background:linear-gradient(#000000, #2A4B57 80%, #000000);
     background-size:cover;
@@ -201,6 +264,27 @@ h6{
 }
 
 .blog_button:hover{
+    background-color: #E0E0E0;
+    color: #2a4b57;
+}
+
+.blog_button_blue {
+    background-color: #2A4B57;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 18px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    border-radius: 18px;
+    border-top: 20px;
+    font-weight: 500;
+    z-index: 1;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.blog_button_blue:hover{
     background-color: #E0E0E0;
     color: #2a4b57;
 }
