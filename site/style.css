@@ -77,6 +77,10 @@ article {
     justify-content: center;
 }
 
+#tutor_left{
+    flex-wrap: wrap;
+}
+
 #tutor_left div{
     display: inline;
 }
