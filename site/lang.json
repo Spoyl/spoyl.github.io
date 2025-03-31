@@ -1,0 +1,120 @@
+[
+    {
+        "de": {
+            "pageTitle": "Englisch für Ingenieure",
+            "navigation": {
+                "search": "Tutor Finden"
+            },
+            "hero": {
+                "description": "1:1-Englischgespräche mit echten Ingenieuren",
+                "search": "Tutor Finden",
+                "resources": "Materialien"
+            },
+            "guide": {
+                "heading": "So Funktioniert Es",
+                "step_1": {
+                    "heading": "1. Finde einen Tutor",
+                    "body": "Suche hier auf MechSpeak nach deinem idealen Tutor"
+                },
+                "step_2": {
+                    "heading": "2. Kostenlose Probestunde",
+                    "body": "Trage dich in den Kalender deines Tutors ein"
+                },
+                "step_3": {
+                    "heading": "3. Stunden",
+                    "body": "Die Stunden dauern 50 Minuten. Übe relevantes Englisch für Ingenieure mit deinem Tutor."
+                },
+                "step_4": {
+                    "heading": "4. Materialien",
+                    "body": "Hol dir Vokabel-Spickzettel, Challenges und Anleitungen – kostenlos für Studenten!"
+                }
+            },
+            "callToAction": {
+                "heading": "Sprich jetzt los!",
+                "button": "Hier klicken",
+                "tip": "(Probestunden sind kostenlos)"
+            },
+            "resources": {
+                "heading": "Materialien",
+                "resource1": {
+                    "heading": "CAD Zwangsbedingungen",
+                    "callToAction": "Kostenloser Download"
+                },
+                "resource2": {
+                    "heading": "Diagramme beschreiben",
+                    "callToAction": "Kostenloser Download"
+                },
+                "resource3": {
+                    "heading": "Interview-Vorbereitung 1",
+                    "callToAction": "Kostenloser Download"
+                },
+                "resource4": {
+                    "heading": "Spickzettel",
+                    "body1": "Interview-Vorbereitung, technisches Vokabular, gängige Redewendungen, Übungsszenarien und mehr...",
+                    "body2": "Gib deine E-Mail-Adresse ein, um ein kostenloses Spickzettel-Paket direkt in dein Postfach zu erhalten: Hier klicken!"
+                }
+            },
+            "footer": {
+                "copyright": "© 2025 Alle Rechte vorbehalten."
+            }
+        },
+        "fr": {
+            "pageTitle": "Anglais pour ingénieurs",
+            "navigation": {
+                "search": "Trouver un tuteur"
+            },
+            "hero": {
+                "description": "Conversations en anglais 1:1 avec de vrais ingénieurs",
+                "search": "Trouver un tuteur",
+                "resources": "Matériel"
+            },
+            "guide": {
+                "heading": "Comment ça marche",
+                "step_1": {
+                    "heading": "1. Trouvez un tuteur",
+                    "body": "Recherchez votre tuteur idéal ici sur MechSpeak"
+                },
+                "step_2": {
+                    "heading": "2. Séance d'essai gratuite",
+                    "body": "Inscrivez-vous dans le calendrier de votre tuteur"
+                },
+                "step_3": {
+                    "heading": "3. Cours",
+                    "body": "Les cours durent 50 minutes. Pratiquez l'anglais technique avec votre tuteur."
+                },
+                "step_4": {
+                    "heading": "4. Matériel",
+                    "body": "Obtenez des fiches de vocabulaire, des défis et des guides – gratuits pour les étudiants !"
+                }
+            },
+            "callToAction": {
+                "heading": "Commencez à parler!",
+                "button": "Cliquez ici",
+                "tip": "(Les séances d'essai sont gratuites)"
+            },
+            "resources": {
+                "heading": "Matériel",
+                "resource1": {
+                    "heading": "Contraintes CAD",
+                    "callToAction": "Téléchargement gratuit"
+                },
+                "resource2": {
+                    "heading": "Décrire des graphiques",
+                    "callToAction": "Téléchargement gratuit"
+                },
+                "resource3": {
+                    "heading": "Préparation d'entretien 1",
+                    "callToAction": "Téléchargement gratuit"
+                },
+                "resource4": {
+                    "heading": "Fiches mémo",
+                    "body1": "Préparation d'entretien, vocabulaire technique, expressions courantes, scénarios de pratique et plus encore...",
+                    "body2": "Entrez votre adresse e-mail pour recevoir un pack gratuit de fiches mémo directement dans votre boîte de réception : Cliquez ici !"
+                }
+            },
+            "footer": {
+                "copyright": "© 2025 Tous droits réservés."
+            }
+        }
+    }
+]

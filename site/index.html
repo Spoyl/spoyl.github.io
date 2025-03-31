@@ -35,17 +35,28 @@
         <a class="home_icon"
             href="https://spoyl.github.io"
             title=Homepage>
-            <img style="display: inline;" src="static/mechspeaklogo.svg" alt="My logo" height=30/>
+            <img style="display: inline;" src="static/mechspeaklogo.svg" alt="logo" height=30/>
         </a>
-        <a href="findtutors.html" class="blog_button" id="search">Find Tutors</a>
-    </nav>         
+        <div id="menu">
+          <img id ="lang_select" style="display: inline;" src="static/lang.svg" title="language" height=20/>
+          <div class="dropdown">
+            <ul>
+              <li>
+                <button id="en">EN 🇬🇧</button>
+              </li>
+              <li>
+                <button id="de">DE 🇩🇪</button>
+              </li>
+              <li>
+                <button id="fr">FR 🇫🇷</button>
+              </li>
+            </ul>
+          </div>
+          <a href="findtutors.html" class="blog_button" id="search">Find Tutors</a>
+        </div>
+    </nav>
 <main>
 <div id="hero" class="head_centered">
-  <!--
-  <span class="dot" id="orangedot1"></span>
-  <span class="dot" id="orangedot2"></span>
-  <span class="dot" id="whitedot"></span>
-  -->
   <div id="left_side">
     <h6 id="title">
       MechSpeak.io
@@ -54,7 +65,7 @@
       MechSpeak
     </h6>
     <p id="subtitle">
-      1:1 English Lessons with Real Engineers
+      1:1 English Conversations with Real Engineers
     </p>
     <div class="button_block">
       <div class = "centered"> 
@@ -308,5 +319,6 @@
         </a>
         </p>
       </center>
+      <script src="scripts/lang.js"></script>
   </body>
 </html>

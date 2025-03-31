@@ -16,21 +16,29 @@ body {
 }
 
 nav {
-    position: fixed;
     display: flex;
-    align-items: center; /* Center align children vertically */
-    justify-content: space-between; /* Distribute space evenly between children */
-    width: 100%;
-    padding: 10px 0; /* Optional: add padding for vertical spacing */
-    box-sizing: border-box; /* Include padding and border in the element's total width */
-    z-index: 3;
-    background-color: #000000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
     top: 0;
-    /*
-    border-width: 0px 0px 4px;
-    border-style: solid;
-    border-image: linear-gradient(to right, rgba(83, 79, 79, 0.949), rgba(42, 75, 87, 0.95), rgba(157, 160, 131, 0.95), rgba(255, 255, 255, 0.95), rgba(234, 180, 2, 0.95)) 1;
-    neat border design trick */
+    left: 0;
+    width: 100%;
+    background: black; 
+    z-index: 7; 
+}
+
+.home_icon {
+    padding-left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+#menu {
+    padding-right: 10%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 article {
@@ -41,6 +49,40 @@ article {
     background:linear-gradient(#000000, #2A4B57 80%, #000000);
     background-size:cover;
     padding-bottom: 240px;
+}
+
+#lang_select:hover + .dropdown{
+    display: block;
+}
+
+ul{
+    list-style-type: none;
+    margin: 4px;
+    padding: 4px;
+    color: #2A4B57;
+}
+
+button{
+    all: unset;
+}
+
+button:hover{
+    cursor: pointer;
+    color: #EF8914;
+}
+
+.dropdown{
+    display: none;
+    background-color: #E0E0E0;
+    position: absolute;
+    border-radius: 6px;
+    top: 40px;
+    right: 20.5%;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.dropdown:hover{
+    display: block;
 }
 
 #tutor_list{
@@ -72,8 +114,8 @@ article {
 }
 
 #tutor_links {
-    flex-direction: column; /* Ensures buttons stack vertically */
-    align-items: flex-end; /* Aligns buttons to the right */
+    flex-direction: column;
+    align-items: flex-end;
     display: flex;
     justify-content: center;
 }
@@ -97,6 +139,11 @@ article {
 
 a{
     text-decoration: none;
+    color: #2a4b57;
+}
+
+#li_callout a{
+    text-decoration: none;
     color:#EF8914;
 }
 
@@ -108,27 +155,11 @@ a{
     padding-left: 14px;
     padding-right: 7px;
 }
-.home_icon {
-    margin-left: 10%;
-}
 
 #search{
     margin-right: 10%;
 }
 
-.menu {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    margin-right: 10%; /* Maintain the right margin for spacing */
-}
-
-.menu img{
-    float: right;
-}
-
-#dropdown{
-    clear: right;
-}
 
 #dp {
     border: solid #E0E0E0;
@@ -145,34 +176,6 @@ h1 {
 hr{
     border: 2px solid;
     opacity: 30%;
-}
-
-.dropdown_content{
-    display: none;
-}
-
-.menu:hover .dropdown_content{
-    display: block;
-}
-
-.menu:hover .dropdown_content ul{
-    display: flex;
-    flex-direction: column;
-}
-
-.dropdown_content li{
-    font-size: 14px;
-    font-weight: 550;
-    color: #2A4B57;
-    padding: 6px 14px;
-}
-
-.dropdown_content > ul > ul > li{
-    font-weight: 340;
-    list-style-type: circle;
-    & a{
-        all: unset;
-    }
 }
 
 h2{
@@ -259,7 +262,7 @@ h6{
 }
 
 .blog_button {
-    background-color: rgb(239, 137, 20);
+    background-color: #ef8914;
     color: #FFFFFF;
     text-align: center;
     padding: 10px 16px;
@@ -272,6 +275,9 @@ h6{
     z-index: 1;
     text-decoration: none;
     width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
 }
 
 .blog_button:hover{
