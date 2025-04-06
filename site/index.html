@@ -9,7 +9,7 @@
     <meta 
       name="viewport" 
       content="width=device-width, initial-scale=1"/>
-    <title>English for Engineers</title>
+    <title data-i18n="pageTitle">English for Engineers</title>
     <meta 
       name="author"
       content="Oli Stocks"/>
@@ -52,7 +52,7 @@
               </li>
             </ul>
           </div>
-          <a href="findtutors.html" class="blog_button" id="search">Find Tutors</a>
+          <a href="findtutors.html" class="orangeFillButton" data-i18n="navigation.search">Find Tutors</a>
         </div>
     </nav>
 <main>
@@ -64,13 +64,13 @@
     <h6 id="mobiletitle">
       MechSpeak
     </h6>
-    <p id="subtitle">
+    <p id="subtitle" data-i18n="hero.description">
       1:1 English Conversations with Real Engineers
     </p>
     <div class="button_block">
       <div class = "centered"> 
-        <a href="findtutors.html" class="proj_button">Find Tutors</a>
-        <a href="#resources" class="resources_button">Resources</a>        
+        <a href="findtutors.html" class="orangeBorderButton" data-i18n="hero.search">Find Tutors</a>
+        <a href="#resources" id="whiteBorderButton" data-i18n="hero.resources">Resources</a>        
       </div>
     </div>
   </div>
@@ -79,19 +79,19 @@
   </div>
 </div>
 <section id="services">
-        <h1 id="serviceh1">
+        <h1 id="howItWorksTitle" data-i18n="guide.heading">
           How it Works
         </h1>
         <div id="package_display">
           <div class="package" id="roamer">
             <center>
-              <img src="static/search_tutor.svg" height=26px/>
+              <img src="static/search_tutor.svg"  height=26px/>
               <p>
-                <h7>
+                <h2 data-i18n="guide.step_1.heading">
                   1. Find a Tutor
-                </h7>
+                </h2>
               </p>
-              <p>
+              <p data-i18n="guide.step_1.body">
                 Search for your ideal tutor here on MechSpeak
               </p>
             </center>
@@ -100,11 +100,11 @@
             <center>
               <img src="static/cal_icon.svg" height=28px/>
               <p>
-                <h7>
+                <h2 data-i18n="guide.step_2.heading">
                   2. Book a Trial
-                </h7>
+                </h2>
               </p>
-              <p>
+              <p data-i18n="guide.step_2.body">
                 Book a session in your tutor's calendar
               </p>
             </center>
@@ -113,11 +113,11 @@
             <center>
               <img src="static/geomicon.svg" height=30px/>
               <p>
-                <h7>
+                <h2 data-i18n="guide.step_3.heading">
                   3. Lessons
-                </h7>
+                </h2>
               </p>
-              <p>
+              <p data-i18n="guide.step_3.body">
                 Lessons are <b id="orange">50 minutes</b> long. Get relevant Engineering English practice with your tutor
               </p>
             </center>
@@ -126,13 +126,13 @@
             <center>
               <img src="static/resourcesicon.svg" alt="Vision" height=30px/>
               <p>
-                <h7>
+                <h2 data-i18n="guide.step_4.heading">
                   4. Resources
-                </h7>
+                </h2>
                 <div id="services">
                 </div>
               </p>
-              <p>
+              <p data-i18n="guide.step_4.body">
                 Get vocabulary cheatsheets, challenges and guides. Free for students! 
               </p>
             </center>
@@ -141,16 +141,16 @@
       </section>
       <section id="booking">
         <center>
-            <div id="contactform">
+            <div id="callToAction">
               <div id="mechspeakinpage">
                 <img src="static/mechspeaklogo.svg" alt="MechSpeak" height="80px">
               </div>
               <center>
-                <h1>
+                <h1 data-i18n="callToAction.heading">
                   Start Speaking Now
                 </h1>
-                <a href="findtutors.html" class="blog_button" id="trackButton">Click here</a>
-                  <p>
+                <a href="findtutors.html" class="orangeFillButton" data-i18n="callToAction.button">Click here</a>
+                  <p data-i18n="callToAction.tip">
                     (Trial sessions are free)
                 </p>
               </center>
@@ -158,71 +158,53 @@
           </center>
       </section>
       <section id="resources">
-        <h1 id="reviewsh1">
-          Resources
-         </h1>
-         <div id="package_display">
-          <div class="package2" id="roamer">
-            <center>
-              <p>
-                <h7>
-                  CAD Constraints
-                </h7>
-              </p>
-              <a href="https://forms.gle/Wgp5sbgKM8RM9Zho8" download="CAD Constraints">
-              <img src="static/CAD Constraints.gif" alt="Vision" height=400px/>
-              </a>
-              <p>
-                Free Download
-              </p>
-            </center>
-          </div>
-          <div class="package2" id="roamer">
-            <center>
-              <p>
-                <h7>
-                  Describing Graphs
-                </h7>
-              </p>
-              <a href="https://forms.gle/Wgp5sbgKM8RM9Zho8" download="Describing Graphs">
-              <img src="static/Describing Graphs.gif" height=400px/>
-              </a>
-              <p>
-                Free Download
-              </p>
-            </center>
-          </div>
+        <h1 id="resourcesh1" data-i18n="resources.heading">Resources</h1>
+        <div id="package_display">
+          
           <div class="package2">
-            <center>
-              <p>
-                <h7>
-                  Interview Prep 1
-                </h7>
-              </p>
+            <div>
+              <h2 data-i18n="resources.resource1.heading">CAD Constraints</h2>
               <a href="https://forms.gle/Wgp5sbgKM8RM9Zho8">
-              <img src="static/Interview prep 1.gif" alt="Vision" height=400px/>
+                <img src="static/CAD Constraints.gif" alt="CAD Constraints" height="400px"/>
               </a>
-              <p>
-                Free Download
-              </p>
-            </center>
+              <p data-i18n="resources.resource1.callToAction">Free Download</p>
+            </div>
           </div>
+      
           <div class="package2">
-            <center>
-              <img src="static/mechspeaklogo.svg" alt="Vision" height=28px/>
-              <p>
-                <h7>
-                  Cheatsheets
-                </h7>
-              </p>
-              <p>
-                Interview preparation, technical vocabulary, common phrases, practice scenarios and more...
-              </p>
-              <p>
-                Enter your email adress to get a free cheatsheet bundle, direct to your inbox: <a id="orange" href="https://forms.gle/Wgp5sbgKM8RM9Zho8">Click here!</a>
-              </p>
-            </center>
+            <div>
+              <h2 data-i18n="resources.resource2.heading">Describing Graphs</h2>
+              <a href="https://forms.gle/Wgp5sbgKM8RM9Zho8">
+                <img src="static/Describing Graphs.gif" alt="Describing Graphs" height="400px"/>
+              </a>
+              <p data-i18n="resources.resource2.callToAction">Free Download</p>
+            </div>
           </div>
+      
+          <div class="package2">
+            <div>
+              <h2 data-i18n="resources.resource3.heading">Interview Prep 1</h2>
+              <a href="https://forms.gle/Wgp5sbgKM8RM9Zho8">
+                <img src="static/Interview prep 1.gif" alt="Interview Prep 1" height="400px"/>
+              </a>
+              <p data-i18n="resources.resource3.callToAction">Free Download</p>
+            </div>
+          </div>
+      
+          <div class="package2">
+            <div>
+              <img src="static/mechspeaklogo.svg" alt="MechSpeak Logo" height="28px"/>
+              <h2 data-i18n="resources.resource4.heading">Cheatsheets</h2>
+              <p data-i18n="resources.resource4.body1">
+                Interview preparation, technical vocabulary, common phrases, practice scenarios, and more...
+              </p>
+              <p data-i18n="resources.resource4.body2">
+                Enter your email address to get a free cheatsheet bundle, direct to your inbox: 
+                <a id="orange" href="https://forms.gle/Wgp5sbgKM8RM9Zho8">Click here!</a>
+              </p>
+            </div>
+          </div>
+      
         </div>
       </section>
       <!--
@@ -234,9 +216,9 @@
           <div class="package" id="review">
             <center>
               <p>
-                <h7 id="review_heading">
+                <h2 id="review_heading">
                   Dmitry
-                </h7>
+                </h2>
                 <div id="services">
                 </div>
               </p>
@@ -252,9 +234,9 @@
           <div class="package" id="review">
             <center>
               <p>
-                <h7 id="review_heading">
+                <h2 id="review_heading">
                   Elizabeth
-                </h7>
+                </h2>
                 <div id="services">
                 </div>
               </p>
@@ -270,9 +252,9 @@
           <div class="package" id="review">
             <center>
               <p>
-                <h7 id="review_heading">
+                <h2 id="review_heading">
                   Gordana
-                </h7>
+                </h2>
                 <div id="services">
                 </div>
               </p>
@@ -292,33 +274,28 @@
       </section>
     -->
   </main>
-    <footer>
-        <center>
-        <p>
-          &#169MechSpeak 2025. All rights reserved.
-        </p>
-        <p>
-          <a
-            href="https://www.instagram.com/mechspeak.io/"
-            title=Instagram>
-            <img style="display: inline; padding: 0px 5px;" src="static/Insta Icon.svg" height=30/>
+
+  <footer>
+    <div>
+      <p data-i18n="footer.copyright">&#169; MechSpeak 2025. All rights reserved.</p>
+      <p>
+        <a href="https://www.instagram.com/mechspeak.io/" title="Instagram">
+          <img src="static/Insta Icon.svg" height="30" style="display: inline; padding: 0px 5px;" alt="Instagram Icon"/>
         </a>
-        <a
-            href="https://www.linkedin.com/company/mechspeak/"
-            title=LinkedIn>
-            <img style="display: inline; padding: 0px 5px;" src="static/LinkedIn Icon.svg" height=30/>
+        <a href="https://www.linkedin.com/company/mechspeak/" title="LinkedIn">
+          <img src="static/LinkedIn Icon.svg" height="30" style="display: inline; padding: 0px 5px;" alt="LinkedIn Icon"/>
         </a>
-        <a
-            href="https://web.facebook.com/profile.php?id=61574095931946"
-            title=LinkedIn>
-            <img style="display: inline; padding: 0px 5px;" src="static/fb_logo.svg" height=30/>
+        <a href="https://web.facebook.com/profile.php?id=61574095931946" title="Facebook">
+          <img src="static/fb_logo.svg" height="30" style="display: inline; padding: 0px 5px;" alt="Facebook Icon"/>
         </a>
-        <a 
-          href="mailto:oli@mechspeak.io"> 
-          <img style="display: inline; padding: 0px 5px;" src="static/Email Icon.svg" height=30/> 
+        <a href="mailto:oli@mechspeak.io" title="Email">
+          <img src="static/Email_Icon.svg" height="30" style="display: inline; padding: 0px 5px;" alt="Email Icon"/>
         </a>
-        </p>
-      </center>
-      <script src="scripts/lang.js"></script>
+      </p>
+    </div>
+  </footer>
+
+  <script src="scripts/lang.js"></script>
+
   </body>
 </html>

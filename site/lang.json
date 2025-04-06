@@ -1,5 +1,75 @@
-[
     {
+        "en": {
+            "pageTitle": "English for Engineers",
+            "navigation": {
+                "search": "Find Tutors"
+            },
+            "hero": {
+                "description": "1:1 English Lessons With Real Engineers",
+                "search": "Find Tutors",
+                "resources": "Resources"
+            },
+            "guide": {
+                "heading": "How it Works",
+                "step_1": {
+                    "heading": "1. Find a Tutor",
+                    "body": "Search for your ideal tutor here on MechSpeak"
+                },
+                "step_2": {
+                    "heading": "2. Book a Trial",
+                    "body": "Book a session in your tutor's calendar"
+                },
+                "step_3": {
+                    "heading": "3. Lessons",
+                    "body": "Lessons are 50 minutes long. Get relevant Engineering English practice with your tutor"
+                },
+                "step_4": {
+                    "heading": "4. Resources",
+                    "body": "Get vocabulary cheatsheets, challenges and guides. Free for students!"
+                }
+            },
+            "callToAction": {
+                "heading": "Start Speaking Now",
+                "button": "Click Here",
+                "tip": "(Trial sessions are free)"
+            },
+            "resources": {
+                "heading": "Resources",
+                "resource1": {
+                    "heading": "CAD Constraints",
+                    "callToAction": "Free Download"
+                },
+                "resource2": {
+                    "heading": "Describing Graphs",
+                    "callToAction": "Free Download"
+                },
+                "resource3": {
+                    "heading": "Interview Prep 1",
+                    "callToAction": "Free Download"
+                },
+                "resource4": {
+                    "heading": "Cheatsheets",
+                    "body1": "Interview preparation, technical vocabulary, common phrases, practice scenarios and more...",
+                    "body2": "Enter your email adress to get a free cheatsheet bundle, direct to your inbox: Click here!"
+                }
+            },
+            "footer": {
+                "copyright": "© MechSpeak 2025. All rights reserved."
+            },
+            "findTutors": {
+                "h1": "Tutors",
+                "OliStocks":{
+                    "profession": "Mechanical Engineer",
+                    "languages": "English (native), French (Limited Working Proficiency)",
+                    "price": "£28 (50 minutes)",
+                    "callToAction": "Check out my experience!"
+                },
+                "generic":{
+                    "msg": "Message",
+                    "cal": "Calendar"
+                }
+            }
+        },
         "de": {
             "pageTitle": "Englisch für Ingenieure",
             "navigation": {
@@ -14,11 +84,11 @@
                 "heading": "So Funktioniert Es",
                 "step_1": {
                     "heading": "1. Finde einen Tutor",
-                    "body": "Suche hier auf MechSpeak nach deinem idealen Tutor"
+                    "body": "Suche hier auf MechSpeak nach deinem idealen Tutor."
                 },
                 "step_2": {
                     "heading": "2. Kostenlose Probestunde",
-                    "body": "Trage dich in den Kalender deines Tutors ein"
+                    "body": "Trage dich in den Kalender deines Tutors ein."
                 },
                 "step_3": {
                     "heading": "3. Stunden",
@@ -26,7 +96,7 @@
                 },
                 "step_4": {
                     "heading": "4. Materialien",
-                    "body": "Hol dir Vokabel-Spickzettel, Challenges und Anleitungen – kostenlos für Studenten!"
+                    "body": "Hol dir Vokabel-Spickzettel, Challenges und Anleitungen - kostenlos für Studenten!"
                 }
             },
             "callToAction": {
@@ -56,6 +126,19 @@
             },
             "footer": {
                 "copyright": "© 2025 Alle Rechte vorbehalten."
+            },
+            "findTutors": {
+                "h1": "Tuteur",
+                "OliStocks":{
+                    "profession": "Ingénieur Mechanique",
+                    "languages": "Anglais (native), French (Limited Working Proficiency)",
+                    "price": "£32 (50 minutes)",
+                    "callToAction": "Check out my experience!"
+                },
+                "generic":{
+                    "msg": "Message",
+                    "cal": "Calendar"
+                }
             }
         },
         "fr": {
@@ -117,4 +200,3 @@
             }
         }
     }
-]

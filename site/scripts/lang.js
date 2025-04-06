@@ -1,45 +1,55 @@
-const de = document.querySelector("#de");
-const fr = document.querySelector("#fr");
-const en = document.querySelector("#en");
-const langURL = "lang.json"
+let translations = {}; // Holds all language data
+const storedLang = localStorage.getItem('selectedLang');
+const defaultLang = storedLang || getBrowserLanguage();
 
-async function updateLang(lang){
-    const response = await fetch(langURL);
-    const langList = await response.json();
-    const obj = langList[0][lang];
-    console.log(obj);
+
+// Load the language file
+fetch('lang.json')
+  .then(response => response.json())
+  .then(data => {
+    translations = data; 
+  })
+  .catch(error => {
+    console.error("Error loading language file:", error);
+  });
+
+
+// Listen for clicks on language buttons in the dropdown
+document.querySelectorAll('.dropdown button').forEach(button => {
+    button.addEventListener('click', () => {
+      const lang = button.id; // The button's id corresponds to the language code
+      applyTranslations(lang);
+
+      // Store the selected language in localStorage
+      localStorage.setItem('selectedLang', lang);
+    });
+  });
+
+
+function applyTranslations(lang) {
+  const langData = translations[lang];
+  if (!langData) return;
+
+  // Apply translations for elements with data-i18n attribute
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const path = el.getAttribute('data-i18n');
+    const text = getValueFromPath(langData, path);
+    if (text !== undefined) {
+      el.textContent = text;
+    }
+  });
 }
 
-var lang = navigator.language;
-lang = lang.slice(0,2);
-sessionStorage.setItem("language", lang);
-    if (lang.slice(0,2)=="fr"){
-        console.log("language set to french");
-    }
-    else if (lang.slice(0,2)=="de"){
-        console.log("language set to german");
-    }
-    else if (lang.slice(0,2)=="en"){
-        console.log("language set to english");
-    }
-    else{
-        console.log("language unknown, set to default");
-    }
+// Helper: safely access nested values from dot notation
+function getValueFromPath(obj, path) {
+  return path.split('.').reduce((acc, part) => acc && acc[part], obj);
+}
 
-fr.addEventListener("click", () => {
-    sessionStorage.setItem("language", "fr");
-    console.log("language set to french");
-    updateLang("fr");
-});
-
-de.addEventListener("click", () => {
-    sessionStorage.setItem("language", "de");
-    console.log("language set to german");
-    updateLang("de");
-});
-
-en.addEventListener("click", () => {
-    sessionStorage.setItem("language", "en");
-    console.log("language set to english");
-});
-
+// Helper: Get browser language and map to supported languages
+function getBrowserLanguage() {
+  const browserLang = navigator.language || navigator.userLanguage;
+  // Map browser language to supported languages (if supported)
+  if (browserLang.startsWith('de')) return 'de';  // German
+  if (browserLang.startsWith('fr')) return 'fr';  // French
+  return 'en';  // Default to English if unsupported or not available
+}

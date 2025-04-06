@@ -9,8 +9,8 @@
     <meta 
       name="viewport" 
       content="width=device-width, initial-scale=1"/>
-    <title>English for Engineers</title>
-    <meta 
+      <title data-i18n="pageTitle">English for Engineers</title>
+      <meta 
       name="author"
       content="Oli Stocks"/>
     <meta 
@@ -52,9 +52,9 @@
             </li>
           </ul>
         </div>
-        <a href="findtutors.html" class="blog_button" id="search">Find Tutors</a>
+        <a href="findtutors.html" class="orangeFillButton" data-i18n="navigation.search">Find Tutors</a>
       </div>
-  </nav>          
+  </nav>      
 <main>
     <article>
         <div id="tutor_list">
@@ -65,65 +65,58 @@
               <div id="tutor_left">
                 <img src="static/websitedp.png" height="220px"/>
                 <div id="tutor_description">
-                    <h7>
+                    <h2>
                         Oli Stocks 🇬🇧
-                    </h7>
-                    <p>
+                    </h2>
+                    <p data-i18n="findTutors.OliStocks.profession">
                         <img src="static/briefcase-fill.svg" style="height:18px;"/>
                         Mechanical Engineer
                     </p>
-                    <p>
+                    <p data-i18n="findTutors.OliStocks.languages">
                         <img src="static/translate.svg" style="height:18px;"/>
                         English (native), French (Limited Working Proficiency)
                     </p>
-                    <p>
+                    <p data-i18n="findTutors.OliStocks.price">
                         <img src="static/Cash_icon.svg" style="height:18px;"/>
                         £28 (50 minutes)
                     </p>
                     <p id="li_callout">
                         <img src="static/li_callout.svg" style="height:18px;"/>
-                        <u><a href="https://www.linkedin.com/in/oliver-stocks/">Check out my experience!</a></u>
+                        <u><a href="https://www.linkedin.com/in/oliver-stocks/" data-i18n="findTutors.OliStocks.callToAction">Check out my experience!</a></u>
                     </p>
                 </div>
               </div>
                 <div id="tutor_links">
-                  <a href="https://mail.google.com/chat/u/0/#chat/space/AAAAkcviB2o" class="blog_button_blue" id="search" style="display: inline-flex; align-items: center; gap: 5px;">
+                  <a href="https://mail.google.com/chat/u/0/#chat/space/AAAAkcviB2o" class="blog_button_blue" id="search" data-i18n="findTutors.generic.cal" style="display: inline-flex; align-items: center; gap: 5px;">
                     <img src="static/chat.svg" style="height:18px; vertical-align: middle;"/>Message
                 </a>
-                    <a href="https://calendar.app.google/NAGnoBqvB1wnP985A" class="blog_button_blue" id="search" style="display: inline-flex; align-items: center; gap: 5px;">
+                    <a href="https://calendar.app.google/NAGnoBqvB1wnP985A" class="blog_button_blue" id="search" data-i18n="findTutors.generic.msg" style="display: inline-flex; align-items: center; gap: 5px;">
                     <img src="static/calendar-event.svg" style="height:18px;"/>Calendar
                 </a>
                 </div>
             </div>
         </div>
     </article>
-</main>
-<footer>
-    <center>
-    <p>
-      &#169MechSpeak 2025. All rights reserved.
-    </p>
-    <p>
-      <a
-        href="https://www.instagram.com/mechspeak.io/"
-        title=Instagram>
-        <img style="display: inline; padding: 0px 5px;" src="static/Insta Icon.svg" height=30/>
-    </a>
-    <a
-        href="https://www.linkedin.com/company/mechspeak/"
-        title=LinkedIn>
-        <img style="display: inline; padding: 0px 5px;" src="static/LinkedIn Icon.svg" height=30/>
-    </a>
-    <a
-        href="https://web.facebook.com/profile.php?id=61574095931946"
-        title=LinkedIn>
-        <img style="display: inline; padding: 0px 5px;" src="static/fb_logo.svg" height=30/>
-    </a>
-    <a 
-      href="mailto:oli@mechspeak.io"> 
-      <img style="display: inline; padding: 0px 5px;" src="static/Email Icon.svg" height=30/> 
-    </a>
-    </p>
-  </center>
+  </main>
+  <footer>
+    <div>
+      <p data-i18n="footer.copyright">&#169; MechSpeak 2025. All rights reserved.</p>
+      <p>
+        <a href="https://www.instagram.com/mechspeak.io/" title="Instagram">
+          <img src="static/Insta Icon.svg" height="30" style="display: inline; padding: 0px 5px;" alt="Instagram Icon"/>
+        </a>
+        <a href="https://www.linkedin.com/company/mechspeak/" title="LinkedIn">
+          <img src="static/LinkedIn Icon.svg" height="30" style="display: inline; padding: 0px 5px;" alt="LinkedIn Icon"/>
+        </a>
+        <a href="https://web.facebook.com/profile.php?id=61574095931946" title="Facebook">
+          <img src="static/fb_logo.svg" height="30" style="display: inline; padding: 0px 5px;" alt="Facebook Icon"/>
+        </a>
+        <a href="mailto:oli@mechspeak.io" title="Email">
+          <img src="static/Email_Icon.svg" height="30" style="display: inline; padding: 0px 5px;" alt="Email Icon"/>
+        </a>
+      </p>
+    </div>
+  </footer>
+  <script src="scripts/lang.js"></script>
 </body>
 </html>

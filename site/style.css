@@ -34,13 +34,6 @@ nav {
     align-items: center;
 }
 
-#menu {
-    padding-right: 10%;
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
 article {
     display: flex;
     height: 100vh;
@@ -49,10 +42,6 @@ article {
     background:linear-gradient(#000000, #2A4B57 80%, #000000);
     background-size:cover;
     padding-bottom: 240px;
-}
-
-#lang_select:hover + .dropdown{
-    display: block;
 }
 
 ul{
@@ -69,6 +58,17 @@ button{
 button:hover{
     cursor: pointer;
     color: #EF8914;
+}
+
+#menu {
+    padding-right: 10%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#lang_select:hover + .dropdown{
+    display: block;
 }
 
 .dropdown{
@@ -156,10 +156,29 @@ a{
     padding-right: 7px;
 }
 
-#search{
-    margin-right: 10%;
+.orangeFillButton{
+    background-color: #ef8914;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 18px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    border-radius: 18px;
+    border-top: 20px;
+    font-weight: 500;
+    z-index: 1;
+    text-decoration: none;
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
 }
 
+.orangeFillButton:hover{
+    background-color: #E0E0E0;
+    color: #2a4b57;
+}
 
 #dp {
     border: solid #E0E0E0;
@@ -179,9 +198,9 @@ hr{
 }
 
 h2{
-    margin-top: 10px;
-    font-size: 18px;
-    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 600;
+    color: #2A4B57;
 }
 
 h3{
@@ -261,30 +280,6 @@ h6{
     display: block;
 }
 
-.blog_button {
-    background-color: #ef8914;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 10px 16px;
-    font-size: 18px;
-    transition-duration: 0.2s;
-    cursor: pointer;
-    border-radius: 18px;
-    border-top: 20px;
-    font-weight: 500;
-    z-index: 1;
-    text-decoration: none;
-    width: fit-content;
-    display: inline-flex;
-    align-items: center;
-    white-space: nowrap;
-}
-
-.blog_button:hover{
-    background-color: #E0E0E0;
-    color: #2a4b57;
-}
-
 .blog_button_blue {
     margin: 10px;
     background-color: #2A4B57;
@@ -311,7 +306,7 @@ h6{
     display: none;
 }
 
-.resources_button {
+#whiteBorderButton {
     border: 2px solid #FFFFFF;
     background-color: #ef891400;
     color: #FFFFFF;
@@ -328,29 +323,20 @@ h6{
     text-decoration: none;
 }
 
-.resources_button:hover{
+#whiteBorderButton:hover{
     background-color: #E0E0E0;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     color: #2A4B57;
 }
 
-.proj_button:hover{
+.orangeBorderButton:hover{
     background-color: #EF8914;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     color: #2A4B57;
+    white-space: nowrap;
 }
 
-#bookingp{
-    color:#EF8914;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-#orange{
-    color: #EF8914;
-}
-
-.proj_button {
+.orangeBorderButton {
     border: 2px solid #EF8914;
     background-color: #ffffff00;
     color: #EF8914;
@@ -365,6 +351,20 @@ h6{
     font-weight: 500;
     z-index: 1;
     text-decoration: none;
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+#bookingp{
+    color:#EF8914;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#orange{
+    color: #EF8914;
 }
 
 .resume_button:hover{
@@ -372,7 +372,7 @@ h6{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-#contactform{
+#callToAction{
     width: 50%;
     display: inline-flex;
     background:linear-gradient(#2A4B57, #000000);
@@ -444,7 +444,7 @@ h6{
     align-items: center;
 }
   
-#reviewsh1{
+#resourcesh1{
     color: #2A4B57;
 }
 
@@ -481,7 +481,7 @@ h6{
     margin: auto;
     box-sizing: border-box;
     margin-top: 0px;
-    flex-wrap: wrap; /* Allow wrapping on small screens */
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
@@ -516,6 +516,7 @@ h6{
     align-items: center;
     max-width: 300px;
     height: fit-content;
+    text-align: center;
 }
 
 #resources{
@@ -530,12 +531,6 @@ h6{
 
 #googly{
     color: #3d4043ff;
-}
-
-h7{
-    font-size: 22px;
-    font-weight: 600;
-    color: #2A4B57;
 }
 
 #review_heading{
@@ -566,9 +561,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-footer p, #contactform p{
+footer p, #callToAction p{
     color: #FFFFFF;
     display: block;
     font-size: 14px;
@@ -599,11 +595,6 @@ footer p, #contactform p{
     #mobiletitle{
         display: block;
         font-size: 50px;
-    }
-
-    #contactform{
-        width: 80%;
-        margin: auto;
     }
     
     .blog_links {
