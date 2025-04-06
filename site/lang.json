@@ -65,6 +65,14 @@
                     "price": "£28 (50 minutes)",
                     "callToAction": "Check out my experience!"
                 },
+                "new":{
+                    "you": "You?",
+                    "hook": "Want to make money having technical conversations in English?",
+                    "profession": "Mechanical Engineer",
+                    "languages": "English",
+                    "price": "Whatever you want!",
+                    "callToAction": "Contact us to Sign Up"
+                },
                 "generic":{
                     "msg": "Message",
                     "cal": "Calendar"
@@ -139,6 +147,14 @@
                     "price": "€32 (50 Minuten)",
                     "callToAction": "Schau dir meine Erfahrung an!"
                 },
+                "new":{
+                    "you": "Du? 🌎",
+                    "hook": "Wollen Sie mit technischen Gesprächen auf Englisch Geld verdienen?",
+                    "profession": "Maschinenbauingenieur",
+                    "languages": "Englisch",
+                    "price": "Legen Sie Ihren eigenen Preis fest",
+                    "callToAction": "Kontaktieren Sie uns"
+                },
                 "generic":{
                     "msg": "Nachricht",
                     "cal": "Kalendar"
@@ -210,6 +226,14 @@
                     "languages": "Anglais (natif), Français (niveau professionnel limité)",
                     "price": "€32 (50 minutes)",
                     "callToAction": "Découvrez mon expérience!"
+                },
+                "new":{
+                    "you": "Vous? 🌎",
+                    "hook": "Vous voulez gagner de l'argent en parlant technique en anglais?",
+                    "profession": "Ingénieur mécanique",
+                    "languages": "Anglais",
+                    "price": "Fixez votre propre prix",
+                    "callToAction": "Contactez-nous"
                 },
                 "generic":{
                     "msg": "Message",
@@ -283,6 +307,14 @@
                     "price": "₽3060 (50 минут)",
                     "callToAction": "Ознакомьтесь с моим опытом!"
                 },
+                "new":{
+                    "you": "Вы? 🌎",
+                    "hook": "Хотите зарабатывать, общаясь на английском по технике?",
+                    "profession": "Машиностроительный инженер",
+                    "languages": "Английский",
+                    "price": "Установите свою цену",
+                    "callToAction": "Свяжитесь с нами"
+                },
                 "generic":{
                     "msg": "Сообщение",
                     "cal": "Calendar"
@@ -354,6 +386,14 @@
                     "languages": "英语（母语），法语（有限的工作能力）",
                     "price": "¥260（50分钟）",
                     "callToAction": "查看我的经验！"
+                },
+                "new":{
+                    "you":"你? 🌎",
+                    "hook": "想通过用英语进行技术对话来赚钱吗?",
+                    "profession": "机械工程师",
+                    "languages": "英语",
+                    "price": "设定您自己的价格",
+                    "callToAction": "联系我们注册"
                 },
                 "generic": {
                     "msg": "信息",
