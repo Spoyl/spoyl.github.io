@@ -50,7 +50,8 @@
                 "resource4": {
                     "heading": "Cheatsheets",
                     "body1": "Interview preparation, technical vocabulary, common phrases, practice scenarios and more...",
-                    "body2": "Enter your email adress to get a free cheatsheet bundle, direct to your inbox: Click here!"
+                    "body2": "Enter your email adress to get a free cheatsheet bundle, direct to your inbox: ",
+                    "clickMe": "Click here!"
                 }
             },
             "footer": {
@@ -70,7 +71,8 @@
                 }
             }
         },
-        "de": {
+        "de": 
+        {
             "pageTitle": "Englisch für Ingenieure",
             "navigation": {
                 "search": "Tutor Finden"
@@ -121,23 +123,25 @@
                 "resource4": {
                     "heading": "Spickzettel",
                     "body1": "Interview-Vorbereitung, technisches Vokabular, gängige Redewendungen, Übungsszenarien und mehr...",
-                    "body2": "Gib deine E-Mail-Adresse ein, um ein kostenloses Spickzettel-Paket direkt in dein Postfach zu erhalten: Hier klicken!"
+                    "body2": "Gib deine E-Mail-Adresse ein, um ein kostenloses Spickzettel-Paket direkt in dein Postfach zu erhalten: ",
+                    "clickMe": "Hier klicken!"
+
                 }
             },
             "footer": {
-                "copyright": "© 2025 Alle Rechte vorbehalten."
+                "copyright": "© 2025 MechSpeak Alle Rechte vorbehalten."
             },
             "findTutors": {
-                "h1": "Tuteur",
+                "h1": "Nachhilfelehrer",
                 "OliStocks":{
-                    "profession": "Ingénieur Mechanique",
-                    "languages": "Anglais (native), French (Limited Working Proficiency)",
-                    "price": "£32 (50 minutes)",
-                    "callToAction": "Check out my experience!"
+                    "profession": "Maschinenbauingenieur",
+                    "languages": "Englisch (Muttersprache), Französisch (Grundkenntnisse)",
+                    "price": "€32 (50 Minuten)",
+                    "callToAction": "Schau dir meine Erfahrung an!"
                 },
                 "generic":{
-                    "msg": "Message",
-                    "cal": "Calendar"
+                    "msg": "Nachricht",
+                    "cal": "Kalendar"
                 }
             }
         },
@@ -192,11 +196,169 @@
                 "resource4": {
                     "heading": "Fiches mémo",
                     "body1": "Préparation d'entretien, vocabulaire technique, expressions courantes, scénarios de pratique et plus encore...",
-                    "body2": "Entrez votre adresse e-mail pour recevoir un pack gratuit de fiches mémo directement dans votre boîte de réception : Cliquez ici !"
+                    "body2": "Entrez votre adresse e-mail pour recevoir un pack gratuit de fiches mémo directement dans votre boîte de réception: ",
+                    "clickMe": "Cliquez ici!"
                 }
             },
             "footer": {
-                "copyright": "© 2025 Tous droits réservés."
+                "copyright": "© MechSpeak 2025 Tous droits réservés."
+            },
+            "findTutors": {
+                "h1": "Tuteurs",
+                "OliStocks":{
+                    "profession": "Ingénieur Mechanique",
+                    "languages": "Anglais (natif), Français (niveau professionnel limité)",
+                    "price": "€32 (50 minutes)",
+                    "callToAction": "Découvrez mon expérience!"
+                },
+                "generic":{
+                    "msg": "Message",
+                    "cal": "Calendrier"
+                }
+            }
+        },
+        "ru": {
+            "pageTitle": "Английский для инженеров",
+            "navigation": {
+                "search": "Найти репетиторов"
+            },
+            "hero": {
+                "description": "Индивидуальные занятия по английскому с реальными инженерами",
+                "search": "Найти репетиторов",
+                "resources": "Ресурсы"
+            },
+            "guide": {
+                "heading": "Как это работает",
+                "step_1": {
+                    "heading": "1. Найти репетитора",
+                    "body": "Найдите идеального репетитора здесь, на MechSpeak"
+                },
+                "step_2": {
+                    "heading": "2. Записаться на пробный урок",
+                    "body": "Забронировать сеанс в календаре вашего репетитора"
+                },
+                "step_3": {
+                    "heading": "3. Уроки",
+                    "body": "Уроки длятся 50 минут. Получите практику инженерного английского с вашим репетитором"
+                },
+                "step_4": {
+                    "heading": "4. Ресурсы",
+                    "body": "Получите шпаргалки по словарному запасу, задания и руководства. Бесплатно для студентов!"
+                }
+            },
+            "callToAction": {
+                "heading": "Начните говорить сейчас",
+                "button": "Нажмите здесь",
+                "tip": "(Пробные занятия бесплатны)"
+            },
+            "resources": {
+                "heading": "Ресурсы",
+                "resource1": {
+                    "heading": "Ограничения CAD",
+                    "callToAction": "Бесплатная загрузка"
+                },
+                "resource2": {
+                    "heading": "Описание графиков",
+                    "callToAction": "Бесплатная загрузка"
+                },
+                "resource3": {
+                    "heading": "Подготовка к интервью 1",
+                    "callToAction": "Бесплатная загрузка"
+                },
+                "resource4": {
+                    "heading": "Шпаргалки",
+                    "body1": "Подготовка к интервью, технический словарь, общие фразы, практические сценарии и многое другое...",
+                    "body2": "Введите свой адрес электронной почты, чтобы получить бесплатный набор шпаргалок, прямо в ваш почтовый ящик: ",
+                    "clickMe": "Нажмите здесь!"
+                }
+            },
+            "footer": {
+                "copyright": "© MechSpeak 2025. Все права защищены."
+            },
+            "findTutors": {
+                "h1": "Репетиторы",
+                "OliStocks":{
+                    "profession": "Механический инженер",
+                    "languages": "Английский (родной), Французский (ограниченный уровень)",
+                    "price": "₽3060 (50 минут)",
+                    "callToAction": "Ознакомьтесь с моим опытом!"
+                },
+                "generic":{
+                    "msg": "Сообщение",
+                    "cal": "Calendar"
+                }
+            }
+        },
+        "zh": {
+            "pageTitle": "工程师英语",
+            "navigation": {
+                "search": "查找导师"
+            },
+            "hero": {
+                "description": "与真正的工程师进行一对一英语课程",
+                "search": "查找导师",
+                "resources": "资源"
+            },
+            "guide": {
+                "heading": "工作原理",
+                "step_1": {
+                    "heading": "1. 找导师",
+                    "body": "在 MechSpeak 上搜索您理想的导师"
+                },
+                "step_2": {
+                    "heading": "2. 预约试听课",
+                    "body": "在导师的日历中预订课程"
+                },
+                "step_3": {
+                    "heading": "3. 课程",
+                    "body": "每节课为 50 分钟。与导师一起进行相关的工程英语练习"
+                },
+                "step_4": {
+                    "heading": "4. 资源",
+                    "body": "获取词汇备忘单、挑战和指南。学生免费！"
+                }
+            },
+            "callToAction": {
+                "heading": "立即开始说英语",
+                "button": "点击这里",
+                "tip": "（试听课程免费）"
+            },
+            "resources": {
+                "heading": "资源",
+                "resource1": {
+                    "heading": "CAD 约束",
+                    "callToAction": "免费下载"
+                },
+                "resource2": {
+                    "heading": "描述图表",
+                    "callToAction": "免费下载"
+                },
+                "resource3": {
+                    "heading": "面试准备 1",
+                    "callToAction": "免费下载"
+                },
+                "resource4": {
+                    "heading": "备忘单",
+                    "body1": "面试准备、技术词汇、常用短语、练习场景等...",
+                    "body2": "输入您的电子邮件地址，直接将免费备忘单包发送到您的收件箱：",
+                    "clickMe": "点击这里!"
+                }
+            },
+            "footer": {
+                "copyright": "© MechSpeak 2025. 版权所有。"
+            },
+            "findTutors": {
+                "h1": "导师",
+                "OliStocks": {
+                    "profession": "机械工程师",
+                    "languages": "英语（母语），法语（有限的工作能力）",
+                    "price": "¥260（50分钟）",
+                    "callToAction": "查看我的经验！"
+                },
+                "generic": {
+                    "msg": "信息",
+                    "cal": "日历"
+                }
             }
         }
-    }
+}

@@ -32,28 +32,32 @@
   </head>
   <body>
     <nav>
-        <a class="home_icon"
-            href="https://spoyl.github.io"
-            title=Homepage>
-            <img style="display: inline;" src="static/mechspeaklogo.svg" alt="logo" height=30/>
-        </a>
-        <div id="menu">
-          <img id ="lang_select" style="display: inline;" src="static/lang.svg" title="language" height=20/>
-          <div class="dropdown">
-            <ul>
-              <li>
-                <button id="en">EN 🇬🇧</button>
-              </li>
-              <li>
-                <button id="de">DE 🇩🇪</button>
-              </li>
-              <li>
-                <button id="fr">FR 🇫🇷</button>
-              </li>
-            </ul>
-          </div>
-          <a href="findtutors.html" class="orangeFillButton" data-i18n="navigation.search">Find Tutors</a>
-        </div>
+      <a class="home_icon"
+          href="https://spoyl.github.io"
+          title=Homepage>
+          <img style="display: inline;" src="static/mechspeaklogo.svg" alt="logo" height=30/>
+      </a>
+      <img id ="langSelect" style="display: inline;" src="static/lang.svg" title="language" height=20/>
+      <div class="dropdown" id="langMenu">
+        <ul>
+          <li>
+            <button id="en">EN 🇬🇧</button>
+          </li>
+          <li>
+            <button id="de">DE 🇩🇪</button>
+          </li>
+          <li>
+            <button id="fr">FR 🇫🇷</button>
+          </li>
+          <li>
+            <button id="ru">RU 🇷🇺</button>
+          </li>
+          <li>
+            <button id="zh">ZH 🇨🇳</button>
+          </li>
+        </ul>
+      </div>
+      <a href="findtutors.html" class="orangeFillButton" id="navSearchButton" data-i18n="navigation.search">Find Tutors</a>
     </nav>
 <main>
 <div id="hero" class="head_centered">
@@ -198,9 +202,13 @@
               <p data-i18n="resources.resource4.body1">
                 Interview preparation, technical vocabulary, common phrases, practice scenarios, and more...
               </p>
-              <p data-i18n="resources.resource4.body2">
-                Enter your email address to get a free cheatsheet bundle, direct to your inbox: 
-                <a id="orange" href="https://forms.gle/Wgp5sbgKM8RM9Zho8">Click here!</a>
+              <p>
+                <span data-i18n="resources.resource4.body2">
+                  Enter your email address to get a free cheatsheet bundle, direct to your inbox: 
+                </span>
+                <span>
+                  <a id="orange" href="https://forms.gle/Wgp5sbgKM8RM9Zho8" data-i18n="resources.resource4.clickMe">Click here!</a>
+                </span>
               </p>
             </div>
           </div>

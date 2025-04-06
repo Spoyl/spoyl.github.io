@@ -37,28 +37,32 @@
           title=Homepage>
           <img style="display: inline;" src="static/mechspeaklogo.svg" alt="logo" height=30/>
       </a>
-      <div id="menu">
-        <img id ="lang_select" style="display: inline;" src="static/lang.svg" title="language" height=20/>
-        <div class="dropdown">
-          <ul>
-            <li>
-              <button id="en">EN 🇬🇧</button>
-            </li>
-            <li>
-              <button id="de">DE 🇩🇪</button>
-            </li>
-            <li>
-              <button id="fr">FR 🇫🇷</button>
-            </li>
-          </ul>
-        </div>
-        <a href="findtutors.html" class="orangeFillButton" data-i18n="navigation.search">Find Tutors</a>
+      <img id ="langSelect" style="display: inline;" src="static/lang.svg" title="language" height=20/>
+      <div class="dropdown" id="langMenu">
+        <ul>
+          <li>
+            <button id="en">EN 🇬🇧</button>
+          </li>
+          <li>
+            <button id="de">DE 🇩🇪</button>
+          </li>
+          <li>
+            <button id="fr">FR 🇫🇷</button>
+          </li>
+          <li>
+            <button id="ru">RU 🇷🇺</button>
+          </li>
+          <li>
+            <button id="zh">ZH 🇨🇳</button>
+          </li>
+        </ul>
       </div>
-  </nav>      
+      <a href="findtutors.html" class="orangeFillButton" id="navSearchButton" data-i18n="navigation.search">Find Tutors</a>
+    </nav>
 <main>
     <article>
         <div id="tutor_list">
-            <h1>
+            <h1 data-i18n="findTutors.h1">
                 Tutors
             </h1>
             <div id="tutor_profile">
@@ -68,30 +72,30 @@
                     <h2>
                         Oli Stocks 🇬🇧
                     </h2>
-                    <p data-i18n="findTutors.OliStocks.profession">
+                    <p>
                         <img src="static/briefcase-fill.svg" style="height:18px;"/>
-                        Mechanical Engineer
+                        <span data-i18n="findTutors.OliStocks.profession">Mechanical Engineer</span>
                     </p>
-                    <p data-i18n="findTutors.OliStocks.languages">
+                    <p>
                         <img src="static/translate.svg" style="height:18px;"/>
-                        English (native), French (Limited Working Proficiency)
+                        <span data-i18n="findTutors.OliStocks.languages">English (native), French (Limited Working Proficiency)</span>
                     </p>
-                    <p data-i18n="findTutors.OliStocks.price">
+                    <p>
                         <img src="static/Cash_icon.svg" style="height:18px;"/>
-                        £28 (50 minutes)
+                        <span data-i18n="findTutors.OliStocks.price">£28 (50 minutes)</span>
                     </p>
                     <p id="li_callout">
                         <img src="static/li_callout.svg" style="height:18px;"/>
-                        <u><a href="https://www.linkedin.com/in/oliver-stocks/" data-i18n="findTutors.OliStocks.callToAction">Check out my experience!</a></u>
+                        <u><a href="https://www.linkedin.com/in/oliver-stocks/"><span data-i18n="findTutors.OliStocks.callToAction"> Check out my experience! </span></a></u>
                     </p>
                 </div>
               </div>
                 <div id="tutor_links">
-                  <a href="https://mail.google.com/chat/u/0/#chat/space/AAAAkcviB2o" class="blog_button_blue" id="search" data-i18n="findTutors.generic.cal" style="display: inline-flex; align-items: center; gap: 5px;">
-                    <img src="static/chat.svg" style="height:18px; vertical-align: middle;"/>Message
-                </a>
-                    <a href="https://calendar.app.google/NAGnoBqvB1wnP985A" class="blog_button_blue" id="search" data-i18n="findTutors.generic.msg" style="display: inline-flex; align-items: center; gap: 5px;">
-                    <img src="static/calendar-event.svg" style="height:18px;"/>Calendar
+                  <a href="https://mail.google.com/chat/u/0/#chat/space/AAAAkcviB2o" class="blog_button_blue" id="search" style="display: inline-flex; align-items: center; gap: 5px;">
+                    <img src="static/chat.svg" style="height:18px; vertical-align: middle;"/><span data-i18n="findTutors.generic.msg">Message</span>
+                  </a>
+                    <a href="https://calendar.app.google/NAGnoBqvB1wnP985A" class="blog_button_blue" id="search" style="display: inline-flex; align-items: center; gap: 5px;">
+                    <img src="static/calendar-event.svg" style="height:18px;"/><span data-i18n="findTutors.generic.cal">Calendar</span>
                 </a>
                 </div>
             </div>
