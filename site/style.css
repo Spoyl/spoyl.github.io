@@ -243,6 +243,19 @@ h5{
     text-align: justify;
 }
 
+.head_centered img:hover{
+    cursor: pointer;
+}
+
+.head_centered {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
 .github_icon{
     padding-left: 7px;
     padding-right: 14px;
@@ -251,8 +264,8 @@ h5{
 
 #hero{
     display: flex;
-    height: 100vh;
     align-items: center;
+    height: 100vh;
     justify-content: center;
     min-height:100%;
     background:linear-gradient(#000000, #2A4B57 80%, #000000);
@@ -285,9 +298,18 @@ h6{
     display: none;
 }
 
-#title{
+#title {
+    display: block;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: left;
+    line-height: 1.2;
+  }
+
+#title span{
     display: block;
 }
+
 
 .blog_button_blue {
     margin: 10px;
@@ -457,7 +479,8 @@ h6{
     color: #2A4B57;
 }
 
-#services{
+
+.service{
     width: 90%;
     margin: auto;
 }
@@ -476,6 +499,7 @@ h6{
 #left_side{
     padding: 80px;
     justify-content: left;
+    margin-left: 0px;
 }
 
 #right_side {

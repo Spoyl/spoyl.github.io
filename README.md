@@ -1,15 +1,5 @@
-MechSpeak.io - Phase 2
-======================
+# MechSpeak.io
 
-This is Mechspeak.io, a site to help mechanical engineers learn technical english. The website serves as a portal to new students, providing booking of trial classes, and information about the service.
+Mechspeak.io is an international Mechanical Engineering consultancy specialising in the design and manufacture of medical devices. It is run by Oliver Stocks - a UK registered Engineer with clients in the UK, mainland Europe, and Asia.
 
 Find the website [here](https://mechspeak.io)
-
-
-Milestones
-----------
-- Landing page ✅
-- Logo design ✅
-- Calendar booking (third party API) ✅
-
-This phase of mechspeak's development process is complete 🚀
