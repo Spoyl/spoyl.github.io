@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="vn">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MechSpeak | Design. Build. Iterate.</title>
+    <meta name="author" content="Oli Stocks" />
+    <meta
+      name="description"
+      content="Mechanical Engineering design consultancy."
+    />
+    <meta property="og:image" content="static/mechspeaklogo.svg" />
+    <meta
+      property="og:description"
+      content="Mechanical Engineering design consultancy."
+    />
+    <meta property="og:title" content="Design. Build. Iterate." />
+    <link rel="icon" href="static/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a class="home_icon" href="https://spoyl.github.io" title="Homepage">
+        <img
+          style="display: inline"
+          src="static/Mechspeaklogo.svg"
+          alt="logo"
+          height="40"
+        />
+      </a>
+
+      <a href="#services" class="navButton">Services</a>
+      <a href="#testimonials" class="navButton">Testimonials</a>
+      <a href="#contact" class="navButton">Contact</a>
+      <a href="#about" class="navButton">About</a>
+      <img id="menu_img" src="static/Menu.svg" title="menu" height="14" />
+      <div class="menu_dropdown" id="menu">
+        <ul>
+          <li>
+            <button>
+              <a href="#services" class="dropNavButton">Services</a>
+            </button>
+          </li>
+          <li>
+            <button>
+              <a href="#testimonials" class="dropNavButton">Testimonials</a>
+            </button>
+          </li>
+          <li>
+            <button>
+              <a href="#contact" class="dropNavButton">Contact</a>
+            </button>
+          </li>
+          <li>
+            <button>
+              <a href="#about" class="dropNavButton">About</a>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <img
+        id="langSelect"
+        style="display: inline"
+        src="static/lang.svg"
+        title="language"
+        height="20"
+      />
+      <div class="dropdown" id="langMenu">
+        <ul>
+          <li>
+            <button id="en">EN 🇬🇧</button>
+          </li>
+          <li>
+            <button id="ru">ZN 🇨🇳</button>
+          </li>
+          <li>
+            <button id="zh">VN 🇻🇳</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <section id="hero">
+        <div id="hero_left">
+          <h1>Design. Build. Iterate.</h1>
+          <p>
+            Faster, smarter product development in mechanical design and
+            industrialisation
+          </p>
+          <button><a href="#services">Services</a></button>
+          <button><a href="#contact">Contact</a></button>
+        </div>
+        <div id="hero_right">
+          <img
+            src="static/MechSpeak hero gif.gif"
+            alt="Design. Build. Iterate."
+          />
+        </div>
+      </section>
+      <section id="services">
+        <h2>Services</h2>
+        <div id="service_container">
+          <div id="service_box">
+            <img
+              src="static/medical_device.gif"
+              alt="medical device"
+              height="40px"
+              id="serv_gif"
+            />
+            <h3>Medical Devices</h3>
+            <p>
+              Engineering design with DHF documentation, in compliance with
+              international medical device regulations
+            </p>
+          </div>
+          <div id="service_box">
+            <img src="static/cons_elec.gif" height="40px" id="serv_gif" />
+            <h3>Consumer Electronics</h3>
+            <p>
+              Design and prototyping of consumer products (mechanical and
+              electromechanical) from concept to manufacture
+            </p>
+          </div>
+          <div id="service_box">
+            <img src="static/automation.gif" height="40px" id="serv_gif" />
+            <h3>Automation</h3>
+            <p>
+              Manufacturing process improvement from mechanical jigs to robotics
+              (UR3 robots, arduino, raspberry pi)
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials">
+        <div id="info_box">
+          <h2>Testimonials</h2>
+          <div id="testimonial_container">
+            <div id="testimonial">
+              <img src="static/blankuser.png" height="50px" id="userpic" />
+              <h3>Ben Chaplin</h3>
+              <h4>Principal Engineer, CMR Surgical</h4>
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat."
+              </p>
+            </div>
+            <div id="testimonial">
+              <img src="static/blankuser.png" height="50px" id="userpic" />
+              <h3>Ian Lane</h3>
+              <h4>Technical Authority, GHD</h4>
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat."
+              </p>
+            </div>
+            <div id="testimonial">
+              <img src="static/blankuser.png" height="50px" id="userpic" />
+              <h3>Simon Foeger</h3>
+              <h4>CEO, SiFo Medical</h4>
+              <p>
+                "Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section id="contact">
+        <div id="contact_container">
+          <div id="contact_box">
+            <h2>Contact</h2>
+            <form
+              action="https://formsubmit.co/enquiries@mechspeak.io"
+              method="POST"
+            >
+              <label for="fname">Name:</label><br />
+              <input type="text" id="fname" name="name" required /><br />
+
+              <label for="cname">Company name:</label><br />
+              <input type="text" id="cname" name="company" /><br />
+
+              <label for="email">Email:</label><br />
+              <input type="email" id="email" name="email" required /><br />
+
+              <label for="msg">Message:</label><br />
+              <textarea
+                id="msg"
+                name="message"
+                rows="5"
+                cols="40"
+                required
+              ></textarea
+              ><br />
+
+              <!-- Optional hidden fields -->
+              <input
+                type="hidden"
+                name="_subject"
+                value="New enquiry from Mechspeak.io"
+              />
+              <input type="hidden" name="_captcha" value="false" />
+
+              <input type="submit" value="Submit" id="submit" />
+            </form>
+
+            <h2>Or...</h2>
+            <p>
+              <b>Email:</b>
+              <a href="mailto:enquiries@mechspeak.io" id="mail_link"
+                >enquiries@mechspeak.io</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div id="about_container">
+          <div id="about_left">
+            <img
+              src="static/oli.png"
+              alt="Oli Stocks"
+              height="300px"
+              id="olipic"
+            />
+          </div>
+          <div id="about_right">
+            <h2>About</h2>
+            <p>
+              MechSpeak is an independent mechanical engineering practice
+              founded by me, Oliver Stocks. After six years working as a
+              Mechanical Engineer in Cambridge, I relocated to Asia to work more
+              closely with manufacturers. Since then, I’ve supported clients
+              across Europe and Asia with design, development, and production
+              challenges.
+            </p>
+            <p>I started MechSpeak with two goals:</p>
+            <ol>
+              <li>
+                <i>
+                  Help clients design and manufacture high-quality hardware
+                </i>
+              </li>
+              <li>
+                <i>Develop and bring my own consumer products to market</i>
+              </li>
+            </ol>
+            <p>
+              If you’re looking for practical engineering support with a focus
+              on turning ideas into reliable products, let’s talk.
+            </p>
+            <img src="static/sig.svg" alt="Oli Stocks" height="40px" id="sig" />
+            <h4>Freelance Engineer, MechSpeak</h4>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>© MechSpeak 2025</p>
+      </footer>
+    </main>
+  </body>
+</html>

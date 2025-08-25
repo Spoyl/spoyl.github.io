@@ -1,323 +1,280 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <meta 
-    charset="utf-8" />
-    <meta 
-      name="viewport" 
-      content="width=device-width, initial-scale=1"/>
-    <title>MechSpeak - Design. Build. Iterate.</title>
-    <meta 
-      name="author"
-      content="Oli Stocks"/>
-    <meta 
-      name="description" 
-      content="English language tools and tuition for engineers learning English." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MechSpeak | Design. Build. Iterate.</title>
+    <meta name="author" content="Oli Stocks" />
     <meta
-      property="og:image"
-      content="static/mechspeaklogo.svg"/>
+      name="description"
+      content="Mechanical Engineering design consultancy."
+    />
+    <meta property="og:image" content="static/mechspeaklogo.svg" />
     <meta
       property="og:description"
-      content="Language tools and tuition for Engineering professionals"/>
-    <meta property="og:title" content="English for Engineers" />
-    <link
-      rel="icon"
-      href="static/mechspeakfavicon.png"/>
-    <link 
-      rel="stylesheet"
-      href="style.css"/>
+      content="Mechanical Engineering design consultancy."
+    />
+    <meta property="og:title" content="Design. Build. Iterate." />
+    <link rel="icon" href="static/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav>
-      <a class="home_icon"
-          href="https://spoyl.github.io"
-          title=Homepage>
-          <img style="display: inline;" src="static/mechspeaklogo.svg" alt="logo" height=30/>
+      <a class="home_icon" href="https://spoyl.github.io" title="Homepage">
+        <img
+          style="display: inline"
+          src="static/Mechspeaklogo.svg"
+          alt="logo"
+          height="40"
+        />
       </a>
-      <img id ="langSelect" style="display: inline;" src="static/lang.svg" title="language" height=20/>
+
+      <a href="#services" class="navButton">Services</a>
+      <a href="#testimonials" class="navButton">Testimonials</a>
+      <a href="#contact" class="navButton">Contact</a>
+      <a href="#about" class="navButton">About</a>
+      <img id="menu_img" src="static/Menu.svg" title="menu" height="14" />
+      <div class="menu_dropdown" id="menu">
+        <ul>
+          <li>
+            <button>
+              <a href="#services" class="dropNavButton">Services</a>
+            </button>
+          </li>
+          <li>
+            <button>
+              <a href="#testimonials" class="dropNavButton">Testimonials</a>
+            </button>
+          </li>
+          <li>
+            <button>
+              <a href="#contact" class="dropNavButton">Contact</a>
+            </button>
+          </li>
+          <li>
+            <button>
+              <a href="#about" class="dropNavButton">About</a>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <img
+        id="langSelect"
+        style="display: inline"
+        src="static/lang.svg"
+        title="language"
+        height="20"
+      />
       <div class="dropdown" id="langMenu">
         <ul>
           <li>
             <button id="en">EN 🇬🇧</button>
           </li>
           <li>
-            <button id="de">DE 🇩🇪</button>
+            <button id="ru">ZN 🇨🇳</button>
           </li>
           <li>
-            <button id="fr">FR 🇫🇷</button>
-          </li>
-          <li>
-            <button id="ru">RU 🇷🇺</button>
-          </li>
-          <li>
-            <button id="zh">ZH 🇨🇳</button>
+            <button id="zh">VN 🇻🇳</button>
           </li>
         </ul>
       </div>
-      <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0uQj__9t24jzjghdpKVC9j-8tLvxb4Wzi4VWkxsxKtJ-fbLrqpnlUeQBEi0AHvqZKb7a_sQ1no"
-      class="orangeFillButton"
-      id="navSearchButton">Book Meeting</a>
     </nav>
-<main>
-<div id="hero">
-  <div id="left_side">
-    <h6 id="title">MechSpeak</h6>
-    <h6 id="mobiletitle">MechSpeak</h6>
-    <p id="subtitle" >
-      Design. Build. Iterate.
-    </p>
-    <div class="button_block">
-      <div class = "centered"> 
-        <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0uQj__9t24jzjghdpKVC9j-8tLvxb4Wzi4VWkxsxKtJ-fbLrqpnlUeQBEi0AHvqZKb7a_sQ1no"
-        class="orangeBorderButton">Book Meeting</a>
-        <a href="#resources" id="whiteBorderButton">English Resources</a>        
-      </div>
-    </div>
-  </div>
-  <div id="right_side">
-    <img src="static/MechSpeak hero img.gif" alt="coverimg" height=450px/>
-  </div>
-</div>
-
-<section class="service">
-  <div class="head_centered">
-    <div class="left_side">
-      <center>
-        <img id="dp" src="static/websitedp.png" alt="Profile Pic" style="width:230px;height:230px;"/>
-        <ul>
-        <li class="email_icon">
-          <a href="mailto:admin@olistocks.com"><img src="static/email_icon.svg" alt="Email icon" title="Email" style="height:32px;"/>
-          </a>
-        </li>
-        <li class="insta">
-          <a href="https://www.instagram.com/stocksoli/"><img src="static/Insta Icon.svg" alt="Instagram" title="LinkedIn" style="height:32px;"/>
-          <a/>
-        </li>
-        <li class="linkedin_icon">
-          <a href="https://www.linkedin.com/in/oliver-stocks/"><img src="static/LinkedIn Icon.svg" alt="LinkedIn" title="LinkedIn" style="height:32px;"/>
-          <a/>
-        </li>
-      </ul>
-    </center>
-  </div>
-  <div class="right_side">
-  <h1>
-    About
-  </h1>
-  <p class="bodytext">
-    Welcome to my website. This started out as a place to
-     share travel stories, but now it's 
-     my multi-purpose corner of the internet. For work related 
-    queries, connect with me on LinkedIn. For travel updates,
-     check out my Instagram. For English lessons, check out my Preply.
-     For anything else, drop me an email.<br/><br/>
-    I'm always interested in new projects so if you'd like to collaborate 
-    on something, feel free to get in touch!
-  </p>
-  <center>
-    <img src="static/sig.svg" alt="Theme" height=30px/>
-  </center>
-</div>
-</section>
-
-<section class="service">
-        <h1 id="howItWorksTitle" >
-          English for Engineers
-        </h1>
-        <div id="package_display">
-          <div class="package" id="roamer">
-            <center>
-              <img src="static/search_tutor.svg"  height=26px/>
-              <p>
-                <h2 >
-                  Confidence in Meetings
-                </h2>
-              </p>
-            </center>
-          </div>
-          <div class="package">
-            <center>
-              <img src="static/cal_icon.svg" height=28px/>
-              <p>
-                <h2 >
-                  Clearer Reports
-                </h2>
-              </p>
-            </center>
-          </div>
-          <div class="package">
-            <center>
-              <img src="static/geomicon.svg" height=30px/>
-              <p>
-                <h2 >
-                  Professional Presentations
-                </h2>
-              </p>
-            </center>
-          </div>
+    <main>
+      <section id="hero">
+        <div id="hero_left">
+          <h1>Design. Build. Iterate.</h1>
+          <p>
+            Faster, smarter product development in mechanical design and
+            industrialisation
+          </p>
+          <button><a href="#services">Services</a></button>
+          <button><a href="#contact">Contact</a></button>
+        </div>
+        <div id="hero_right">
+          <img
+            src="static/MechSpeak hero gif.gif"
+            alt="Design. Build. Iterate."
+          />
         </div>
       </section>
-      <section id="booking">
-        <center>
-            <div id="callToAction">
-              <div id="mechspeakinpage">
-                <img src="static/mechspeaklogo.svg" alt="MechSpeak" height="80px">
-              </div>
-              <center>
-                <h1 >
-                  Start Speaking Now
-                </h1>
-                <a href="findtutors.html" class="orangeFillButton" >Click here</a>
-                  <p >
-                    (Trial sessions are free)
-                </p>
-              </center>
-            </div>
-          </center>
-      </section>
-      <section id="resources">
-        <h1 id="resourcesh1" >Resources</h1>
-        <div id="package_display">
-          
-          <div class="package2">
-            <div>
-              <h2 >CAD Constraints</h2>
-              <a href="https://forms.gle/Wgp5sbgKM8RM9Zho8">
-                <img src="static/CAD Constraints.gif" alt="CAD Constraints" height="400px"/>
-              </a>
-              <p >Free Download</p>
-            </div>
-          </div>
-      
-          <div class="package2">
-            <div>
-              <h2 >Describing Graphs</h2>
-              <a href="https://forms.gle/Wgp5sbgKM8RM9Zho8">
-                <img src="static/Describing Graphs.gif" alt="Describing Graphs" height="400px"/>
-              </a>
-              <p >Free Download</p>
-            </div>
-          </div>
-      
-          <div class="package2">
-            <div>
-              <h2 >Interview Prep 1</h2>
-              <a href="https://forms.gle/Wgp5sbgKM8RM9Zho8">
-                <img src="static/Interview prep 1.gif" alt="Interview Prep 1" height="400px"/>
-              </a>
-              <p >Free Download</p>
-            </div>
-          </div>
-      
-          <div class="package2">
-            <div>
-              <img src="static/mechspeaklogo.svg" alt="MechSpeak Logo" height="28px"/>
-              <h2 >Cheatsheets</h2>
-              <p >
-                Interview preparation, technical vocabulary, common phrases, practice scenarios, and more...
-              </p>
-              <p>
-                <span >
-                  Enter your email address to get a free cheatsheet bundle, direct to your inbox: 
-                </span>
-                <span>
-                  <a id="orange" href="https://forms.gle/Wgp5sbgKM8RM9Zho8" >Click here!</a>
-                </span>
-              </p>
-            </div>
-          </div>
-      
-        </div>
-      </section>
-      <!--
       <section id="services">
-        <h1 id="serviceh1">
-          Reviews
-        </h1>
-        <div id="review_display">
-          <div class="package" id="review">
-            <center>
-              <p>
-                <h2 id="review_heading">
-                  Dmitry
-                </h2>
-                <div id="services">
-                </div>
-              </p>
-              <p>
-                <img src="static/location.svg" style="height:14px;"/>
-                <b id="orange">Serbia</b>
-              </p>
-              <p>
-                <i>"Oli is an excellent tutor who really understands my needs. I'm working to improve my language skills and technical vocabulary for my engineering career, and Oli offers engaging lessons and a variety of tasks that help me reach these goals. His patience and easy-going attitude make it easy for me to highly recommend his lessons!"</i>
-              </p>
-            </center>
+        <h2>Services</h2>
+        <div id="service_container">
+          <div id="service_box">
+            <img
+              src="static/medical_device.gif"
+              alt="medical device"
+              height="40px"
+              id="serv_gif"
+            />
+            <h3>Medical Devices</h3>
+            <p>
+              Engineering design with DHF documentation, in compliance with
+              international medical device regulations
+            </p>
           </div>
-          <div class="package" id="review">
-            <center>
-              <p>
-                <h2 id="review_heading">
-                  Elizabeth
-                </h2>
-                <div id="services">
-                </div>
-              </p>
-              <p>
-                <img src="static/location.svg" style="height:14px;"/>
-                <b id="orange">India</b>
-              </p>
-              <p>
-                <i>"Oli's teaching style is very good and he is supportive."</i>
-              </p>
-            </center>
+          <div id="service_box">
+            <img src="static/cons_elec.gif" height="40px" id="serv_gif" />
+            <h3>Consumer Electronics</h3>
+            <p>
+              Design and prototyping of consumer products (mechanical and
+              electromechanical) from concept to manufacture
+            </p>
           </div>
-          <div class="package" id="review">
-            <center>
-              <p>
-                <h2 id="review_heading">
-                  Gordana
-                </h2>
-                <div id="services">
-                </div>
-              </p>
-              <p>
-                <img src="static/location.svg" style="height:14px;"/>
-                <b id="orange">Germany</b>
-              </p>
-              <p>
-                <i>"Oli is an excellent teacher. He responds to the needs 
-                  of the learner. Especially when it comes to mechanical 
-                  engineering or similar technical fields, Oli is a great 
-                  help"</i>
-              </p>
-            </center>
+          <div id="service_box">
+            <img src="static/automation.gif" height="40px" id="serv_gif" />
+            <h3>Automation</h3>
+            <p>
+              Manufacturing process improvement from mechanical jigs to robotics
+              (UR3 robots, arduino, raspberry pi)
+            </p>
           </div>
         </div>
       </section>
-    -->
-  </main>
+      <section id="testimonials">
+        <div id="info_box">
+          <h2>Testimonials</h2>
+          <div id="testimonial_container">
+            <div id="testimonial">
+              <img src="static/blankuser.png" height="50px" id="userpic" />
+              <h3>Jon Doe</h3>
+              <h4>Engineer, CMR Surgical</h4>
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat."
+              </p>
+            </div>
+            <div id="testimonial">
+              <img src="static/blankuser.png" height="50px" id="userpic" />
+              <h3>Jon Doe</h3>
+              <h4>Technical Authority</h4>
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat."
+              </p>
+            </div>
+            <div id="testimonial">
+              <img src="static/blankuser.png" height="50px" id="userpic" />
+              <h3>Jon Doe</h3>
+              <h4>CEO, Medical</h4>
+              <p>
+                "Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section id="contact">
+        <div id="contact_container">
+          <div id="contact_box">
+            <h2>Contact</h2>
+            <form
+              action="https://formsubmit.co/enquiries@mechspeak.io"
+              method="POST"
+            >
+              <label for="fname">Name:</label><br />
+              <input type="text" id="fname" name="name" required /><br />
 
-  <footer>
-    <div>
-      <p >&#169; MechSpeak 2025. All rights reserved.</p>
-      <p>
-        <a href="https://www.instagram.com/mechspeak.io/" title="Instagram">
-          <img src="static/Insta Icon.svg" height="30" style="display: inline; padding: 0px 5px;" alt="Instagram Icon"/>
-        </a>
-        <a href="https://www.linkedin.com/company/mechspeak/" title="LinkedIn">
-          <img src="static/LinkedIn Icon.svg" height="30" style="display: inline; padding: 0px 5px;" alt="LinkedIn Icon"/>
-        </a>
-        <a href="https://web.facebook.com/profile.php?id=61574095931946" title="Facebook">
-          <img src="static/fb_logo.svg" height="30" style="display: inline; padding: 0px 5px;" alt="Facebook Icon"/>
-        </a>
-        <a href="mailto:oli@mechspeak.io" title="Email">
-          <img src="static/Email_Icon.svg" height="30" style="display: inline; padding: 0px 5px;" alt="Email Icon"/>
-        </a>
-      </p>
-    </div>
-  </footer>
+              <label for="cname">Company name:</label><br />
+              <input type="text" id="cname" name="company" /><br />
+
+              <label for="email">Email:</label><br />
+              <input type="email" id="email" name="email" required /><br />
+
+              <label for="msg">Message:</label><br />
+              <textarea
+                id="msg"
+                name="message"
+                rows="5"
+                cols="40"
+                required
+              ></textarea
+              ><br />
+
+              <!-- Optional hidden fields -->
+              <input
+                type="hidden"
+                name="_subject"
+                value="New enquiry from Mechspeak.io"
+              />
+              <input type="hidden" name="_captcha" value="false" />
+
+              <input type="submit" value="Submit" id="submit" />
+            </form>
+
+            <h2>Or...</h2>
+            <p>
+              <b>Email:</b>
+              <a href="mailto:enquiries@mechspeak.io" id="mail_link"
+                >enquiries@mechspeak.io</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div id="about_container">
+          <div id="about_left">
+            <img
+              src="static/oli.png"
+              alt="Oli Stocks"
+              height="300px"
+              id="olipic"
+            />
+          </div>
+          <div id="about_right">
+            <h2>About</h2>
+            <p>
+              MechSpeak is an independent mechanical engineering practice
+              founded by me, Oliver Stocks. After six years working as a
+              Mechanical Engineer in Cambridge, I relocated to Asia to work more
+              closely with manufacturers. Since then, I’ve supported clients
+              across Europe and Asia with design, development, and production
+              challenges.
+            </p>
+            <p>I started MechSpeak with two goals:</p>
+            <ol>
+              <li>
+                <i>
+                  Help clients design and manufacture high-quality hardware
+                </i>
+              </li>
+              <li>
+                <i>Develop and bring my own consumer products to market</i>
+              </li>
+            </ol>
+            <p>
+              If you’re looking for practical engineering support with a focus
+              on turning ideas into reliable products, let’s talk.
+            </p>
+            <img src="static/sig.svg" alt="Oli Stocks" height="40px" id="sig" />
+            <h4>Freelance Engineer, MechSpeak</h4>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>© MechSpeak 2025</p>
+      </footer>
+    </main>
   </body>
 </html>
