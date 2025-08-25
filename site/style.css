@@ -460,7 +460,7 @@ ol li {
 
 #contact_box {
   background-color: #2a4b57;
-  height: 80vh;
+  height: fit-content;
   width: 40vw;
   border-radius: 60px;
   margin-left: auto;
@@ -501,6 +501,8 @@ input,
 textarea {
   margin-bottom: 20px;
   padding: 4px;
+  font-family: "Inter";
+  font-size: medium;
 }
 
 #mail_link {
