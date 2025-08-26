@@ -116,6 +116,11 @@ nav > a.navButton,
   margin: 0px;
 }
 
+button a {
+  text-decoration: none;
+  color: #2a4b57;
+}
+
 .dropdown li {
   border-bottom: 1px solid #e0e0e0;
 }
@@ -209,17 +214,20 @@ h1 {
   font-size: large;
 }
 
-#hero_left button:nth-of-type(2) {
+#hero_left button:nth-of-type(2),
+#return {
   padding: 8px;
 }
 
-#hero_left button:nth-of-type(2) a {
+#hero_left button:nth-of-type(2) a,
+#return {
   text-decoration: none;
   color: #fff;
 }
 
 #hero_left button:nth-of-type(2),
-#submit {
+#submit,
+#return {
   font-size: 20px;
   font-family: "Ubuntu";
   font-weight: 500;
@@ -231,7 +239,8 @@ h1 {
 }
 
 #hero_left button:nth-of-type(2):hover,
-#submit:hover {
+#submit:hover,
+#return:hover {
   background-color: #b66912;
   border: 2px solid #b66912;
   cursor: pointer;
@@ -549,4 +558,23 @@ footer p {
   #testimonials h2 {
     padding-top: 70px;
   }
+}
+
+#thankyou_page {
+  display: flex;
+  flex-direction: column; /* Stack h1 and button */
+  justify-content: center; /* Vertical center */
+  align-items: center; /* Horizontal center */
+  height: 100vh; /* Full screen height */
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+#thank_msg {
+  margin-bottom: 20px;
+}
+
+#return a {
+  color: #fff;
 }

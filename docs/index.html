@@ -80,13 +80,13 @@
       <div class="dropdown" id="langMenu">
         <ul>
           <li>
-            <button id="en">EN 🇬🇧</button>
+            <button id="en"><a href="index.html"> EN 🇬🇧</a></button>
           </li>
           <li>
-            <button id="ru">ZN 🇨🇳</button>
+            <button id="ru"><a href="index_zh.html"> ZH 🇨🇳</a></button>
           </li>
           <li>
-            <button id="zh">VN 🇻🇳</button>
+            <button id="zh"><a href="index_vi.html">VN 🇻🇳</a></button>
           </li>
         </ul>
       </div>
@@ -218,6 +218,13 @@
                 value="New enquiry from Mechspeak.io"
               />
               <input type="hidden" name="_captcha" value="false" />
+
+              <!-- Redirect to thankyou page -->
+              <input
+                type="hidden"
+                name="_next"
+                value="https://mechspeak.io/thankyou.html"
+              />
 
               <input type="submit" value="Submit" id="submit" />
             </form>
