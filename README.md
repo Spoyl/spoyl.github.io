@@ -1,5 +1,5 @@
-# MechSpeak.io
+# Personal Website Hosting
 
-Mechspeak.io is an international Mechanical Engineering consultancy specialising in the design and manufacture of medical devices. It is run by Oliver Stocks - a UK registered Engineer with clients in the UK, mainland Europe, and Asia.
+Mechspeak is an independent Mechanical Engineering practice specialising in the design and manufacture of medical devices and consumer products. The website is fast, has internationalisation, a contact form, and custom gifs/icons.
 
 Find the website [here](https://mechspeak.io)
