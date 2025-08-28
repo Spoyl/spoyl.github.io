@@ -17,6 +17,10 @@ nav {
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* subtle shadow for separation */
 }
 
+.home_icon img {
+  height: 40px;
+}
+
 /* Logo on the left */
 .home_icon {
   margin-right: auto;
@@ -525,15 +529,40 @@ textarea {
   color: #b66912;
 }
 
+#privacy {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+#privacy_container {
+  width: 80vw;
+}
+
+#privacy_container p,
+#privacy_container li {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #2a4b57;
+  font-family: "Inter";
+}
+
+#privacy_container a {
+  text-decoration: none;
+  color: #ef8914;
+}
+
 footer {
   box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1); /* subtle shadow for separation */
   text-align: center;
   padding: 0.75rem 4%;
 }
 
-footer p {
+footer p,
+footer a {
   font-family: "Ubuntu";
   color: #2a4b57;
+  font-size: small;
 }
 
 @media screen and (max-width: 1120px) {
@@ -553,6 +582,9 @@ footer p {
 }
 
 @media screen and (max-width: 900px) {
+  .home_icon img {
+    height: 30px;
+  }
   #hero_right img {
     display: none;
   }
