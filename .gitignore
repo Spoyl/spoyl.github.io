@@ -1,5 +1,11 @@
-.DS_store
-*.DS_store
-*/DS_store
-__pycache__
-.venv
+# OS Metadata
+.DS_Store
+Thumbs.db
+
+# Local editor settings
+.vscode/
+.idea/
+
+# Potential future dependencies
+node_modules/
+dist/

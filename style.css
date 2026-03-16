@@ -1,0 +1,245 @@
+/* CSS VARIABLES - Logo Color Palette */
+:root {
+  --bg-color: #ecf0f1; /* Clean, light grey-blue */
+  --logo-dark: #123340; /* Runic Deep Navy */
+  --accent: #1a495b; /* Secondary Navy for hover states */
+  --white: #ffffff;
+  --heading-font: "Montserrat", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+  --transition: all 0.3s ease;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--bg-color);
+  color: var(--logo-dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* TYPOGRAPHY */
+h1,
+h2 {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+}
+
+/* LAYOUT BLOCKS */
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+/* HERO SECTION */
+.hero-section {
+  justify-content: start;
+  padding-top: 10vh;
+}
+
+.main-logo {
+  display: block;
+  margin: 0 auto 30px auto;
+  max-width: 120px;
+  height: auto;
+}
+
+.company-name {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  max-width: 480px;
+  text-align: center;
+  margin-bottom: 6vh;
+  opacity: 0.9;
+}
+
+/* MAILERLITE FORM STYLES */
+.signup-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.mailerlite-form input[type="email"] {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(18, 51, 64, 0.2);
+  background-color: var(--white);
+  border-radius: 2px;
+  font-family: var(--body-font);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.mailerlite-form input[type="email"]:focus {
+  outline: none;
+  border-color: var(--logo-dark);
+}
+
+.mailerlite-form button {
+  width: 100%;
+  padding: 16px;
+  background-color: var(--logo-dark);
+  color: var(--white);
+  border: none;
+  font-family: var(--heading-font);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.mailerlite-form button:hover {
+  background-color: var(--accent);
+  letter-spacing: 3px;
+}
+
+.privacy-note {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 20px;
+  opacity: 0.6;
+}
+
+/* ABOUT SECTION */
+.about-section {
+  background-color: var(--white);
+}
+
+.about-container {
+  max-width: 850px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.founder-photo-container {
+  flex-shrink: 0;
+  width: 280px;
+  height: 280px;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid rgba(18, 51, 64, 0.1);
+}
+
+.placeholder-image {
+  font-size: 0.8rem;
+  font-family: var(--heading-font);
+  letter-spacing: 1px;
+  opacity: 0.4;
+}
+
+.about-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.about-text h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--logo-dark);
+  margin-top: 8px;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text h2::after {
+    margin: 8px auto 0 auto;
+  }
+
+  .hero-section {
+    padding-top: 5vh;
+  }
+}
+/* FOOTER STYLES */
+.site-footer {
+  background-color: var(--logo-dark);
+  color: var(--bg-color);
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.address {
+  margin: 10px 0;
+  opacity: 0.8;
+  font-style: normal;
+}
+
+.footer-nav {
+  margin-top: 20px;
+}
+
+.footer-nav a {
+  color: var(--bg-color);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(236, 240, 241, 0.3);
+  padding-bottom: 2px;
+  transition: var(--transition);
+}
+
+.footer-nav a:hover {
+  border-bottom-color: var(--bg-color);
+  opacity: 1;
+}
+
+/* Back Link for Privacy Page */
+.back-link {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: var(--logo-dark);
+  text-decoration: none;
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: lowercase;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
