@@ -11,19 +11,8 @@ This repository hosts a minimalist, performance-oriented static email sign up pa
 - **Mailing List:** MailerLite
 - **Hosting:** GitHub Pages
 
-## Deployment
-
-The site is automatically deployed via the `main` branch.
-
-To make changes locally:
-
-1. Clone the repository.
-2. Edit `index.html` or `style.css`.
-3. Preview by opening `index.html` in any modern browser.
-
 ## Assets
 
-- `logo.png`: The proprietary Berkana logo.
 - `me.jpg`: Founder profile image (Class 15/16 branding).
 
 ## License
