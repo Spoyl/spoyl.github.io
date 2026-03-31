@@ -97,18 +97,18 @@
             have a say in what the product becomes.
           </p>
           <form
+            id="berkana-signup-form"
             action="https://assets.mailerlite.com/jsonp/2195341/forms/182200210775081993/subscribe"
             data-code=""
             method="post"
-            target="_blank"
           >
             <div class="field">
-              <label for="first_name">First name</label>
+              <label for="first_name">Name</label>
               <input
                 type="text"
                 id="first_name"
                 name="fields[name]"
-                placeholder="Your first name"
+                placeholder="Your name"
                 autocomplete="given-name"
               />
             </div>
@@ -135,13 +135,12 @@
                 <option value="other">Other</option>
               </select>
             </div>
+            <input type="hidden" name="ml-submit" value="1" />
+            <input type="hidden" name="anticsrf" value="true" />
             <button type="submit" class="submit-btn">
               Join the founding list
             </button>
-            <p class="form-note">
-              No spam. Updates only when there's something worth saying.<br />Unsubscribe
-              anytime.
-            </p>
+            <p class="form-note">No spam. Unsubscribe anytime.</p>
           </form>
         </div>
       </section>
@@ -257,5 +256,21 @@
         >
       </footer>
     </div>
+    <script>
+      document
+        .getElementById("berkana-signup-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          var form = e.target;
+          var data = new FormData(form);
+          fetch(form.action, { method: "POST", body: data })
+            .then(function () {
+              window.location.href = "thank-you.html";
+            })
+            .catch(function () {
+              window.location.href = "thank-you.html";
+            });
+        });
+    </script>
   </body>
 </html>
