@@ -9,6 +9,13 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: "Norsebold";
+  src: url("fonts/Norsebold.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --white: #ffffff;
   --off-white: #f8f7f4;
@@ -37,8 +44,7 @@ body {
 /* ── HEADER ── */
 header {
   background: var(--ink-dark);
-  padding: 0 48px;
-  height: 50px;
+  height: 52px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,27 +52,20 @@ header {
 }
 
 .logo {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1.05rem;
-  letter-spacing: 0.06em;
+  font-family: "Norsebold", "Josefin Sans", sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
   color: var(--ink-text);
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .rune {
   color: var(--ink-accent);
   font-family: "Noto Sans Runic", sans-serif;
-}
-
-.header-tag {
-  font-family: "DM Mono", monospace;
-  font-size: 0.57rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--ink-muted);
 }
 
 /* ── HERO BAND (split layout) ── */
@@ -81,23 +80,24 @@ header {
   position: absolute;
   inset: 0;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  opacity: 0.04;
+  opacity: 0.06;
   pointer-events: none;
 }
 
-/* Desktop: text right, media left */
+/* Desktop: text left, media right */
 .hero-split {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "media text";
-  min-height: 340px;
+  grid-template-areas: "text media";
+  height: calc(50vh - 52px);
+  min-height: 300px;
 }
 
 .hero-media {
   grid-area: media;
   display: flex;
   align-items: stretch;
-  border-right: 1px solid var(--ink-rule);
+  border-left: 1px solid var(--ink-rule);
 }
 
 .hero-text {
@@ -670,9 +670,6 @@ footer {
 @media (max-width: 620px) {
   header {
     padding: 0 20px;
-  }
-  .header-tag {
-    display: none;
   }
   .media-placeholder {
     margin: 16px 24px;
