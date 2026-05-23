@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free CAD Download | Berkana Drums</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Runic&family=Josefin+Sans:wght@300;400;600&family=Jost:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ═══════════════════════════════════════════════════════════
+    HERO + MEDIA — side by side on desktop, media first on mobile.
+    Replace .media-placeholder with your video or image when ready.
+    See style.css for copy-paste snippets.
+  ════════════════════════════════════════════════════════════════ -->
+    <div class="hero-band">
+      <div class="hero-split">
+        <div class="hero-media">
+          <div class="media-placeholder">
+            <svg class="media-placeholder-icon" viewBox="0 0 40 40">
+              <rect x="2" y="8" width="36" height="24" rx="3" />
+              <polygon
+                points="16,15 16,25 26,20"
+                fill="currentColor"
+                stroke="none"
+                style="fill: var(--ink-muted); opacity: 0.4"
+              />
+            </svg>
+            <p class="media-placeholder-text">
+              Add your video or image here<br />
+              See style.css for instructions
+            </p>
+          </div>
+        </div>
+
+        <div class="hero-text">
+          <h1 class="hero-title">
+            Turn your <span>kick drum</span> into a drum case
+            <span>(for free)</span>...
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <main class="main">
+      <p class="section-label">What's in the zip</p>
+      <ul class="file-list">
+        <li class="file-item">
+          <div class="file-icon">
+            <svg viewBox="0 0 16 16">
+              <rect x="2" y="1" width="9" height="12" rx="1" />
+              <polyline points="9,1 13,5 13,13 2,13" />
+              <line x1="5" y1="6" x2="10" y2="6" />
+              <line x1="5" y1="9" x2="10" y2="9" />
+            </svg>
+          </div>
+          <span class="file-name">SHELL_MOUNT.stl</span>
+          <span class="file-desc">Fixed anchor to the drum shell</span>
+        </li>
+        <li class="file-item">
+          <div class="file-icon">
+            <svg viewBox="0 0 16 16">
+              <rect x="2" y="1" width="9" height="12" rx="1" />
+              <polyline points="9,1 13,5 13,13 2,13" />
+              <line x1="5" y1="6" x2="10" y2="6" />
+              <line x1="5" y1="9" x2="10" y2="9" />
+            </svg>
+          </div>
+          <span class="file-name">LUG_BODY.stl</span>
+          <span class="file-desc">Sliding lug body</span>
+        </li>
+        <li class="file-item">
+          <div class="file-icon">
+            <svg viewBox="0 0 16 16">
+              <rect x="2" y="1" width="9" height="12" rx="1" />
+              <polyline points="9,1 13,5 13,13 2,13" />
+              <line x1="5" y1="6" x2="10" y2="6" />
+              <line x1="5" y1="9" x2="10" y2="9" />
+            </svg>
+          </div>
+          <span class="file-name">LATCH_ARM.stl</span>
+          <span class="file-desc">Latch arm — the over-centre element</span>
+        </li>
+        <li class="file-item">
+          <div class="file-icon">
+            <svg viewBox="0 0 16 16">
+              <rect x="2" y="1" width="9" height="12" rx="1" />
+              <polyline points="9,1 13,5 13,13 2,13" />
+              <line x1="5" y1="6" x2="10" y2="6" />
+              <line x1="5" y1="9" x2="10" y2="9" />
+            </svg>
+          </div>
+          <span class="file-name">LEVER.stl</span>
+          <span class="file-desc">Lever — the handle you pull</span>
+        </li>
+        <li class="file-item">
+          <div class="file-icon">
+            <svg viewBox="0 0 16 16">
+              <path d="M2 3h12v2H2z" />
+              <path d="M2 7h8v2H2z" />
+              <path d="M2 11h5v2H2z" />
+            </svg>
+          </div>
+          <span class="file-name">README.md</span>
+          <span class="file-desc"
+            >3D print setup, assembly instructions, useful notes</span
+          >
+        </li>
+      </ul>
+
+      <p class="latch-note">
+        <strong>This is just the lug latch.</strong> How you modify or build
+        your drumkit to fit with this mechanism is entirely up to you. Use
+        off-the-shelf tension rods and hoop hooks. The design is patent pending;
+        as such, it should
+        <strong>only be used for personal builds, not commercial resale</strong
+        >.
+      </p>
+
+      <hr class="divider" />
+
+      <!-- SURVEY -->
+      <div id="survey-section">
+        <h2 class="survey-heading">Two minutes first (optional)</h2>
+        <p class="survey-sub">
+          A few questions help me understand who's building with this and
+          whether there's any appetite for a finished kit one day. Optional but
+          much appreciated.
+        </p>
+
+        <form id="survey-form" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-name">Name (optional)</label>
+              <input
+                type="text"
+                id="f-name"
+                name="fields[name]"
+                placeholder="Your name"
+                autocomplete="given-name"
+              />
+            </div>
+            <div class="field">
+              <label for="f-email"
+                >Email <span style="color: var(--ink-accent)">*</span></label
+              >
+              <input
+                type="email"
+                id="f-email"
+                name="fields[email]"
+                placeholder="you@example.com"
+                required
+                autocomplete="email"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="f-drummer">I play as a…</label>
+            <select id="f-drummer" name="fields[drummer_type]">
+              <option value="">Select one</option>
+              <option value="touring">Touring / gigging musician</option>
+              <option value="session">Session drummer</option>
+              <option value="teacher">Drum teacher</option>
+              <option value="traveller">Travelling musician</option>
+              <option value="hobbyist">Hobbyist / home player</option>
+              <option value="builder">Drum builder</option>
+              <option value="other">Other / just curious</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="f-problem"
+              >What are you actually trying to build or solve?</label
+            >
+            <textarea
+              id="f-problem"
+              name="fields[problem]"
+              placeholder="e.g. I want a compact jazz kit that fits in an overhead locker..."
+            ></textarea>
+          </div>
+
+          <div class="field">
+            <label for="f-buy"
+              >If a finished version of this kit existed — would you buy
+              it?</label
+            >
+            <select id="f-buy" name="fields[would_buy]">
+              <option value="">Select one</option>
+              <option value="yes_definitely">Yes, immediately</option>
+              <option value="yes_right_price">Yes, at the right price</option>
+              <option value="maybe">Maybe — depends on the spec</option>
+              <option value="no_diy">No — I'd rather build my own</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="f-price">If yes — what would you expect to pay?</label>
+            <select id="f-price" name="fields[price_point]">
+              <option value="">Select one</option>
+              <option value="under_1000">Under £1,000</option>
+              <option value="1000_2000">£1,000 – £2,000</option>
+              <option value="2000_3500">£2,000 – £3,500</option>
+              <option value="3500_5000">£3,500 – £5,000</option>
+              <option value="over_5000">Over £5,000</option>
+              <option value="na">Not applicable</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="f-feedback"
+              >Anything else — feedback, questions, ideas?</label
+            >
+            <textarea
+              id="f-feedback"
+              name="fields[feedback]"
+              placeholder="Optional — but the more honest the better."
+            ></textarea>
+          </div>
+
+          <input type="hidden" name="ml-submit" value="1" />
+          <input type="hidden" name="anticsrf" value="true" />
+
+          <button type="submit" class="submit-btn" id="submit-btn">
+            Get the files
+          </button>
+          <p class="form-note">
+            Email used for the download link and the occasional project update.
+            No spam. Unsubscribe whenever. See our
+            <a href="privacy.html">privacy policy</a>.
+          </p>
+        </form>
+      </div>
+
+      <!-- DOWNLOAD REVEAL -->
+      <div id="download-section">
+        <div class="download-card">
+          <div class="download-inner">
+            <p class="download-kicker">You're good to go</p>
+            <h2 class="download-title">Here are your files.</h2>
+            <p class="download-sub">
+              STEP files, assembly, and build notes in one zip. If you make
+              something with it,
+              <a href="https://www.instagram.com/berkanadrums/"
+                >share your photo</a
+              >! I'm curious to see what people build with this.
+            </p>
+
+            <!--
+            ════════════════════════════════════════════════════════════
+            REPLACE href BELOW WITH YOUR ACTUAL DOWNLOAD LINK
+
+            Recommended: GitHub Releases
+              1. Create a repo (can be private or public)
+              2. Go to Releases → Draft a new release → tag it v1.0
+              3. Upload berkana-latch-cad-v1.zip as a release asset
+              4. Publish — direct download URL will be:
+                 https://github.com/YOUR_USERNAME/REPO/releases/download/v1.0/berkana-latch-cad-v1.zip
+
+            Alternative: Google Drive
+              Upload zip → Share → "Anyone with the link" → Copy link
+              Convert: https://drive.google.com/uc?export=download&id=YOUR_FILE_ID
+            ════════════════════════════════════════════════════════════
+          -->
+            <a class="download-btn" href="YOUR_DOWNLOAD_LINK_HERE" download>
+              <svg viewBox="0 0 16 16">
+                <path d="M8 2v8M5 7l3 3 3-3M2 12h12" />
+              </svg>
+              Download — berkana-latch-cad-v1.zip
+            </a>
+
+            <p class="download-small">
+              STEP format · personal builds free · not for commercial use<br />
+              Patent pending
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ABOUT -->
+      <div class="about-strip">
+        <div class="about-item">
+          <div class="about-num">ᛒ</div>
+          <p class="about-heading">How it works</p>
+          <p class="about-body">
+            It's a simple over-centre latch, with an additional joint to make it
+            work smoothly. Tension from the head holds it shut. Lift the handle
+            to open. Tune as normal.
+          </p>
+        </div>
+        <div class="about-item">
+          <div class="about-num">ᚱ</div>
+          <p class="about-heading">Why I'm sharing it</p>
+          <p class="about-body">
+            Manufacturing costs for full drum kits are high, but I like this
+            design so I'm putting it out there to see what people do with it.
+          </p>
+        </div>
+        <div class="about-item">
+          <div class="about-num">ᚦ</div>
+          <p class="about-heading">The bigger project</p>
+          <p class="about-body">
+            Regular drums aren't portable portable enough, so I designed this
+            latch as a way to stack my toms into my kick. If there's loads of
+            interest, I can justify making and selling a full kit based on it.
+          </p>
+        </div>
+        <div class="about-item">
+          <div class="about-num">ᛗ</div>
+          <p class="about-heading">Talk to me</p>
+          <p class="about-body">
+            Questions, builds, ideas, problems with the files —
+            <a href="mailto:oli@berkanadrums.com">oli@berkanadrums.com</a>. You
+            can also tag me in your builds on
+            <a
+              href="https://instagram.com/berkanadrums"
+              target="_blank"
+              rel="noopener"
+              >Instagram</a
+            >.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <img
+        class="footer-logo"
+        src="logonobg.svg"
+        height="30px"
+        alt="Berkana Drums logo"
+      />
+      <span class="footer-note"
+        >© Berkana Drums Ltd 2026 · Registered in England &amp; Wales</span
+      >
+      <a class="footer-link" href="privacy.html">Privacy policy</a>
+    </footer>
+
+    <script>
+      var form = document.getElementById("survey-form");
+      var surveySection = document.getElementById("survey-section");
+      var downloadSection = document.getElementById("download-section");
+      var submitBtn = document.getElementById("submit-btn");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var email = document.getElementById("f-email").value.trim();
+        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          document.getElementById("f-email").focus();
+          return;
+        }
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending…";
+        var data = new FormData(form);
+        fetch(
+          "https://assets.mailerlite.com/jsonp/2195341/forms/182200210775081993/subscribe",
+          {
+            method: "POST",
+            body: data,
+          },
+        )
+          .then(reveal)
+          .catch(reveal);
+      });
+
+      function reveal() {
+        surveySection.style.display = "none";
+        downloadSection.classList.add("visible");
+        downloadSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    </script>
+  </body>
+</html>
