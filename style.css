@@ -11,8 +11,8 @@ html {
 
 @font-face {
   font-family: "Norsebold";
-  src: url("fonts/Norsebold.otf") format("truetype");
-  font-weight: normal;
+  src: url("fonts/Norsebold.otf") format("opentype");
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -39,21 +39,26 @@ body {
   color: var(--text);
   line-height: 1.6;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ── HEADER ── */
 header {
   background: var(--ink-dark);
   height: 52px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid var(--ink-rule);
+  position: relative;
+  z-index: 10;
 }
 
 .logo {
   font-family: "Norsebold", "Josefin Sans", sans-serif;
-  font-size: 1.25rem;
+  font-size: 2rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--ink-text);
@@ -68,80 +73,70 @@ header {
   font-family: "Noto Sans Runic", sans-serif;
 }
 
-/* ── HERO BAND (split layout) ── */
-.hero-band {
+/* ── HERO MEDIA ── */
+/*
+  ── REPLACING THE MEDIA PLACEHOLDER ──────────────────────────────
+
+  Delete the .media-placeholder div and replace with one of:
+
+  SELF-HOSTED VIDEO:
+  <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;display:block">
+    <source src="berkana-demo.mp4" type="video/mp4">
+  </video>
+
+  YOUTUBE / VIMEO EMBED:
+  <div style="position:relative;width:100%;height:100%">
+    <iframe style="position:absolute;inset:0;width:100%;height:100%;border:0"
+      src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1&muted=1&loop=1"
+      allowfullscreen></iframe>
+  </div>
+
+  IMAGE:
+  <img src="berkana-kit.jpg" alt="Berkana Drums kit"
+    style="width:100%;height:100%;object-fit:cover;display:block">
+
+  ─────────────────────────────────────────────────────────────────
+*/
+.hero-media {
   background: var(--ink-dark);
+  flex: 1;
+  min-height: calc(100vh - 52px - 160px);
+  display: flex;
+  align-items: stretch;
   position: relative;
   overflow: hidden;
 }
 
-.hero-band::before {
+.hero-media::before {
   content: "";
   position: absolute;
   inset: 0;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  opacity: 0.06;
+  opacity: 0.04;
   pointer-events: none;
 }
 
-/* Desktop: text left, media right */
-.hero-split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "text media";
-  height: calc(50vh - 52px);
-  min-height: 300px;
-}
-
-.hero-media {
-  grid-area: media;
-  display: flex;
-  align-items: stretch;
-  border-left: 1px solid var(--ink-rule);
-}
-
-.hero-text {
-  grid-area: text;
-  display: flex;
-  align-items: center;
-  padding: 52px 48px;
-}
-
-.hero-title {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: clamp(1.8rem, 3.2vw, 3rem);
-  font-weight: 600;
-  line-height: 1.1;
-  color: var(--ink-text);
-  animation: fadeUp 0.5s ease both;
-}
-
-.hero-title span {
-  color: var(--ink-accent);
-}
-
-/* Media placeholder */
 .media-placeholder {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 40px 32px;
+  gap: 12px;
   text-align: center;
   border: 2px dashed var(--ink-rule);
   border-radius: 2px;
-  margin: 16px;
+  margin: 24px;
+  position: relative;
 }
 
 .media-placeholder-icon {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   stroke: var(--ink-muted);
   stroke-width: 1.2;
   fill: none;
-  opacity: 0.4;
+  opacity: 0.35;
 }
 
 .media-placeholder-text {
@@ -150,284 +145,21 @@ header {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--ink-muted);
-  opacity: 0.5;
+  opacity: 0.45;
   line-height: 1.8;
 }
 
-/*
-  ── REPLACING THE MEDIA PLACEHOLDER ──────────────────────────────
-
-  Replace the entire .media-placeholder div with one of these:
-
-  SELF-HOSTED VIDEO:
-  <video controls style="width:100%;height:100%;object-fit:cover;display:block">
-    <source src="latch-demo.mp4" type="video/mp4">
-  </video>
-
-  YOUTUBE / VIMEO EMBED:
-  <div style="position:relative;width:100%;padding-bottom:56.25%;height:0">
-    <iframe style="position:absolute;inset:0;width:100%;height:100%;border:0"
-      src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-      allowfullscreen></iframe>
-  </div>
-
-  IMAGE:
-  <img src="latch-photo.jpg" alt="Berkana latch mechanism"
-    style="width:100%;height:100%;object-fit:cover;display:block">
-
-  ─────────────────────────────────────────────────────────────────
-*/
-
-/* Mobile: media on top, text below */
-@media (max-width: 700px) {
-  .hero-split {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "media"
-      "text";
-    min-height: unset;
-  }
-  .hero-media {
-    border-right: none;
-    border-bottom: 1px solid var(--ink-rule);
-    min-height: 220px;
-  }
-  .media-placeholder {
-    margin: 12px;
-    padding: 28px 20px;
-  }
-  .hero-text {
-    padding: 36px 24px;
-  }
-}
-
-/* ── MAIN ── */
-.main {
-  max-width: 680px;
-  margin: 0 auto;
-  padding: 60px 48px 80px;
-}
-
-/* ── SECTION LABEL ── */
-.section-label {
-  font-family: "DM Mono", monospace;
-  font-size: 0.58rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  margin-bottom: 14px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.section-label::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background: var(--rule);
-}
-
-/* ── FILE LIST ── */
-.file-list {
-  list-style: none;
-  border: 1px solid var(--rule);
-  border-radius: 3px;
-  overflow: hidden;
-  margin-bottom: 52px;
-}
-
-.file-item {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 13px 18px;
-  border-bottom: 1px solid var(--rule);
-}
-.file-item:last-child {
-  border-bottom: none;
-}
-
-.file-icon {
-  width: 30px;
-  height: 30px;
-  background: var(--off-white);
-  border: 1px solid var(--rule);
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.file-icon svg {
-  width: 13px;
-  height: 13px;
-  stroke: var(--text-muted);
-  stroke-width: 1.5;
-  fill: none;
-}
-
-.file-name {
-  font-family: "DM Mono", monospace;
-  font-size: 0.76rem;
-  color: var(--text);
-  flex: 1;
-}
-.file-desc {
-  font-size: 0.8rem;
-  font-weight: 300;
-  color: var(--text-muted);
-}
-
-/* ── LATCH NOTE ── */
-.latch-note {
-  background: var(--off-white);
-  border: 1px solid var(--rule);
-  border-left: 3px solid var(--ink-accent);
-  border-radius: 2px;
-  padding: 16px 20px;
-  font-size: 0.84rem;
-  font-weight: 300;
-  line-height: 1.75;
-  color: var(--text-mid);
-  margin-bottom: 52px;
-}
-.latch-note strong {
-  font-weight: 500;
-  color: var(--text);
-}
-
-/* ── DIVIDER ── */
-.divider {
-  border: none;
-  border-top: 1px solid var(--rule);
-  margin: 0 0 48px;
-}
-
-/* ── SURVEY ── */
-.survey-heading {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1.55rem;
-  font-weight: 600;
-  color: var(--text);
-  margin-bottom: 10px;
-}
-
-.survey-sub {
-  font-size: 0.88rem;
-  font-weight: 300;
-  color: var(--text-muted);
-  margin-bottom: 34px;
-  line-height: 1.75;
-}
-
-.field {
-  margin-bottom: 20px;
-}
-
-.field label {
-  display: block;
-  font-family: "DM Mono", monospace;
-  font-size: 0.58rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  margin-bottom: 7px;
-}
-
-.field input,
-.field select,
-.field textarea {
-  width: 100%;
-  background: var(--white);
-  border: 1px solid var(--rule);
-  border-radius: 2px;
-  padding: 10px 13px;
-  font-family: "Jost", sans-serif;
-  font-size: 0.88rem;
-  font-weight: 300;
-  color: var(--text);
-  outline: none;
-  transition: border-color 0.2s;
-  appearance: none;
-  -webkit-appearance: none;
-}
-.field input:focus,
-.field select:focus,
-.field textarea:focus {
-  border-color: var(--accent);
-}
-.field input::placeholder,
-.field textarea::placeholder {
-  color: var(--text-muted);
-  opacity: 0.55;
-}
-.field textarea {
-  resize: vertical;
-  min-height: 76px;
-  line-height: 1.6;
-}
-
-.field-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-}
-
-.submit-btn {
-  width: 100%;
+/* ── NOTIFY BAND ── */
+.notify-band {
   background: var(--ink);
-  color: var(--ink-text);
-  border: none;
-  border-radius: 2px;
-  padding: 13px 20px;
-  font-family: "Jost", sans-serif;
-  font-size: 0.84rem;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  cursor: pointer;
-  margin-top: 6px;
-  transition: background 0.2s;
-}
-.submit-btn:hover {
-  background: var(--ink-dark);
-}
-.submit-btn:disabled {
-  opacity: 0.45;
-  cursor: not-allowed;
-}
-
-.form-note {
-  font-family: "DM Mono", monospace;
-  font-size: 0.56rem;
-  letter-spacing: 0.08em;
-  color: var(--text-muted);
-  opacity: 0.65;
-  text-align: center;
-  margin-top: 12px;
-  line-height: 1.7;
-}
-.form-note a {
-  color: var(--text-muted);
-}
-
-/* ── DOWNLOAD REVEAL ── */
-#download-section {
-  display: none;
-}
-#download-section.visible {
-  display: block;
-  animation: fadeUp 0.45s ease both;
-}
-
-.download-card {
-  background: var(--ink);
-  border-radius: 3px;
-  padding: 40px 36px;
+  border-top: 1px solid var(--ink-rule);
+  border-bottom: 1px solid var(--ink-rule);
+  padding: 40px 24px;
   position: relative;
   overflow: hidden;
 }
-.download-card::before {
+
+.notify-band::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -435,131 +167,180 @@ header {
   opacity: 0.04;
   pointer-events: none;
 }
-.download-card::after {
-  content: "ᛒ";
-  position: absolute;
-  right: 28px;
-  bottom: -8px;
-  font-family: "Noto Sans Runic", sans-serif;
-  font-size: 7rem;
-  color: var(--ink-accent);
-  opacity: 0.07;
-  pointer-events: none;
-  line-height: 1;
-}
 
-.download-inner {
+.notify-inner {
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: center;
   position: relative;
 }
 
-.download-kicker {
+.notify-eyebrow {
   font-family: "DM Mono", monospace;
-  font-size: 0.58rem;
-  letter-spacing: 0.2em;
+  font-size: 0.6rem;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--ink-accent);
   margin-bottom: 10px;
+  animation: fadeUp 0.5s ease both;
 }
 
-.download-title {
+.notify-title {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 1.7rem;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
   font-weight: 600;
+  line-height: 1.1;
   color: var(--ink-text);
   margin-bottom: 10px;
+  animation: fadeUp 0.5s 0.07s ease both;
 }
 
-.download-sub {
-  font-size: 0.85rem;
+.notify-title span {
+  color: var(--ink-accent);
+}
+
+.notify-sub {
+  font-size: 0.88rem;
   font-weight: 300;
   color: var(--ink-muted);
-  margin-bottom: 28px;
-  line-height: 1.75;
-}
-.download-sub a {
-  color: var(--ink-accent);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(126, 200, 216, 0.3);
+  margin-bottom: 24px;
+  animation: fadeUp 0.5s 0.14s ease both;
 }
 
-.download-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
+.notify-fields {
+  display: flex;
+  gap: 8px;
+  max-width: 420px;
+  margin: 0 auto 10px;
+  animation: fadeUp 0.5s 0.18s ease both;
+}
+
+.notify-fields input[type="email"] {
+  flex: 1;
+  background: var(--ink-dark);
+  border: 1px solid var(--ink-rule);
+  border-radius: 2px;
+  padding: 11px 14px;
+  font-family: "Jost", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 300;
+  color: var(--ink-text);
+  outline: none;
+  transition: border-color 0.2s;
+  appearance: none;
+  -webkit-appearance: none;
+  min-width: 0;
+}
+
+.notify-fields input[type="email"]:focus {
+  border-color: var(--ink-accent);
+}
+
+.notify-fields input[type="email"]::placeholder {
+  color: var(--ink-muted);
+  opacity: 0.5;
+}
+
+.notify-btn {
   background: var(--ink-accent);
   color: var(--ink-dark);
-  text-decoration: none;
+  border: none;
   border-radius: 2px;
-  padding: 12px 26px;
+  padding: 11px 24px;
   font-family: "Jost", sans-serif;
   font-size: 0.84rem;
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
   transition: background 0.2s;
-}
-.download-btn:hover {
-  background: #a8dce8;
-}
-.download-btn svg {
-  width: 15px;
-  height: 15px;
-  stroke: currentColor;
-  stroke-width: 2;
-  fill: none;
   flex-shrink: 0;
 }
 
-.download-small {
+.notify-btn:hover {
+  background: #dfc090;
+}
+.notify-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.notify-note {
   font-family: "DM Mono", monospace;
-  font-size: 0.56rem;
-  letter-spacing: 0.1em;
+  font-size: 0.55rem;
+  letter-spacing: 0.08em;
   color: var(--ink-muted);
-  opacity: 0.55;
-  margin-top: 18px;
-  line-height: 1.9;
+  opacity: 0.5;
+  line-height: 1.7;
+  animation: fadeUp 0.5s 0.22s ease both;
+}
+
+.notify-note a {
+  color: var(--ink-muted);
+}
+
+.notify-thanks {
+  display: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--ink-accent);
+  letter-spacing: 0.06em;
+  padding: 12px 0;
+  animation: fadeUp 0.4s ease both;
+}
+
+/* ── MAIN / ABOUT ── */
+.main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 64px 48px 80px;
+  width: 100%;
 }
 
 /* ── ABOUT STRIP ── */
 .about-strip {
-  margin-top: 64px;
-  padding-top: 48px;
-  border-top: 1px solid var(--rule);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 32px;
+  gap: 36px 48px;
+  border-top: 1px solid var(--rule);
+  padding-top: 48px;
 }
 
 .about-num {
   font-family: "Noto Sans Runic", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: var(--rule);
   line-height: 1;
   margin-bottom: 8px;
 }
+
 .about-heading {
   font-size: 0.85rem;
   font-weight: 500;
   color: var(--text);
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
+
 .about-body {
   font-size: 0.82rem;
   font-weight: 300;
   color: var(--text-muted);
-  line-height: 1.75;
+  line-height: 1.8;
 }
+
 .about-body a {
   color: var(--accent);
   text-decoration: none;
-  border-bottom: 1px solid rgba(42, 75, 87, 0.2);
+  border-bottom: 1px solid rgba(122, 82, 48, 0.2);
 }
 
 /* ── FOOTER ── */
 footer {
   background: var(--ink-dark);
   border-top: 1px solid var(--ink-rule);
-  padding: 32px 48px;
+  padding: 28px 48px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -567,10 +348,8 @@ footer {
   text-align: center;
 }
 
-.footer-rune {
-  font-size: 1.6rem;
-  color: var(--ink-accent);
-  opacity: 0.6;
+.footer-logo {
+  opacity: 1;
 }
 
 .footer-note {
@@ -588,9 +367,10 @@ footer {
   text-transform: uppercase;
   color: var(--ink-muted);
   text-decoration: none;
-  opacity: 0.55;
+  opacity: 0.5;
   transition: opacity 0.2s;
 }
+
 .footer-link:hover {
   opacity: 0.9;
 }
@@ -601,6 +381,7 @@ footer {
   margin: 0 auto;
   padding: 64px 48px 80px;
 }
+
 .prose-page h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.8rem;
@@ -608,6 +389,7 @@ footer {
   color: var(--text);
   margin-bottom: 8px;
 }
+
 .prose-page .prose-meta {
   font-family: "DM Mono", monospace;
   font-size: 0.6rem;
@@ -618,6 +400,7 @@ footer {
   padding-bottom: 24px;
   border-bottom: 1px solid var(--rule);
 }
+
 .prose-page h2 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 0.9rem;
@@ -627,6 +410,7 @@ footer {
   color: var(--text);
   margin: 36px 0 10px;
 }
+
 .prose-page p {
   font-size: 0.88rem;
   font-weight: 300;
@@ -634,11 +418,13 @@ footer {
   line-height: 1.8;
   margin-bottom: 12px;
 }
+
 .prose-page a {
   color: var(--accent);
   text-decoration: none;
-  border-bottom: 1px solid rgba(42, 75, 87, 0.2);
+  border-bottom: 1px solid rgba(122, 82, 48, 0.2);
 }
+
 .back-link {
   font-family: "DM Mono", monospace;
   font-size: 0.6rem;
@@ -650,6 +436,7 @@ footer {
   margin-bottom: 36px;
   transition: color 0.2s;
 }
+
 .back-link:hover {
   color: var(--accent);
 }
@@ -668,34 +455,28 @@ footer {
 
 /* ── RESPONSIVE ── */
 @media (max-width: 620px) {
-  header {
-    padding: 0 20px;
+  .hero-media {
+    min-height: 56vw;
   }
-  .media-placeholder {
-    margin: 16px 24px;
-    min-height: 180px;
+  .notify-band {
+    padding: 32px 20px;
+  }
+  .notify-fields {
+    flex-direction: column;
+  }
+  .notify-btn {
+    width: 100%;
+    padding: 12px;
   }
   .main {
     padding: 44px 24px 64px;
   }
-  .field-row {
-    grid-template-columns: 1fr;
-  }
   .about-strip {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 28px;
   }
   footer {
-    padding: 22px 20px;
-    flex-direction: column;
-    gap: 12px;
-    text-align: center;
-  }
-  .footer-links {
-    justify-content: center;
-  }
-  .download-card {
-    padding: 28px 22px;
+    padding: 24px 20px;
   }
   .prose-page {
     padding: 44px 24px 64px;
