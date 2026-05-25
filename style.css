@@ -46,7 +46,7 @@ body {
 /* ── HEADER ── */
 header {
   background: var(--ink-dark);
-  height: 52px;
+  height: 90px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -57,12 +57,6 @@ header {
 }
 
 .logo {
-  font-family: "Norsebold", "Josefin Sans", sans-serif;
-  font-size: 2rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--ink-text);
-  text-decoration: none;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -71,6 +65,14 @@ header {
 .rune {
   color: var(--ink-accent);
   font-family: "Noto Sans Runic", sans-serif;
+}
+
+.trademark {
+  font-family: "Norsebold", "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  color: var(--ink-text);
+  letter-spacing: 0.1em;
+  vertical-align: top;
 }
 
 /* ── HERO MEDIA ── */
@@ -100,7 +102,7 @@ header {
 .hero-media {
   background: var(--ink-dark);
   flex: 1;
-  min-height: calc(100vh - 52px - 160px);
+  min-height: calc(100vh - 90px - 160px);
   display: flex;
   align-items: stretch;
   position: relative;
@@ -217,14 +219,14 @@ header {
 
 .notify-fields input[type="email"] {
   flex: 1;
-  background: var(--ink-dark);
+  background: var(--ink-text);
   border: 1px solid var(--ink-rule);
   border-radius: 2px;
   padding: 11px 14px;
   font-family: "Jost", sans-serif;
   font-size: 0.88rem;
   font-weight: 300;
-  color: var(--ink-text);
+  color: var(--ink-dark);
   outline: none;
   transition: border-color 0.2s;
   appearance: none;
