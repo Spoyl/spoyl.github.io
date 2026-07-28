@@ -605,6 +605,72 @@ header {
   background: rgba(122, 82, 48, 0.05);
 }
 
+.option-cta {
+  margin-top: auto;
+}
+
+.option-email-form {
+  margin: 0;
+}
+
+.option-email-fields {
+  display: flex;
+  gap: 8px;
+}
+
+.option-email-fields input[type="email"] {
+  flex: 1;
+  min-width: 0;
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 11px 12px;
+  font-family: "Jost", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 300;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.option-email-fields input[type="email"]:focus {
+  border-color: var(--accent);
+}
+
+.option-email-fields input[type="email"]::placeholder {
+  color: var(--text-muted);
+  opacity: 0.6;
+}
+
+.option-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.option-download {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  font-family: "DM Mono", monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(122, 82, 48, 0.25);
+  padding-bottom: 2px;
+  transition:
+    color 0.2s,
+    border-color 0.2s;
+}
+
+.option-download:hover {
+  color: var(--accent-mid);
+  border-color: var(--accent-mid);
+}
+
 /* ── FOOTER ── */
 footer {
   background: var(--ink-dark);
@@ -773,6 +839,12 @@ footer {
   .notify-btn {
     width: 100%;
     padding: 12px;
+  }
+  .option-email-fields {
+    flex-direction: column;
+  }
+  .option-email-fields button {
+    width: 100%;
   }
   .main {
     padding: 44px 24px 64px;

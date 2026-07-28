@@ -102,15 +102,43 @@
             <p class="option-tag">Free</p>
             <h3 class="option-title">Print it yourself</h3>
             <p class="option-body">
-              We'll email you the 3D print files so you can print your own
-              lug-latches at home, on your own printer.
+              Pop your email on our list and we'll send you straight to the STL
+              files so you can print your own lug-latches at home.
             </p>
-            <a
-              class="option-btn option-btn-outline"
-              href="mailto:social@berkanadrums.com?subject=Send%20me%20the%20lug-latch%20print%20files"
-            >
-              Email me the files
-            </a>
+
+            <div class="option-cta">
+              <form class="option-email-form" id="print-form" novalidate>
+                <div class="option-email-fields">
+                  <input
+                    type="email"
+                    id="print-email"
+                    name="fields[email]"
+                    placeholder="you@example.com"
+                    required
+                    autocomplete="email"
+                  />
+                  <button
+                    type="submit"
+                    class="option-btn option-btn-outline"
+                    id="print-btn"
+                  >
+                    Get the files
+                  </button>
+                </div>
+                <input type="hidden" name="ml-submit" value="1" />
+                <input type="hidden" name="anticsrf" value="true" />
+              </form>
+
+              <!-- Replace href with the raw/release URL of your STL zip on GitHub -->
+              <a
+                class="option-download"
+                id="print-download"
+                href="https://github.com/Spoyl/spoyl.github.io/releases/download/stlsV1/LugLatchSTLS.zip"
+                download
+              >
+                Download the STL files (.zip)
+              </a>
+            </div>
           </div>
 
           <div class="option-card option-card-featured">
@@ -122,8 +150,9 @@
             <p class="option-tag">£6 per latch + postage</p>
             <h3 class="option-title">Get the 3D prints</h3>
             <p class="option-body">
-              3D printed in PETG, assembled and ready to go. Retro-fits to most
-              kick drums.
+              3D printed in PETG, retro-fits to most kick drums. Not for
+              recommended for heavy duty use - we're working on a full metal
+              version.
             </p>
             <!-- Replace href with your Stripe Payment Link -->
             <a
@@ -266,6 +295,43 @@
       function showThanks() {
         form.style.display = "none";
         thanks.style.display = "block";
+      }
+    </script>
+    <script>
+      var printForm = document.getElementById("print-form");
+      var printBtn = document.getElementById("print-btn");
+      var printDownload = document.getElementById("print-download");
+
+      printForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var email = document.getElementById("print-email").value.trim();
+        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          document.getElementById("print-email").focus();
+          return;
+        }
+        printBtn.disabled = true;
+        printBtn.textContent = "Sending…";
+        var data = new FormData(printForm);
+        // Same MailerLite form endpoint as the main signup — swap the URL
+        // if you'd rather tag/group these leads separately.
+        fetch(
+          "https://assets.mailerlite.com/jsonp/2195341/forms/182200210775081993/subscribe",
+          {
+            method: "POST",
+            body: data,
+          },
+        )
+          .then(function () {
+            showDownload();
+          })
+          .catch(function () {
+            showDownload();
+          });
+      });
+
+      function showDownload() {
+        printForm.style.display = "none";
+        printDownload.style.display = "inline-flex";
       }
     </script>
     <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
