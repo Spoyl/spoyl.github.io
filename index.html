@@ -34,7 +34,7 @@
             Your gig kit. <span> Now your best kit.</span>
           </h1>
           <p class="notify-sub">
-            Leave your email to be notified when we launch our kickstarter.
+            Leave your email to be notified when we launch our Kickstarter.
           </p>
           <form id="notify-form" novalidate>
             <div class="notify-fields">
@@ -82,11 +82,10 @@
     <!-- ═══════════════════════════════════════════════════════
     GET YOUR LATCHES — three ways to get hold of a lug-latch kit.
     Sits in its own full-width section so it can run wider than the
-    narrow prose column above. Card 2's "Buy now" href is a
-    placeholder — replace with your Stripe Payment Link when ready.
-    Card 3's background is a placeholder CAD-style graphic — swap
-    the background-image on .option-card-metal in style.css for your
-    real render when it's ready.
+    narrow prose column above. Card 2 is currently marked sold out —
+    to re-enable sales, swap the "Sold out" span back for an <a> with
+    your Stripe Payment Link and restore the option-btn-solid class.
+    Card 3's background now uses metalversion.png (see style.css).
   ════════════════════════════════════════════════════════════════ -->
     <section class="options-section" id="get-latches">
       <div class="options-inner">
@@ -103,7 +102,8 @@
             <h3 class="option-title">Print it yourself</h3>
             <p class="option-body">
               Pop your email on our list and we'll send you straight to the STL
-              files so you can print your own lug-latches at home.
+              files so you can print your own lug-latches. Strictly for
+              non-commercial use.
             </p>
 
             <div class="option-cta">
@@ -141,7 +141,7 @@
             </div>
           </div>
 
-          <div class="option-card option-card-featured">
+          <div class="option-card option-card-soldout">
             <svg class="option-icon" viewBox="0 0 48 48">
               <polygon points="24,4 44,14 44,34 24,44 4,34 4,14" />
               <polyline points="4,14 24,24 44,14" />
@@ -154,15 +154,12 @@
               recommended for heavy duty use - we're working on a full metal
               version.
             </p>
-            <!-- Replace href with your Stripe Payment Link -->
-            <a
-              class="option-btn option-btn-solid"
-              href="https://buy.stripe.com/5kQ5kD1bi1sLbDf4rigEg02"
-              target="_blank"
-              rel="noopener"
+            <span
+              class="option-btn option-btn-soldout-label"
+              aria-disabled="true"
             >
-              Buy now
-            </a>
+              Sold out
+            </span>
           </div>
 
           <div class="option-card option-card-metal">
@@ -173,10 +170,10 @@
                 d="M24 4v6M24 38v6M4 24h6M38 24h6M9.5 9.5l4.2 4.2M34.3 34.3l4.2 4.2M9.5 38.5l4.2-4.2M34.3 13.7l4.2-4.2"
               />
             </svg>
-            <p class="option-tag">£20 per latch - Coming soon</p>
+            <p class="option-tag">£24 per latch - Coming soon</p>
             <h3 class="option-title">Full metal version</h3>
             <p class="option-body option-body-fade">
-              The full steel lug-latch is in development — we're launching a
+              The full metal lug-latch is in development — we're launching a
               Kickstarter soon!
             </p>
             <a

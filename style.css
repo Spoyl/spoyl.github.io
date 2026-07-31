@@ -462,18 +462,38 @@ header {
   z-index: 1;
 }
 
-.option-card-featured {
-  background: var(--white);
-  border-color: var(--accent);
-  box-shadow: 0 6px 18px rgba(28, 23, 20, 0.07);
+.option-card-soldout {
+  background: var(--off-white);
+  border-color: var(--rule);
+  position: relative;
+}
+
+.option-card-soldout:hover {
+  border-color: var(--rule);
+  transform: none;
+  box-shadow: none;
+}
+
+.option-card-soldout .option-icon {
+  opacity: 0.4;
+  filter: grayscale(1);
+}
+
+.option-card-soldout .option-tag,
+.option-card-soldout .option-title {
+  opacity: 0.55;
+}
+
+.option-card-soldout .option-body {
+  opacity: 0.65;
 }
 
 /*
-  ── CAD RENDER PLACEHOLDER ──────────────────────────────────────
-  The background-image below is a stand-in blueprint-style graphic.
-  Swap it for your real CAD render — either replace the data URI
-  with your own, or drop in an image file and use:
-  background-image: url("metal-latch-cad.jpg");
+  ── METAL VERSION PHOTO ──────────────────────────────────────────
+  Background photo lives on its own ::before layer (not directly on
+  the card) so a filter can fade/desaturate it without touching the
+  text on top. The .option-metal-scrim div sits above that and adds
+  the ink-toned wash. To swap the image, just change the url() below.
   ─────────────────────────────────────────────────────────────────
 */
 .option-card-metal {
@@ -481,10 +501,18 @@ header {
   border-color: var(--ink-rule);
   color: var(--ink-text);
   background-color: var(--ink-dark);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%23251c14'/%3E%3Cg stroke='%233d3028' stroke-width='1'%3E%3Cline x1='0' y1='100' x2='400' y2='100'/%3E%3Cline x1='0' y1='200' x2='400' y2='200'/%3E%3Cline x1='0' y1='300' x2='400' y2='300'/%3E%3Cline x1='0' y1='400' x2='400' y2='400'/%3E%3Cline x1='100' y1='0' x2='100' y2='500'/%3E%3Cline x1='200' y1='0' x2='200' y2='500'/%3E%3Cline x1='300' y1='0' x2='300' y2='500'/%3E%3C/g%3E%3Cg stroke='%23c9a87a' stroke-width='2' fill='none'%3E%3Crect x='100' y='150' width='200' height='230' rx='10'/%3E%3Ccircle cx='100' cy='150' r='12'/%3E%3Ccircle cx='300' cy='150' r='12'/%3E%3Ccircle cx='100' cy='380' r='12'/%3E%3Ccircle cx='300' cy='380' r='12'/%3E%3Ccircle cx='200' cy='265' r='34'/%3E%3C/g%3E%3Cg stroke='%239aa0a6' stroke-width='1'%3E%3Cline x1='100' y1='108' x2='100' y2='128'/%3E%3Cline x1='300' y1='108' x2='300' y2='128'/%3E%3Cline x1='60' y1='108' x2='340' y2='108'/%3E%3C/g%3E%3C/svg%3E");
+  overflow: hidden;
+}
+
+.option-card-metal::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("metalversion.png");
   background-size: cover;
   background-position: center;
-  overflow: hidden;
+  filter: grayscale(0.4) sepia(0.2) brightness(0.65) contrast(1.05);
+  z-index: 0;
 }
 
 .option-metal-scrim {
@@ -492,16 +520,16 @@ header {
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(37, 28, 20, 0.94) 0%,
-    rgba(37, 28, 20, 0.88) 60%,
-    rgba(37, 28, 20, 0.94) 100%
+    rgba(37, 28, 20, 0.9) 0%,
+    rgba(37, 28, 20, 0.8) 60%,
+    rgba(37, 28, 20, 0.9) 100%
   );
   transition: opacity 0.4s ease;
   z-index: 0;
 }
 
 .option-card-metal:hover .option-metal-scrim {
-  opacity: 0.15;
+  opacity: 0.35;
 }
 
 .option-card-metal .option-tag,
@@ -592,6 +620,14 @@ header {
 .option-btn-solid:hover {
   background: var(--accent-mid);
   border-color: var(--accent-mid);
+}
+
+.option-btn-soldout-label {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--rule);
+  cursor: not-allowed;
+  letter-spacing: 0.14em;
 }
 
 .option-btn-outline {
