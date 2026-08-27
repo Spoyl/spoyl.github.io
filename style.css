@@ -78,7 +78,6 @@ header {
 /* ── HERO SECTION (media + notify, side by side) ── */
 .hero-section {
   background: var(--ink);
-  border-bottom: 1px solid var(--ink-rule);
   flex: none;
   height: calc(100vh - 90px);
   display: flex;
@@ -196,8 +195,8 @@ header {
 }
 
 .notify-eyebrow {
-  font-family: "DM Mono", monospace;
-  font-size: 0.6rem;
+  font-family: "Norsebold", "DM Mono", monospace;
+  font-size: 0.8rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--ink-accent);
@@ -316,9 +315,9 @@ header {
   align-items: center;
   gap: 8px;
   margin-top: 28px;
-  font-family: "DM Mono", monospace;
-  font-size: 0.62rem;
-  letter-spacing: 0.12em;
+  font-family: "Norsebold", "DM Mono", monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--ink-muted);
   text-decoration: none;
@@ -403,8 +402,8 @@ header {
 }
 
 .options-eyebrow {
-  font-family: "DM Mono", monospace;
-  font-size: 0.6rem;
+  font-family: "Norsebold", "DM Mono", monospace;
+  font-size: 0.8rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--accent);
@@ -567,9 +566,9 @@ header {
 }
 
 .option-tag {
-  font-family: "DM Mono", monospace;
-  font-size: 0.6rem;
-  letter-spacing: 0.14em;
+  font-family: "Norsebold", "DM Mono", monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--accent);
   margin-bottom: 12px;
@@ -732,9 +731,9 @@ footer {
 }
 
 .footer-link {
-  font-family: "DM Mono", monospace;
-  font-size: 0.54rem;
-  letter-spacing: 0.1em;
+  font-family: "Norsebold", "DM Mono", monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--ink-muted);
   text-decoration: none;
