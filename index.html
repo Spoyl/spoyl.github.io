@@ -82,9 +82,8 @@
     <!-- ═══════════════════════════════════════════════════════
     GET YOUR LATCHES — three ways to get hold of a lug-latch kit.
     Sits in its own full-width section so it can run wider than the
-    narrow prose column above. Card 2 is currently marked sold out —
-    to re-enable sales, swap the "Sold out" span back for an <a> with
-    your Stripe Payment Link and restore the option-btn-solid class.
+    narrow prose column above. Card 2 is the test-partner application form: the button
+    reveals the form, which emails social@berkanadrums.com via FormSubmit.
     Card 3's background now uses metalversion.png (see style.css).
   ════════════════════════════════════════════════════════════════ -->
     <section class="options-section" id="get-latches">
@@ -141,25 +140,151 @@
             </div>
           </div>
 
-          <div class="option-card option-card-soldout">
+          <div class="option-card option-card-partner">
             <svg class="option-icon" viewBox="0 0 48 48">
-              <polygon points="24,4 44,14 44,34 24,44 4,34 4,14" />
-              <polyline points="4,14 24,24 44,14" />
-              <line x1="24" y1="24" x2="24" y2="44" />
+              <circle cx="17" cy="24" r="11" />
+              <circle cx="31" cy="24" r="11" />
             </svg>
-            <p class="option-tag">£6 per latch + postage</p>
-            <h3 class="option-title">Get the 3D prints</h3>
+            <p class="option-tag">Apply to test</p>
+            <h3 class="option-title">Become a Berkana Test Partner</h3>
             <p class="option-body">
-              3D printed in PETG, retro-fits to most kick drums. Not for
-              recommended for heavy duty use - we're working on a full metal
-              version.
+              Help us put the lug-latch through its paces on your kit, and tell
+              us what works and what doesn't. Tell us a little about you and
+              your kit and we'll be in touch by email.
             </p>
-            <span
-              class="option-btn option-btn-soldout-label"
-              aria-disabled="true"
-            >
-              Sold out
-            </span>
+
+            <div class="option-cta">
+              <button
+                type="button"
+                class="option-btn option-btn-solid partner-open"
+                id="partner-open"
+                aria-expanded="false"
+                aria-controls="partner-form"
+              >
+                Apply to be a test partner
+              </button>
+
+              <form class="partner-form" id="partner-form" novalidate hidden>
+                <div class="partner-field">
+                  <label for="p-name">Name</label>
+                  <input
+                    type="text"
+                    id="p-name"
+                    name="name"
+                    required
+                    autocomplete="name"
+                    placeholder="Your name"
+                  />
+                </div>
+                <div class="partner-field">
+                  <label for="p-email">Email</label>
+                  <input
+                    type="email"
+                    id="p-email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                    placeholder="you@example.com"
+                  />
+                </div>
+                <div class="partner-field">
+                  <label for="p-country">Country</label>
+                  <input
+                    type="text"
+                    id="p-country"
+                    name="country"
+                    required
+                    autocomplete="country-name"
+                    placeholder="e.g. United Kingdom"
+                  />
+                </div>
+                <div class="partner-field">
+                  <label for="p-kick">Your kick drum</label>
+                  <input
+                    type="text"
+                    id="p-kick"
+                    name="kick_drum"
+                    required
+                    placeholder="Brand, size &amp; no. of lugs if known"
+                  />
+                </div>
+                <div class="partner-field">
+                  <label for="p-notes">
+                    How &amp; where do you play?
+                    <span class="partner-optional">Optional</span>
+                  </label>
+                  <textarea
+                    id="p-notes"
+                    name="how_they_play"
+                    rows="3"
+                    placeholder="Gigs, rehearsals, touring..."
+                  ></textarea>
+                </div>
+
+                <label class="partner-check">
+                  <input
+                    type="checkbox"
+                    id="p-costs"
+                    name="agrees_to_costs"
+                    value="Yes"
+                    required
+                  />
+                  <span>
+                    I understand I'll need to cover shipping and basic material
+                    costs for my test set.
+                  </span>
+                </label>
+
+                <p class="partner-note">
+                  We'll also add you to our mailing list. No spam, unsubscribe
+                  anytime. See our <a href="privacy.html">privacy policy</a>.
+                </p>
+
+                <!-- Honeypot: real people never see or fill this in -->
+                <input
+                  type="text"
+                  name="_honey"
+                  id="p-honey"
+                  tabindex="-1"
+                  autocomplete="off"
+                  aria-hidden="true"
+                  style="display: none"
+                />
+
+                <p
+                  class="partner-error"
+                  id="partner-error"
+                  role="alert"
+                  hidden
+                ></p>
+
+                <div class="partner-actions">
+                  <button
+                    type="submit"
+                    class="option-btn option-btn-solid"
+                    id="partner-submit"
+                  >
+                    Send application
+                  </button>
+                  <button
+                    type="button"
+                    class="partner-cancel"
+                    id="partner-cancel"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </form>
+
+              <p
+                class="partner-thanks"
+                id="partner-thanks"
+                role="status"
+                hidden
+              >
+                Thanks &mdash; your application is in. We'll be in touch soon.
+              </p>
+            </div>
           </div>
 
           <div class="option-card option-card-metal">
@@ -322,6 +447,137 @@
         printForm.style.display = "none";
         printDownload.style.display = "inline-flex";
       }
+    </script>
+    <script>
+      // Test-partner application. Sends an email to social@berkanadrums.com
+      // via FormSubmit (https://formsubmit.co). The very first submission
+      // triggers an activation email to that address — click the link in it
+      // once and all later applications arrive as normal emails.
+      (function () {
+        var ENDPOINT = "https://formsubmit.co/ajax/social@berkanadrums.com";
+        var openBtn = document.getElementById("partner-open");
+        var pForm = document.getElementById("partner-form");
+        var pSubmit = document.getElementById("partner-submit");
+        var pCancel = document.getElementById("partner-cancel");
+        var pError = document.getElementById("partner-error");
+        var pThanks = document.getElementById("partner-thanks");
+
+        function showError(msg) {
+          pError.textContent = msg;
+          pError.hidden = false;
+        }
+
+        openBtn.addEventListener("click", function () {
+          openBtn.hidden = true;
+          openBtn.setAttribute("aria-expanded", "true");
+          pForm.hidden = false;
+          document.getElementById("p-name").focus();
+        });
+
+        pCancel.addEventListener("click", function () {
+          pForm.hidden = true;
+          pError.hidden = true;
+          openBtn.hidden = false;
+          openBtn.setAttribute("aria-expanded", "false");
+          openBtn.focus();
+        });
+
+        pForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+          pError.hidden = true;
+
+          var fields = ["p-name", "p-email", "p-country", "p-kick"];
+          var firstBad = null;
+          fields.forEach(function (id) {
+            var el = document.getElementById(id);
+            var bad = !el.value.trim();
+            if (id === "p-email" && !bad) {
+              bad = !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value.trim());
+            }
+            el.classList.toggle("partner-invalid", bad);
+            if (bad && !firstBad) firstBad = el;
+          });
+          var costs = document.getElementById("p-costs");
+          var costsBad = !costs.checked;
+          costs
+            .closest(".partner-check")
+            .classList.toggle("partner-invalid", costsBad);
+          if (costsBad && !firstBad) firstBad = costs;
+
+          if (firstBad) {
+            showError(
+              firstBad === costs
+                ? "Please tick the box to confirm you'll cover shipping and material costs."
+                : "Please check the highlighted fields.",
+            );
+            firstBad.focus();
+            return;
+          }
+
+          // Honeypot tripped: pretend success, send nothing.
+          if (document.getElementById("p-honey").value) {
+            pForm.hidden = true;
+            pThanks.hidden = false;
+            return;
+          }
+
+          pSubmit.disabled = true;
+          pSubmit.textContent = "Sending\u2026";
+
+          // Also add them to the MailerLite list (same form as the other signups).
+          // Fire-and-forget: a failure here shouldn't block the application.
+          var listData = new FormData();
+          listData.append(
+            "fields[email]",
+            document.getElementById("p-email").value.trim(),
+          );
+          listData.append("ml-submit", "1");
+          listData.append("anticsrf", "true");
+          fetch(
+            "https://assets.mailerlite.com/jsonp/2195341/forms/182200210775081993/subscribe",
+            { method: "POST", body: listData },
+          ).catch(function () {});
+
+          var payload = {
+            name: document.getElementById("p-name").value.trim(),
+            email: document.getElementById("p-email").value.trim(),
+            country: document.getElementById("p-country").value.trim(),
+            kick_drum: document.getElementById("p-kick").value.trim(),
+            how_they_play:
+              document.getElementById("p-notes").value.trim() || "(not given)",
+            agrees_to_cover_shipping_and_materials: "Yes",
+            _subject: "New Berkana test partner application",
+            _template: "table",
+            _captcha: "false",
+          };
+
+          fetch(ENDPOINT, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            body: JSON.stringify(payload),
+          })
+            .then(function (res) {
+              return res.json().then(function (data) {
+                if (!res.ok || String(data.success) !== "true")
+                  throw new Error("failed");
+              });
+            })
+            .then(function () {
+              pForm.hidden = true;
+              pThanks.hidden = false;
+            })
+            .catch(function () {
+              pSubmit.disabled = false;
+              pSubmit.textContent = "Send application";
+              showError(
+                "Sorry, that didn't send. Please try again, or email us directly at social@berkanadrums.com.",
+              );
+            });
+        });
+      })();
     </script>
     <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
     <script>
